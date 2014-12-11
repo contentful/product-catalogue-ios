@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14A388a" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Asset" representedClassName="Asset" syncable="YES">
+        <attribute name="height" optional="YES" attributeType="Float" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="internetMediaType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="width" optional="YES" attributeType="Float" syncable="YES"/>
+        <relationship name="BrandInverse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Brand" inverseName="logo" inverseEntity="Brand" syncable="YES"/>
+        <relationship name="CategoryInverse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Category" inverseName="icon" inverseEntity="Category" syncable="YES"/>
+        <relationship name="ProductInverse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="image" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="Brand" representedClassName="Brand" syncable="YES">
+        <attribute name="companyDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="twitter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="brandInverse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="brand" inverseEntity="Product" syncable="YES"/>
+        <relationship name="logo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Asset" inverseName="BrandInverse" inverseEntity="Asset" syncable="YES"/>
+    </entity>
+    <entity name="Category" representedClassName="Category" syncable="YES">
+        <attribute name="categoryDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="categoriesInverse" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="categories" inverseEntity="Product" syncable="YES"/>
+        <relationship name="icon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Asset" inverseName="CategoryInverse" inverseEntity="Asset" syncable="YES"/>
+    </entity>
+    <entity name="Product" representedClassName="Product" syncable="YES">
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" syncable="YES"/>
+        <attribute name="productDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 64" syncable="YES"/>
+        <attribute name="sizetypecolor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sku" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="brand" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Brand" inverseName="brandInverse" inverseEntity="Brand" syncable="YES"/>
+        <relationship name="categories" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Category" inverseName="categoriesInverse" inverseEntity="Category" syncable="YES"/>
+        <relationship name="image" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Asset" inverseName="ProductInverse" inverseEntity="Asset" syncable="YES"/>
+    </entity>
+    <entity name="SyncInfo" representedClassName="SyncInfo" syncable="YES">
+        <attribute name="lastSyncTimestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="syncToken" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Asset" positionX="0" positionY="0" width="128" height="165"/>
+        <element name="Brand" positionX="0" positionY="0" width="128" height="165"/>
+        <element name="Category" positionX="0" positionY="0" width="128" height="118"/>
+        <element name="Product" positionX="0" positionY="0" width="128" height="193"/>
+        <element name="SyncInfo" positionX="0" positionY="0" width="128" height="75"/>
+    </elements>
+</model>
