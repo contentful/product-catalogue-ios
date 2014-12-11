@@ -41,6 +41,7 @@
 		A1083AF21A388281007EF3C9 /* Product CatalogueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Product CatalogueTests.xctest"; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1083AF71A388281007EF3C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1083AF81A388281007EF3C9 /* Product_CatalogueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product_CatalogueTests.m; sourceTree = "<group>"; };
+		A1B3A0DE1A39E4E9004DF1A2 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		A1D3A4741A38845B001DF93D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A1D3A4761A38845B001DF93D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1D3A47A1A389D89001DF93D /* ProductCatalog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProductCatalog.xcdatamodel; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 			children = (
 				A1083AE01A388281007EF3C9 /* AppDelegate.h */,
 				A1083AE11A388281007EF3C9 /* AppDelegate.m */,
+				A1B3A0DE1A39E4E9004DF1A2 /* Constants.h */,
 				A1083AE31A388281007EF3C9 /* ViewController.h */,
 				A1083AE41A388281007EF3C9 /* ViewController.m */,
 			);
