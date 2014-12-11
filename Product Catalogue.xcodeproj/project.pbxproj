@@ -59,6 +59,8 @@
 		A1B3A0DA1A39DF32004DF1A2 /* ProductCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductCategory.h; path = "Product Catalogue/ProductCategory.h"; sourceTree = SOURCE_ROOT; };
 		A1B3A0DB1A39DF32004DF1A2 /* ProductCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductCategory.m; path = "Product Catalogue/ProductCategory.m"; sourceTree = SOURCE_ROOT; };
 		A1B3A0DE1A39E4E9004DF1A2 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		A1B3A0DF1A39FB09004DF1A2 /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCell.h; sourceTree = "<group>"; };
+		A1B3A0E01A39FB09004DF1A2 /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCell.m; sourceTree = "<group>"; };
 		A1B3A0E51A39FD26004DF1A2 /* UIView+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Geometry.h"; sourceTree = "<group>"; };
 		A1B3A0E61A39FD26004DF1A2 /* UIView+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Geometry.m"; sourceTree = "<group>"; };
 		A1D3A4741A38845B001DF93D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -133,6 +135,8 @@
 				A1083AE01A388281007EF3C9 /* AppDelegate.h */,
 				A1083AE11A388281007EF3C9 /* AppDelegate.m */,
 				A1B3A0DE1A39E4E9004DF1A2 /* Constants.h */,
+				A1B3A0DF1A39FB09004DF1A2 /* ProductCell.h */,
+				A1B3A0E01A39FB09004DF1A2 /* ProductCell.m */,
 				A1083AE31A388281007EF3C9 /* ViewController.h */,
 				A1083AE41A388281007EF3C9 /* ViewController.m */,
 				A1B3A0E51A39FD26004DF1A2 /* UIView+Geometry.h */,
@@ -328,6 +332,7 @@
 				A1083AE51A388281007EF3C9 /* ViewController.m in Sources */,
 				A1B3A0D01A39DF31004DF1A2 /* Product.m in Sources */,
 				A1083AE21A388281007EF3C9 /* AppDelegate.m in Sources */,
+				A1B3A0E11A39FB09004DF1A2 /* ProductCell.m in Sources */,
 				A1B3A0E71A39FD26004DF1A2 /* UIView+Geometry.m in Sources */,
 				A1B3A0D61A39DF32004DF1A2 /* Brand.m in Sources */,
 				A1083ADF1A388281007EF3C9 /* main.m in Sources */,
