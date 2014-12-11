@@ -204,6 +204,7 @@
 				A1083AD61A388280007EF3C9 /* Frameworks */,
 				A1083AD71A388280007EF3C9 /* Resources */,
 				86DFC9E89AE0186EECC27B85 /* Copy Pods Resources */,
+				A1B3A0DD1A39E377004DF1A2 /* List TODOs and FIXMEs */,
 			);
 			buildRules = (
 			);
@@ -319,6 +320,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Product Catalogue/Pods-Product Catalogue-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		A1B3A0DD1A39E377004DF1A2 /* List TODOs and FIXMEs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "List TODOs and FIXMEs";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | grep -v '/Pods/' | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
