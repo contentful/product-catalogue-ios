@@ -13,6 +13,11 @@
 		A1083AE51A388281007EF3C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1083AE41A388281007EF3C9 /* ViewController.m */; };
 		A1083AEA1A388281007EF3C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1083AE91A388281007EF3C9 /* Images.xcassets */; };
 		A1083AF91A388281007EF3C9 /* Product_CatalogueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1083AF81A388281007EF3C9 /* Product_CatalogueTests.m */; };
+		A1B3A0D01A39DF31004DF1A2 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0CF1A39DF31004DF1A2 /* Product.m */; };
+		A1B3A0D31A39DF32004DF1A2 /* Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0D21A39DF32004DF1A2 /* Asset.m */; };
+		A1B3A0D61A39DF32004DF1A2 /* Brand.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0D51A39DF32004DF1A2 /* Brand.m */; };
+		A1B3A0D91A39DF32004DF1A2 /* SyncInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0D81A39DF32004DF1A2 /* SyncInfo.m */; };
+		A1B3A0DC1A39DF32004DF1A2 /* ProductCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0DB1A39DF32004DF1A2 /* ProductCategory.m */; };
 		A1D3A4771A38845B001DF93D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1D3A4731A38845B001DF93D /* LaunchScreen.xib */; };
 		A1D3A4781A38845B001DF93D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D3A4751A38845B001DF93D /* Main.storyboard */; };
 		A1D3A47B1A389D89001DF93D /* ProductCatalog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1D3A4791A389D89001DF93D /* ProductCatalog.xcdatamodeld */; };
@@ -41,6 +46,16 @@
 		A1083AF21A388281007EF3C9 /* Product CatalogueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Product CatalogueTests.xctest"; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1083AF71A388281007EF3C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1083AF81A388281007EF3C9 /* Product_CatalogueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product_CatalogueTests.m; sourceTree = "<group>"; };
+		A1B3A0CE1A39DF31004DF1A2 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Product.h; path = "Product Catalogue/Product.h"; sourceTree = SOURCE_ROOT; };
+		A1B3A0CF1A39DF31004DF1A2 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Product.m; path = "Product Catalogue/Product.m"; sourceTree = SOURCE_ROOT; };
+		A1B3A0D11A39DF32004DF1A2 /* Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Asset.h; path = "Product Catalogue/Asset.h"; sourceTree = SOURCE_ROOT; };
+		A1B3A0D21A39DF32004DF1A2 /* Asset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Asset.m; path = "Product Catalogue/Asset.m"; sourceTree = SOURCE_ROOT; };
+		A1B3A0D41A39DF32004DF1A2 /* Brand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Brand.h; path = "Product Catalogue/Brand.h"; sourceTree = SOURCE_ROOT; };
+		A1B3A0D51A39DF32004DF1A2 /* Brand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Brand.m; path = "Product Catalogue/Brand.m"; sourceTree = SOURCE_ROOT; };
+		A1B3A0D71A39DF32004DF1A2 /* SyncInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SyncInfo.h; path = "Product Catalogue/SyncInfo.h"; sourceTree = SOURCE_ROOT; };
+		A1B3A0D81A39DF32004DF1A2 /* SyncInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SyncInfo.m; path = "Product Catalogue/SyncInfo.m"; sourceTree = SOURCE_ROOT; };
+		A1B3A0DA1A39DF32004DF1A2 /* ProductCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductCategory.h; path = "Product Catalogue/ProductCategory.h"; sourceTree = SOURCE_ROOT; };
+		A1B3A0DB1A39DF32004DF1A2 /* ProductCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductCategory.m; path = "Product Catalogue/ProductCategory.m"; sourceTree = SOURCE_ROOT; };
 		A1B3A0DE1A39E4E9004DF1A2 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		A1D3A4741A38845B001DF93D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A1D3A4761A38845B001DF93D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -110,6 +125,7 @@
 		A1083ADB1A388280007EF3C9 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				A1B3A0AF1A39DDF7004DF1A2 /* Model */,
 				A1083AE01A388281007EF3C9 /* AppDelegate.h */,
 				A1083AE11A388281007EF3C9 /* AppDelegate.m */,
 				A1B3A0DE1A39E4E9004DF1A2 /* Constants.h */,
@@ -147,6 +163,23 @@
 				A1D3A4791A389D89001DF93D /* ProductCatalog.xcdatamodeld */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A1B3A0AF1A39DDF7004DF1A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1B3A0D11A39DF32004DF1A2 /* Asset.h */,
+				A1B3A0D21A39DF32004DF1A2 /* Asset.m */,
+				A1B3A0D41A39DF32004DF1A2 /* Brand.h */,
+				A1B3A0D51A39DF32004DF1A2 /* Brand.m */,
+				A1B3A0CE1A39DF31004DF1A2 /* Product.h */,
+				A1B3A0CF1A39DF31004DF1A2 /* Product.m */,
+				A1B3A0DA1A39DF32004DF1A2 /* ProductCategory.h */,
+				A1B3A0DB1A39DF32004DF1A2 /* ProductCategory.m */,
+				A1B3A0D71A39DF32004DF1A2 /* SyncInfo.h */,
+				A1B3A0D81A39DF32004DF1A2 /* SyncInfo.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,9 +317,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B3A0D31A39DF32004DF1A2 /* Asset.m in Sources */,
+				A1B3A0DC1A39DF32004DF1A2 /* ProductCategory.m in Sources */,
 				A1083AE51A388281007EF3C9 /* ViewController.m in Sources */,
+				A1B3A0D01A39DF31004DF1A2 /* Product.m in Sources */,
 				A1083AE21A388281007EF3C9 /* AppDelegate.m in Sources */,
+				A1B3A0D61A39DF32004DF1A2 /* Brand.m in Sources */,
 				A1083ADF1A388281007EF3C9 /* main.m in Sources */,
+				A1B3A0D91A39DF32004DF1A2 /* SyncInfo.m in Sources */,
 				A1D3A47B1A389D89001DF93D /* ProductCatalog.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
