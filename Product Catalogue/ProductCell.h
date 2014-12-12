@@ -11,6 +11,7 @@
 @interface ProductCell : UICollectionViewCell
 
 @property (nonatomic, readonly) UIImageView* coverImageView;
+@property (nonatomic, readonly) UILabel* pricingLabel;
 @property (nonatomic, readonly) UILabel* titleLabel;
 
 @end

@@ -62,6 +62,10 @@ static NSString* const ProductContentTypeId = @"2PqfXUJwE8qSYKuM0U6w8M";
                                                      client:welf.manager.client
                                                        size:CGSizeZero
                                            placeholderImage:nil];
+
+        cell.pricingLabel.text = [NSString stringWithFormat:@"%@ €", product.price];
+        [cell.pricingLabel sizeToFit];
+
         cell.titleLabel.text = product.productName;
     };
 

@@ -12,6 +12,7 @@
 @implementation ProductCell
 
 @synthesize coverImageView = _coverImageView;
+@synthesize pricingLabel = _pricingLabel;
 @synthesize titleLabel = _titleLabel;
 
 -(UIImageView *)coverImageView {
@@ -24,6 +25,19 @@
     [self addSubview:_coverImageView];
 
     return _coverImageView;
+}
+
+-(UILabel *)pricingLabel {
+    if (_pricingLabel) {
+        return _pricingLabel;
+    }
+
+    _pricingLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, self.coverImageView.y, 50.0, 20.0)];
+    _pricingLabel.backgroundColor = [UIColor yellowColor];
+    _pricingLabel.x = self.width - _pricingLabel.width - 50.0;
+    [self addSubview:_pricingLabel];
+
+    return _pricingLabel;
 }
 
 -(UILabel *)titleLabel {
