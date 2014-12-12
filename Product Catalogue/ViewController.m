@@ -58,7 +58,7 @@ static NSString* const ProductContentTypeId = @"2PqfXUJwE8qSYKuM0U6w8M";
     __weak typeof(self) welf = self;
     _dataSource.cellConfigurator = ^(ProductCell* cell, NSIndexPath* indexPath) {
         Product* product = [welf.dataSource objectAtIndexPath:indexPath];
-        [cell.coverImageView cda_setImageWithPersistedAsset:product.image[0]
+        [cell.coverImageView cda_setImageWithPersistedAsset:[product.image firstObject]
                                                      client:welf.manager.client
                                                        size:CGSizeZero
                                            placeholderImage:nil];
