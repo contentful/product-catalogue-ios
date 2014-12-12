@@ -27,6 +27,12 @@
     return _coverImageView;
 }
 
+-(instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    self.backgroundColor = [UIColor whiteColor];
+    return self;
+}
+
 -(UILabel *)pricingLabel {
     if (_pricingLabel) {
         return _pricingLabel;
