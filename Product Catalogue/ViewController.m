@@ -95,6 +95,7 @@ static NSString* const ProductContentTypeId = @"2PqfXUJwE8qSYKuM0U6w8M";
 
     UICollectionViewFlowLayout* layout = [UICollectionViewFlowLayout new];
     layout.itemSize = CGSizeMake(self.view.frame.size.width, 300.0);
+    layout.minimumLineSpacing = 5.0;
     [self.collectionView setCollectionViewLayout:layout];
 
     [self.manager performSynchronizationWithSuccess:^{
