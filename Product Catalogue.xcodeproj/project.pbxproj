@@ -45,7 +45,7 @@
 		A1083AE31A388281007EF3C9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A1083AE41A388281007EF3C9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A1083AE91A388281007EF3C9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A1083AF21A388281007EF3C9 /* Product CatalogueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Product CatalogueTests.xctest"; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1083AF21A388281007EF3C9 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1083AF71A388281007EF3C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1083AF81A388281007EF3C9 /* Product_CatalogueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product_CatalogueTests.m; sourceTree = "<group>"; };
 		A1B3A0CE1A39DF31004DF1A2 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Product.h; path = "Product Catalogue/Product.h"; sourceTree = SOURCE_ROOT; };
@@ -123,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				A1083AD91A388280007EF3C9 /* Product Catalogue.app */,
-				A1083AF21A388281007EF3C9 /* Product CatalogueTests.xctest */,
+				A1083AF21A388281007EF3C9 /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,7 +230,7 @@
 			);
 			name = Tests;
 			productName = "Product CatalogueTests";
-			productReference = A1083AF21A388281007EF3C9 /* Product CatalogueTests.xctest */;
+			productReference = A1083AF21A388281007EF3C9 /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
