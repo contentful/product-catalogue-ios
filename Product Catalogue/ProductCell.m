@@ -13,7 +13,6 @@
 
 @synthesize coverImageView = _coverImageView;
 @synthesize pricingLabel = _pricingLabel;
-@synthesize titleLabel = _titleLabel;
 
 -(UIImageView *)coverImageView {
     if (_coverImageView) {
@@ -44,22 +43,6 @@
     [self addSubview:_pricingLabel];
 
     return _pricingLabel;
-}
-
--(UILabel *)titleLabel {
-    if (_titleLabel) {
-        return _titleLabel;
-    }
-
-    _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, self.height - 60.0, 200.0, 20.0)];
-    _titleLabel.x = (self.width - _titleLabel.width) / 2;
-
-    _titleLabel.font = [UIFont boldSystemFontOfSize:20.0];
-    _titleLabel.textAlignment = NSTextAlignmentCenter;
-
-    [self addSubview:_titleLabel];
-
-    return _titleLabel;
 }
 
 @end
