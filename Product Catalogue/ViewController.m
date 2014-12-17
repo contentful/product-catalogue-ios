@@ -97,8 +97,10 @@ static NSString* const ProductContentTypeId = @"2PqfXUJwE8qSYKuM0U6w8M";
             forCellWithReuseIdentifier:NSStringFromClass(self.class)];
 
     UICollectionViewFlowLayout* layout = [UICollectionViewFlowLayout new];
-    layout.itemSize = CGSizeMake(self.view.frame.size.width, 300.0);
-    layout.minimumLineSpacing = 5.0;
+    layout.itemSize = CGSizeMake((int)self.view.frame.size.width / 2,
+                                 (int)(self.view.frame.size.height / 3));
+    layout.minimumInteritemSpacing = 0.0;
+    layout.minimumLineSpacing = 0.0;
     [self.collectionView setCollectionViewLayout:layout];
 
     [self.manager performSynchronizationWithSuccess:^{
