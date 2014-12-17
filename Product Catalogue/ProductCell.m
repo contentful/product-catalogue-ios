@@ -19,8 +19,10 @@
         return _coverImageView;
     }
 
-    _coverImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 20.0, 200.0, 200.0)];
-    _coverImageView.x = (self.width - _coverImageView.width) / 2;
+    _coverImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10.0, 10.0, 0.0, 0.0)];
+    _coverImageView.contentMode = UIViewContentModeScaleAspectFit;
+    _coverImageView.width = self.width - 2 * _coverImageView.x;
+    _coverImageView.height = self.height - 2 * _coverImageView.y;
     [self addSubview:_coverImageView];
 
     return _coverImageView;
