@@ -65,7 +65,6 @@ static NSString* const ProductContentTypeId = @"2PqfXUJwE8qSYKuM0U6w8M";
                                            placeholderImage:nil];
 
         cell.pricingLabel.text = [NSString stringWithFormat:@"%@ €", product.price];
-        [cell.pricingLabel sizeToFit];
     };
 
     return _dataSource;
