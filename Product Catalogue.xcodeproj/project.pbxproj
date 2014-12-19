@@ -23,6 +23,7 @@
 		A1D3A4771A38845B001DF93D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1D3A4731A38845B001DF93D /* LaunchScreen.xib */; };
 		A1D3A4781A38845B001DF93D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D3A4751A38845B001DF93D /* Main.storyboard */; };
 		A1D3A47B1A389D89001DF93D /* ProductCatalog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1D3A4791A389D89001DF93D /* ProductCatalog.xcdatamodeld */; };
+		A1D792A71A431DF000325B32 /* StoryboardIdentifiers.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D792A61A431DF000325B32 /* StoryboardIdentifiers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		A1D3A4741A38845B001DF93D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A1D3A4761A38845B001DF93D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1D3A47A1A389D89001DF93D /* ProductCatalog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProductCatalog.xcdatamodel; sourceTree = "<group>"; };
+		A1D792A51A431DF000325B32 /* StoryboardIdentifiers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardIdentifiers.h; sourceTree = "<group>"; };
+		A1D792A61A431DF000325B32 /* StoryboardIdentifiers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardIdentifiers.m; sourceTree = "<group>"; };
 		B4B83D25F89142397E44F5D9 /* Pods-Product Catalogue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Product Catalogue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Product Catalogue/Pods-Product Catalogue.debug.xcconfig"; sourceTree = "<group>"; };
 		E32DFC738149AFD80A23AEC5 /* libPods-Product Catalogue.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Product Catalogue.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -190,6 +193,15 @@
 				A1B3A0D81A39DF32004DF1A2 /* SyncInfo.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		A1D792A81A431DF700325B32 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				A1D792A51A431DF000325B32 /* StoryboardIdentifiers.h */,
+				A1D792A61A431DF000325B32 /* StoryboardIdentifiers.m */,
+			);
+			name = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +360,7 @@
 				A1B3A0D01A39DF31004DF1A2 /* Product.m in Sources */,
 				A1083AE21A388281007EF3C9 /* AppDelegate.m in Sources */,
 				A1B3A0E11A39FB09004DF1A2 /* ProductCell.m in Sources */,
+				A1D792A71A431DF000325B32 /* StoryboardIdentifiers.m in Sources */,
 				A1B3A0E71A39FD26004DF1A2 /* UIView+Geometry.m in Sources */,
 				A1B3A0D61A39DF32004DF1A2 /* Brand.m in Sources */,
 				A1083ADF1A388281007EF3C9 /* main.m in Sources */,
