@@ -24,6 +24,7 @@
 		A1D3A4781A38845B001DF93D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D3A4751A38845B001DF93D /* Main.storyboard */; };
 		A1D3A47B1A389D89001DF93D /* ProductCatalog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1D3A4791A389D89001DF93D /* ProductCatalog.xcdatamodeld */; };
 		A1D792A71A431DF000325B32 /* StoryboardIdentifiers.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D792A61A431DF000325B32 /* StoryboardIdentifiers.m */; };
+		A1D792AB1A43340400325B32 /* ContentfulDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D792AA1A43340400325B32 /* ContentfulDataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		A1D3A47A1A389D89001DF93D /* ProductCatalog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProductCatalog.xcdatamodel; sourceTree = "<group>"; };
 		A1D792A51A431DF000325B32 /* StoryboardIdentifiers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardIdentifiers.h; sourceTree = "<group>"; };
 		A1D792A61A431DF000325B32 /* StoryboardIdentifiers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardIdentifiers.m; sourceTree = "<group>"; };
+		A1D792A91A43340400325B32 /* ContentfulDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentfulDataManager.h; sourceTree = "<group>"; };
+		A1D792AA1A43340400325B32 /* ContentfulDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentfulDataManager.m; sourceTree = "<group>"; };
 		B4B83D25F89142397E44F5D9 /* Pods-Product Catalogue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Product Catalogue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Product Catalogue/Pods-Product Catalogue.debug.xcconfig"; sourceTree = "<group>"; };
 		E32DFC738149AFD80A23AEC5 /* libPods-Product Catalogue.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Product Catalogue.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -142,6 +145,8 @@
 				A1B3A0E01A39FB09004DF1A2 /* ProductCell.m */,
 				A1083AE31A388281007EF3C9 /* ViewController.h */,
 				A1083AE41A388281007EF3C9 /* ViewController.m */,
+				A1D792A91A43340400325B32 /* ContentfulDataManager.h */,
+				A1D792AA1A43340400325B32 /* ContentfulDataManager.m */,
 				A1B3A0E51A39FD26004DF1A2 /* UIView+Geometry.h */,
 				A1B3A0E61A39FD26004DF1A2 /* UIView+Geometry.m */,
 			);
@@ -361,6 +366,7 @@
 				A1083AE21A388281007EF3C9 /* AppDelegate.m in Sources */,
 				A1B3A0E11A39FB09004DF1A2 /* ProductCell.m in Sources */,
 				A1D792A71A431DF000325B32 /* StoryboardIdentifiers.m in Sources */,
+				A1D792AB1A43340400325B32 /* ContentfulDataManager.m in Sources */,
 				A1B3A0E71A39FD26004DF1A2 /* UIView+Geometry.m in Sources */,
 				A1B3A0D61A39DF32004DF1A2 /* Brand.m in Sources */,
 				A1083ADF1A388281007EF3C9 /* main.m in Sources */,
