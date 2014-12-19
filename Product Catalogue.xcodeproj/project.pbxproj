@@ -23,6 +23,9 @@
 		A1D3A4771A38845B001DF93D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1D3A4731A38845B001DF93D /* LaunchScreen.xib */; };
 		A1D3A4781A38845B001DF93D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D3A4751A38845B001DF93D /* Main.storyboard */; };
 		A1D3A47B1A389D89001DF93D /* ProductCatalog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1D3A4791A389D89001DF93D /* ProductCatalog.xcdatamodeld */; };
+		A1D7929B1A42D6B300325B32 /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D7929A1A42D6B300325B32 /* ProductViewController.m */; };
+		A1D792A11A4309B600325B32 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D792A01A4309B600325B32 /* GalleryViewController.m */; };
+		A1D792A41A430F1F00325B32 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D792A31A430F1F00325B32 /* ImageViewController.m */; };
 		A1D792A71A431DF000325B32 /* StoryboardIdentifiers.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D792A61A431DF000325B32 /* StoryboardIdentifiers.m */; };
 		A1D792AB1A43340400325B32 /* ContentfulDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D792AA1A43340400325B32 /* ContentfulDataManager.m */; };
 /* End PBXBuildFile section */
@@ -68,6 +71,12 @@
 		A1D3A4741A38845B001DF93D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A1D3A4761A38845B001DF93D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1D3A47A1A389D89001DF93D /* ProductCatalog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProductCatalog.xcdatamodel; sourceTree = "<group>"; };
+		A1D792991A42D6B300325B32 /* ProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductViewController.h; sourceTree = "<group>"; };
+		A1D7929A1A42D6B300325B32 /* ProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductViewController.m; sourceTree = "<group>"; };
+		A1D7929F1A4309B600325B32 /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
+		A1D792A01A4309B600325B32 /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
+		A1D792A21A430F1F00325B32 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		A1D792A31A430F1F00325B32 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		A1D792A51A431DF000325B32 /* StoryboardIdentifiers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardIdentifiers.h; sourceTree = "<group>"; };
 		A1D792A61A431DF000325B32 /* StoryboardIdentifiers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardIdentifiers.m; sourceTree = "<group>"; };
 		A1D792A91A43340400325B32 /* ContentfulDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentfulDataManager.h; sourceTree = "<group>"; };
@@ -137,14 +146,14 @@
 		A1083ADB1A388280007EF3C9 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				A1D792AE1A433BDF00325B32 /* Category List */,
+				A1D792A81A431DF700325B32 /* Generated */,
 				A1B3A0AF1A39DDF7004DF1A2 /* Model */,
+				A1D792AD1A433BD300325B32 /* Product Details */,
+				A1D792AC1A433BC900325B32 /* Product List */,
 				A1083AE01A388281007EF3C9 /* AppDelegate.h */,
 				A1083AE11A388281007EF3C9 /* AppDelegate.m */,
 				A1B3A0DE1A39E4E9004DF1A2 /* Constants.h */,
-				A1B3A0DF1A39FB09004DF1A2 /* ProductCell.h */,
-				A1B3A0E01A39FB09004DF1A2 /* ProductCell.m */,
-				A1083AE31A388281007EF3C9 /* ViewController.h */,
-				A1083AE41A388281007EF3C9 /* ViewController.m */,
 				A1D792A91A43340400325B32 /* ContentfulDataManager.h */,
 				A1D792AA1A43340400325B32 /* ContentfulDataManager.m */,
 				A1B3A0E51A39FD26004DF1A2 /* UIView+Geometry.h */,
@@ -207,6 +216,37 @@
 				A1D792A61A431DF000325B32 /* StoryboardIdentifiers.m */,
 			);
 			name = Generated;
+			sourceTree = "<group>";
+		};
+		A1D792AC1A433BC900325B32 /* Product List */ = {
+			isa = PBXGroup;
+			children = (
+				A1B3A0DF1A39FB09004DF1A2 /* ProductCell.h */,
+				A1B3A0E01A39FB09004DF1A2 /* ProductCell.m */,
+				A1083AE31A388281007EF3C9 /* ViewController.h */,
+				A1083AE41A388281007EF3C9 /* ViewController.m */,
+			);
+			name = "Product List";
+			sourceTree = "<group>";
+		};
+		A1D792AD1A433BD300325B32 /* Product Details */ = {
+			isa = PBXGroup;
+			children = (
+				A1D7929F1A4309B600325B32 /* GalleryViewController.h */,
+				A1D792A01A4309B600325B32 /* GalleryViewController.m */,
+				A1D792A21A430F1F00325B32 /* ImageViewController.h */,
+				A1D792A31A430F1F00325B32 /* ImageViewController.m */,
+				A1D792991A42D6B300325B32 /* ProductViewController.h */,
+				A1D7929A1A42D6B300325B32 /* ProductViewController.m */,
+			);
+			name = "Product Details";
+			sourceTree = "<group>";
+		};
+		A1D792AE1A433BDF00325B32 /* Category List */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Category List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,11 +406,14 @@
 				A1083AE21A388281007EF3C9 /* AppDelegate.m in Sources */,
 				A1B3A0E11A39FB09004DF1A2 /* ProductCell.m in Sources */,
 				A1D792A71A431DF000325B32 /* StoryboardIdentifiers.m in Sources */,
+				A1D792A11A4309B600325B32 /* GalleryViewController.m in Sources */,
+				A1D7929B1A42D6B300325B32 /* ProductViewController.m in Sources */,
 				A1D792AB1A43340400325B32 /* ContentfulDataManager.m in Sources */,
 				A1B3A0E71A39FD26004DF1A2 /* UIView+Geometry.m in Sources */,
 				A1B3A0D61A39DF32004DF1A2 /* Brand.m in Sources */,
 				A1083ADF1A388281007EF3C9 /* main.m in Sources */,
 				A1B3A0D91A39DF32004DF1A2 /* SyncInfo.m in Sources */,
+				A1D792A41A430F1F00325B32 /* ImageViewController.m in Sources */,
 				A1D3A47B1A389D89001DF93D /* ProductCatalog.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
