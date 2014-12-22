@@ -20,6 +20,8 @@
 		A1B3A0DC1A39DF32004DF1A2 /* ProductCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0DB1A39DF32004DF1A2 /* ProductCategory.m */; };
 		A1B3A0E11A39FB09004DF1A2 /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0E01A39FB09004DF1A2 /* ProductCell.m */; };
 		A1B3A0E71A39FD26004DF1A2 /* UIView+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0E61A39FD26004DF1A2 /* UIView+Geometry.m */; };
+		A1CB14471A48825A003D2813 /* HorizontalImageStripController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB14461A48825A003D2813 /* HorizontalImageStripController.m */; };
+		A1CB144A1A488416003D2813 /* SingleImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB14491A488416003D2813 /* SingleImageCell.m */; };
 		A1D3A4771A38845B001DF93D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1D3A4731A38845B001DF93D /* LaunchScreen.xib */; };
 		A1D3A4781A38845B001DF93D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D3A4751A38845B001DF93D /* Main.storyboard */; };
 		A1D3A47B1A389D89001DF93D /* ProductCatalog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1D3A4791A389D89001DF93D /* ProductCatalog.xcdatamodeld */; };
@@ -68,6 +70,10 @@
 		A1B3A0E01A39FB09004DF1A2 /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCell.m; sourceTree = "<group>"; };
 		A1B3A0E51A39FD26004DF1A2 /* UIView+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Geometry.h"; sourceTree = "<group>"; };
 		A1B3A0E61A39FD26004DF1A2 /* UIView+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Geometry.m"; sourceTree = "<group>"; };
+		A1CB14451A48825A003D2813 /* HorizontalImageStripController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalImageStripController.h; sourceTree = "<group>"; };
+		A1CB14461A48825A003D2813 /* HorizontalImageStripController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalImageStripController.m; sourceTree = "<group>"; };
+		A1CB14481A488416003D2813 /* SingleImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleImageCell.h; sourceTree = "<group>"; };
+		A1CB14491A488416003D2813 /* SingleImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleImageCell.m; sourceTree = "<group>"; };
 		A1D3A4741A38845B001DF93D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A1D3A4761A38845B001DF93D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1D3A47A1A389D89001DF93D /* ProductCatalog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProductCatalog.xcdatamodel; sourceTree = "<group>"; };
@@ -238,6 +244,10 @@
 				A1D792A31A430F1F00325B32 /* ImageViewController.m */,
 				A1D792991A42D6B300325B32 /* ProductViewController.h */,
 				A1D7929A1A42D6B300325B32 /* ProductViewController.m */,
+				A1CB14481A488416003D2813 /* SingleImageCell.h */,
+				A1CB14491A488416003D2813 /* SingleImageCell.m */,
+				A1CB14451A48825A003D2813 /* HorizontalImageStripController.h */,
+				A1CB14461A48825A003D2813 /* HorizontalImageStripController.m */,
 			);
 			name = "Product Details";
 			sourceTree = "<group>";
@@ -400,6 +410,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1B3A0D31A39DF32004DF1A2 /* Asset.m in Sources */,
+				A1CB144A1A488416003D2813 /* SingleImageCell.m in Sources */,
+				A1CB14471A48825A003D2813 /* HorizontalImageStripController.m in Sources */,
 				A1B3A0DC1A39DF32004DF1A2 /* ProductCategory.m in Sources */,
 				A1083AE51A388281007EF3C9 /* ViewController.m in Sources */,
 				A1B3A0D01A39DF31004DF1A2 /* Product.m in Sources */,
