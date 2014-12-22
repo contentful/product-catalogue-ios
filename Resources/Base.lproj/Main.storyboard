@@ -77,8 +77,8 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="SFb-dB-cKo"/>
                                         <exclude reference="EwF-97-LPJ"/>
+                                        <exclude reference="SFb-dB-cKo"/>
                                     </mask>
                                 </variation>
                             </button>
@@ -100,7 +100,7 @@ EUR</string>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFi-dS-uCf">
-                                <rect key="frame" x="508" y="386" width="66" height="41"/>
+                                <rect key="frame" x="508.5" y="386" width="65.5" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="Xxc-5b-eQ4"/>
                                 </constraints>
@@ -115,11 +115,22 @@ in stock</string>
                                     </mask>
                                 </variation>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CG9-zF-MWr" userLabel="Horizontal Line">
+                                <rect key="frame" x="0.0" y="275" width="600" height="1"/>
+                                <color key="backgroundColor" red="0.89064472849999998" green="0.89064472849999998" blue="0.89064472849999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="MVC-Oa-V6B"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="GBE-wp-eqb" firstAttribute="top" secondItem="CG9-zF-MWr" secondAttribute="top" id="0d1-d2-4HN"/>
+                            <constraint firstItem="GBE-wp-eqb" firstAttribute="top" secondItem="CG9-zF-MWr" secondAttribute="bottom" id="1Yu-3a-wzn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AFi-dS-uCf" secondAttribute="trailing" constant="10" id="56Z-E3-gEZ"/>
                             <constraint firstItem="Ih2-q9-cbj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gn1-mm-x26" secondAttribute="leadingMargin" constant="50" id="5np-iV-uJ0"/>
+                            <constraint firstItem="GBE-wp-eqb" firstAttribute="bottom" secondItem="CG9-zF-MWr" secondAttribute="bottom" constant="-222" id="5qX-36-a2r"/>
+                            <constraint firstItem="GBE-wp-eqb" firstAttribute="top" secondItem="CG9-zF-MWr" secondAttribute="top" constant="-265" id="7LL-XV-Q49"/>
                             <constraint firstItem="4pA-WR-2xM" firstAttribute="bottom" secondItem="Ih2-q9-cbj" secondAttribute="bottom" constant="20" id="7eI-nC-2Zw"/>
                             <constraint firstItem="CoU-RX-DRh" firstAttribute="trailing" secondItem="AFi-dS-uCf" secondAttribute="trailing" constant="20" id="CM0-OO-6Ui"/>
                             <constraint firstItem="DCq-qf-ML4" firstAttribute="bottom" secondItem="4pA-WR-2xM" secondAttribute="bottom" constant="-50" id="Cgh-yu-cA1"/>
@@ -128,10 +139,15 @@ in stock</string>
                             <constraint firstItem="ghp-3P-wp6" firstAttribute="top" secondItem="GBE-wp-eqb" secondAttribute="bottom" constant="170" id="HY9-q0-X5U"/>
                             <constraint firstAttribute="bottom" secondItem="Ih2-q9-cbj" secondAttribute="bottom" constant="20" symbolic="YES" id="IPY-2V-TBr"/>
                             <constraint firstAttribute="centerX" secondItem="GBE-wp-eqb" secondAttribute="centerX" id="LVV-kU-IZW"/>
+                            <constraint firstAttribute="width" secondItem="CG9-zF-MWr" secondAttribute="width" id="MD4-3q-Sl3"/>
+                            <constraint firstItem="GBE-wp-eqb" firstAttribute="top" secondItem="CG9-zF-MWr" secondAttribute="bottom" constant="1" id="Mmu-FP-IR4"/>
                             <constraint firstItem="CoU-RX-DRh" firstAttribute="leading" secondItem="DCq-qf-ML4" secondAttribute="leading" id="NeN-o5-JHs"/>
+                            <constraint firstItem="CoU-RX-DRh" firstAttribute="top" secondItem="CG9-zF-MWr" secondAttribute="bottom" constant="20" id="O6u-zF-QXZ"/>
                             <constraint firstItem="U68-bb-22G" firstAttribute="top" secondItem="GBE-wp-eqb" secondAttribute="bottom" id="OlK-ql-658"/>
                             <constraint firstItem="Ih2-q9-cbj" firstAttribute="leading" secondItem="gn1-mm-x26" secondAttribute="leading" constant="238" id="U0G-IX-ZIq"/>
                             <constraint firstItem="AFi-dS-uCf" firstAttribute="baseline" secondItem="4pA-WR-2xM" secondAttribute="baseline" id="Wvp-VP-icP"/>
+                            <constraint firstItem="GBE-wp-eqb" firstAttribute="top" secondItem="CG9-zF-MWr" secondAttribute="top" id="bo4-t9-KPk"/>
+                            <constraint firstAttribute="centerX" secondItem="CG9-zF-MWr" secondAttribute="centerX" id="d7U-BR-6i3"/>
                             <constraint firstAttribute="centerX" secondItem="Ih2-q9-cbj" secondAttribute="centerX" id="gVA-UX-Av3"/>
                             <constraint firstItem="CoU-RX-DRh" firstAttribute="bottom" secondItem="DCq-qf-ML4" secondAttribute="bottom" constant="-40" id="gq0-u0-pFq"/>
                             <constraint firstItem="GBE-wp-eqb" firstAttribute="width" secondItem="gn1-mm-x26" secondAttribute="width" id="h5j-zj-jsO"/>
@@ -143,19 +159,32 @@ in stock</string>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="0d1-d2-4HN"/>
+                                <exclude reference="1Yu-3a-wzn"/>
+                                <exclude reference="5qX-36-a2r"/>
+                                <exclude reference="7LL-XV-Q49"/>
+                                <exclude reference="Mmu-FP-IR4"/>
+                                <exclude reference="bo4-t9-KPk"/>
                                 <exclude reference="Cji-WH-Ibd"/>
                                 <exclude reference="GJq-lz-yik"/>
                                 <exclude reference="OlK-ql-658"/>
                                 <exclude reference="7eI-nC-2Zw"/>
+                                <exclude reference="HY9-q0-X5U"/>
                                 <exclude reference="5np-iV-uJ0"/>
                                 <exclude reference="U0G-IX-ZIq"/>
-                                <exclude reference="HY9-q0-X5U"/>
                             </mask>
                         </variation>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="availabilityLabel" destination="AFi-dS-uCf" id="CWG-kG-gxO"/>
+                        <outlet property="brandButton" destination="DCq-qf-ML4" id="J1Z-ME-ndn"/>
+                        <outlet property="buyButton" destination="Ih2-q9-cbj" id="y85-Ys-RlG"/>
+                        <outlet property="pricingLabel" destination="4pA-WR-2xM" id="Eco-kg-Pkc"/>
+                        <outlet property="productNameLabel" destination="CoU-RX-DRh" id="0JP-Iu-Ntl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yfc-Zr-R3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
