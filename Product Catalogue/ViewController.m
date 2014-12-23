@@ -61,6 +61,7 @@
     [super viewDidLoad];
 
     self.collectionView.dataSource = self.dataSource;
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
 
     [self.collectionView registerClass:ProductCell.class
             forCellWithReuseIdentifier:NSStringFromClass(self.class)];

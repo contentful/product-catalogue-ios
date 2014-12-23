@@ -37,6 +37,8 @@
 -(void)viewDidLoad {
     [super viewDidLoad];
 
+    self.title = self.product.productName;
+
     if (self.product.quantity.integerValue == 0) {
         self.availabilityLabel.text = NSLocalizedString(@"No products\nin stock",
                                                         @"Product quantity label");
