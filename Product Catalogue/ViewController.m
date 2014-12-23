@@ -49,7 +49,7 @@
         [cell.coverImageView cda_setImageWithPersistedAsset:[product.image firstObject]
                                                      client:welf.dataManager.client
                                                        size:CGSizeZero
-                                           placeholderImage:nil];
+                                           placeholderImage:[UIImage imageNamed:@"placeholder"]];
 
         cell.pricingLabel.text = [NSString stringWithFormat:@"%@ €", product.price];
     };

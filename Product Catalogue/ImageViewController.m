@@ -32,7 +32,7 @@
     [imageView cda_setImageWithPersistedAsset:self.asset
                                        client:self.client
                                          size:CGSizeZero
-                             placeholderImage:nil];
+                             placeholderImage:[UIImage imageNamed:@"placeholder"]];
     [self.view addSubview:imageView];
 
     [imageView mas_makeConstraints:^(MASConstraintMaker *make) {

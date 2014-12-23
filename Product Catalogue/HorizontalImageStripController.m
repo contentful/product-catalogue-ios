@@ -59,7 +59,7 @@
     [cell.imageView cda_setImageWithPersistedAsset:self.assets[indexPath.row]
                                             client:self.client
                                               size:CGSizeZero
-                                  placeholderImage:nil];
+                                  placeholderImage:[UIImage imageNamed:@"placeholder"]];
 
     return cell;
 }
