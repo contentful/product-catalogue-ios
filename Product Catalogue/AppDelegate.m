@@ -7,6 +7,7 @@
 //
 
 #import <CocoaPods-Keys/ProductCatalogueKeys.h>
+#import <ContentfulStyle/UIFont+Contentful.h>
 
 #import "AppDelegate.h"
 #import "Constants.h"
@@ -21,6 +22,10 @@
 
 - (BOOL)application:(UIApplication *)app didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self writeKeysToUserDefaults];
+
+    [[UINavigationBar appearance] setTitleTextAttributes:@{ NSFontAttributeName: UIFont.titleBarFont }];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{ NSFontAttributeName: UIFont.tabTitleFont } forState:UIControlStateNormal];
+
     return YES;
 }
 

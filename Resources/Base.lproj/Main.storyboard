@@ -202,7 +202,9 @@ in stock</string>
         <scene sceneID="e5c-4S-KnY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zdu-8k-8t3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="All products" image="all_products_tab" id="ZAC-OM-DhL"/>
+                    <tabBarItem key="tabBarItem" title="All products" image="all_products_tab" id="ZAC-OM-DhL">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y3K-zN-ksw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -267,7 +269,9 @@ in stock</string>
         <scene sceneID="Of9-g5-0db">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JvE-MI-m3o" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Categories" image="categories_tab" id="z5A-eo-Rct"/>
+                    <tabBarItem key="tabBarItem" title="Categories" image="categories_tab" id="z5A-eo-Rct">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BVX-k7-F3w">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
