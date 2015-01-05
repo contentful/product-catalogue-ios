@@ -100,7 +100,7 @@ EUR</string>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFi-dS-uCf">
-                                <rect key="frame" x="508.5" y="386" width="65.5" height="41"/>
+                                <rect key="frame" x="508" y="386" width="66" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="Xxc-5b-eQ4"/>
                                 </constraints>
