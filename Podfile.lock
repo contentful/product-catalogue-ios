@@ -20,6 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.5.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - ApplePayStubs (HEAD based on 0.1.2)
   - ContentfulDeliveryAPI (1.4.7):
     - AFNetworking
     - HRCoder
@@ -36,6 +37,7 @@ PODS:
   - Masonry (0.5.3)
 
 DEPENDENCIES:
+  - ApplePayStubs (HEAD)
   - ContentfulPersistence (from `../contentful-persistence.objc`)
   - ContentfulStyle (from `../contentful-ios-style`)
   - Masonry
@@ -48,6 +50,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
+  ApplePayStubs: cad4854ffd447d14095a176ca09d5262a5a86279
   ContentfulDeliveryAPI: c3815bd863ddc5ae8a9039051bc7ab6962bfc031
   ContentfulPersistence: 9c7117962b4cf9a069756639d3275ecf7cee0364
   ContentfulStyle: 51deb5e2f57f944b3c37f558187d09ac4aeb97c0

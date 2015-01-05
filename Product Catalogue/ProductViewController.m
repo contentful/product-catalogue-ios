@@ -6,12 +6,15 @@
 //  Copyright (c) 2014 Boris Bügling. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+#import <ApplePayStubs/STPTestPaymentAuthorizationViewController.h>
+
 #import "Brand.h"
 #import "GalleryViewController.h"
 #import "ProductViewController.h"
 #import "StoryboardIdentifiers.h"
 
-@interface ProductViewController ()
+@interface ProductViewController () <PKPaymentAuthorizationViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *availabilityLabel;
 @property (weak, nonatomic) IBOutlet UIButton *brandButton;
@@ -37,6 +40,8 @@
 -(void)viewDidLoad {
     [super viewDidLoad];
 
+    [self.buyButton addTarget:self action:@selector(buyButtonTapped) forControlEvents:UIControlEventTouchUpInside];
+
     self.title = self.product.productName;
 
     if (self.product.quantity.integerValue == 0) {
@@ -51,6 +56,31 @@
     [self.brandButton setTitle:[NSString stringWithFormat:NSLocalizedString(@"by %@", @"Brand button"), self.product.brand.companyName] forState:UIControlStateNormal];
     self.pricingLabel.text = [NSString stringWithFormat:NSLocalizedString(@"%@\nEUR", @"Pricing label"), self.product.price];
     self.productNameLabel.text = self.product.productName;
+}
+
+#pragma mark - Actions
+
+-(void)buyButtonTapped {
+    NSDecimalNumber* price = [NSDecimalNumber decimalNumberWithDecimal:self.product.price.decimalValue];
+
+    PKPaymentRequest* request = [PKPaymentRequest new];
+    request.currencyCode = @"EUR";
+    request.paymentSummaryItems = @[ [PKPaymentSummaryItem summaryItemWithLabel:self.product.productName
+                                                                         amount:price] ];
+
+    STPTestPaymentAuthorizationViewController* viewController = [[STPTestPaymentAuthorizationViewController alloc] initWithPaymentRequest:request];
+    viewController.delegate = self;
+    [self presentViewController:viewController animated:YES completion:nil];
+}
+
+#pragma mark - PKPaymentAuthorizationViewControllerDelegate
+
+-(void)paymentAuthorizationViewControllerDidFinish:(PKPaymentAuthorizationViewController *)controller {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)paymentAuthorizationViewController:(PKPaymentAuthorizationViewController *)controller didAuthorizePayment:(PKPayment *)payment completion:(void (^)(PKPaymentAuthorizationStatus))completion {
+    completion(PKPaymentAuthorizationStatusSuccess);
 }
 
 @end

@@ -10,6 +10,7 @@ target 'Product Catalogue' do
 pod 'ContentfulPersistence', :path => '../contentful-persistence.objc'
 pod 'ContentfulStyle', :path => '../contentful-ios-style'
 
+pod 'ApplePayStubs', :head
 pod 'Masonry'
 
 end
