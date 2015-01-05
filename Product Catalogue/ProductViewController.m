@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <ApplePayStubs/STPTestPaymentAuthorizationViewController.h>
+#import <ContentfulStyle/UIFont+Contentful.h>
 
 #import "Brand.h"
 #import "GalleryViewController.h"
@@ -39,6 +40,12 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
+
+    self.availabilityLabel.font = [UIFont bodyTextFont];
+    self.brandButton.titleLabel.font = [UIFont buttonTitleFont];
+    self.buyButton.titleLabel.font = [UIFont buttonTitleFont];
+    self.pricingLabel.font = [UIFont bodyTextFont];
+    self.productNameLabel.font = [UIFont bodyTextFont];
 
     [self.buyButton addTarget:self action:@selector(buyButtonTapped) forControlEvents:UIControlEventTouchUpInside];
 
