@@ -37,7 +37,7 @@ NSString* const ProductContentTypeId = @"2PqfXUJwE8qSYKuM0U6w8M";
 }
 
 -(NSFetchedResultsController*)fetchedResultsControllerForContentTypeWithIdentifier:(NSString*)contentTypeIdentifier sortDescriptors:(NSArray*)sortDescriptors {
-    NSFetchRequest* fetchRequest = [self.manager fetchRequestForEntriesOfContentTypeWithIdentifier:ProductContentTypeId matchingPredicate:nil];
+    NSFetchRequest* fetchRequest = [self.manager fetchRequestForEntriesOfContentTypeWithIdentifier:contentTypeIdentifier matchingPredicate:nil];
     [fetchRequest setSortDescriptors:sortDescriptors];
 
     return [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.manager.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
