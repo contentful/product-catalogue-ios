@@ -2,6 +2,9 @@
 
 #import "StoryboardIdentifiers.h"
 
+#pragma mark - collectionViewController.storyboardIdentifier
+NSString * const FilteredProductsViewControllerSegue = @"FilteredProductsViewControllerSegue";
+
 #pragma mark - segue.identifier
 NSString * const EmbedGalleryVCSegue = @"EmbedGalleryVCSegue";
 

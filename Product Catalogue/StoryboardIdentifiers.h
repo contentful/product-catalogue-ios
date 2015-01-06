@@ -2,6 +2,9 @@
 
 #import <Foundation/Foundation.h>
 
+#pragma mark - collectionViewController.storyboardIdentifier
+extern NSString * const FilteredProductsViewControllerSegue;
+
 #pragma mark - segue.identifier
 extern NSString * const EmbedGalleryVCSegue;
 
