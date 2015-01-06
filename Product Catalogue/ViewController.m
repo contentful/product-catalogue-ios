@@ -73,11 +73,17 @@
     layout.minimumLineSpacing = 0.0;
     [self.collectionView setCollectionViewLayout:layout];
 
+    self.tabBarController.view.userInteractionEnabled = NO;
+
     [self.dataManager performSynchronizationWithSuccess:^{
         [self.dataSource performFetch];
+
+        self.tabBarController.view.userInteractionEnabled = YES;
     } failure:^(CDAResponse *response, NSError *error) {
         // FIXME: For brevity's sake, we do not check the cause of the error, but a real app should.
         [self.dataSource performFetch];
+
+        self.tabBarController.view.userInteractionEnabled = YES;
     }];
 }
 
