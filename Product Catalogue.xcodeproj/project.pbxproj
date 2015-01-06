@@ -22,6 +22,7 @@
 		A1B3A0E71A39FD26004DF1A2 /* UIView+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0E61A39FD26004DF1A2 /* UIView+Geometry.m */; };
 		A1CB14471A48825A003D2813 /* HorizontalImageStripController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB14461A48825A003D2813 /* HorizontalImageStripController.m */; };
 		A1CB144A1A488416003D2813 /* SingleImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB14491A488416003D2813 /* SingleImageCell.m */; };
+		A1D289E31A5C137C00EE485C /* ProductCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D289E21A5C137C00EE485C /* ProductCategoryCell.m */; };
 		A1D3A4771A38845B001DF93D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1D3A4731A38845B001DF93D /* LaunchScreen.xib */; };
 		A1D3A4781A38845B001DF93D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D3A4751A38845B001DF93D /* Main.storyboard */; };
 		A1D3A47B1A389D89001DF93D /* ProductCatalog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1D3A4791A389D89001DF93D /* ProductCatalog.xcdatamodeld */; };
@@ -30,6 +31,7 @@
 		A1D792A41A430F1F00325B32 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D792A31A430F1F00325B32 /* ImageViewController.m */; };
 		A1D792A71A431DF000325B32 /* StoryboardIdentifiers.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D792A61A431DF000325B32 /* StoryboardIdentifiers.m */; };
 		A1D792AB1A43340400325B32 /* ContentfulDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D792AA1A43340400325B32 /* ContentfulDataManager.m */; };
+		A1E493801A5AF50400EB1065 /* ProductCategoryList.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E4937F1A5AF50400EB1065 /* ProductCategoryList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		A1CB14461A48825A003D2813 /* HorizontalImageStripController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalImageStripController.m; sourceTree = "<group>"; };
 		A1CB14481A488416003D2813 /* SingleImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleImageCell.h; sourceTree = "<group>"; };
 		A1CB14491A488416003D2813 /* SingleImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleImageCell.m; sourceTree = "<group>"; };
+		A1D289E11A5C137C00EE485C /* ProductCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCategoryCell.h; sourceTree = "<group>"; };
+		A1D289E21A5C137C00EE485C /* ProductCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCategoryCell.m; sourceTree = "<group>"; };
 		A1D3A4741A38845B001DF93D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A1D3A4761A38845B001DF93D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1D3A47A1A389D89001DF93D /* ProductCatalog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProductCatalog.xcdatamodel; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 		A1D792A61A431DF000325B32 /* StoryboardIdentifiers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardIdentifiers.m; sourceTree = "<group>"; };
 		A1D792A91A43340400325B32 /* ContentfulDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentfulDataManager.h; sourceTree = "<group>"; };
 		A1D792AA1A43340400325B32 /* ContentfulDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentfulDataManager.m; sourceTree = "<group>"; };
+		A1E4937E1A5AF50400EB1065 /* ProductCategoryList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCategoryList.h; sourceTree = "<group>"; };
+		A1E4937F1A5AF50400EB1065 /* ProductCategoryList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCategoryList.m; sourceTree = "<group>"; };
 		B4B83D25F89142397E44F5D9 /* Pods-Product Catalogue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Product Catalogue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Product Catalogue/Pods-Product Catalogue.debug.xcconfig"; sourceTree = "<group>"; };
 		E32DFC738149AFD80A23AEC5 /* libPods-Product Catalogue.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Product Catalogue.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -155,6 +161,7 @@
 				A1D792AE1A433BDF00325B32 /* Category List */,
 				A1D792A81A431DF700325B32 /* Generated */,
 				A1B3A0AF1A39DDF7004DF1A2 /* Model */,
+				A1E4937D1A5AF4C500EB1065 /* Product Categories */,
 				A1D792AD1A433BD300325B32 /* Product Details */,
 				A1D792AC1A433BC900325B32 /* Product List */,
 				A1083AE01A388281007EF3C9 /* AppDelegate.h */,
@@ -257,6 +264,17 @@
 			children = (
 			);
 			name = "Category List";
+			sourceTree = "<group>";
+		};
+		A1E4937D1A5AF4C500EB1065 /* Product Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A1D289E11A5C137C00EE485C /* ProductCategoryCell.h */,
+				A1D289E21A5C137C00EE485C /* ProductCategoryCell.m */,
+				A1E4937E1A5AF50400EB1065 /* ProductCategoryList.h */,
+				A1E4937F1A5AF50400EB1065 /* ProductCategoryList.m */,
+			);
+			name = "Product Categories";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,6 +429,8 @@
 			files = (
 				A1B3A0D31A39DF32004DF1A2 /* Asset.m in Sources */,
 				A1CB144A1A488416003D2813 /* SingleImageCell.m in Sources */,
+				A1E493801A5AF50400EB1065 /* ProductCategoryList.m in Sources */,
+				A1D289E31A5C137C00EE485C /* ProductCategoryCell.m in Sources */,
 				A1CB14471A48825A003D2813 /* HorizontalImageStripController.m in Sources */,
 				A1B3A0DC1A39DF32004DF1A2 /* ProductCategory.m in Sources */,
 				A1083AE51A388281007EF3C9 /* ViewController.m in Sources */,
