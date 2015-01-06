@@ -158,7 +158,6 @@
 		A1083ADB1A388280007EF3C9 /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				A1D792AE1A433BDF00325B32 /* Category List */,
 				A1D792A81A431DF700325B32 /* Generated */,
 				A1B3A0AF1A39DDF7004DF1A2 /* Model */,
 				A1E4937D1A5AF4C500EB1065 /* Product Categories */,
@@ -257,13 +256,6 @@
 				A1CB14461A48825A003D2813 /* HorizontalImageStripController.m */,
 			);
 			name = "Product Details";
-			sourceTree = "<group>";
-		};
-		A1D792AE1A433BDF00325B32 /* Category List */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Category List";
 			sourceTree = "<group>";
 		};
 		A1E4937D1A5AF4C500EB1065 /* Product Categories */ = {
