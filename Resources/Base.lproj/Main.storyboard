@@ -120,16 +120,21 @@ EUR</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ih2-q9-cbj">
-                                <rect key="frame" x="246" y="437" width="109" height="30"/>
+                                <rect key="frame" x="26" y="447" width="548" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="arJ-Ob-utS"/>
                                 </constraints>
                                 <state key="normal" title="BUY THIS ITEM">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="arJ-Ob-utS"/>
+                                    </mask>
+                                </variation>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFi-dS-uCf">
-                                <rect key="frame" x="509" y="336" width="66" height="41"/>
+                                <rect key="frame" x="508" y="336" width="66" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="Xxc-5b-eQ4"/>
                                 </constraints>
@@ -166,19 +171,21 @@ in stock</string>
                             <constraint firstItem="CoU-RX-DRh" firstAttribute="trailing" secondItem="AFi-dS-uCf" secondAttribute="trailing" constant="20" id="CM0-OO-6Ui"/>
                             <constraint firstItem="DCq-qf-ML4" firstAttribute="bottom" secondItem="4pA-WR-2xM" secondAttribute="bottom" constant="-50" id="Cgh-yu-cA1"/>
                             <constraint firstItem="U68-bb-22G" firstAttribute="top" secondItem="GBE-wp-eqb" secondAttribute="bottom" constant="-317" id="Cji-WH-Ibd"/>
+                            <constraint firstItem="AFi-dS-uCf" firstAttribute="trailing" secondItem="Ih2-q9-cbj" secondAttribute="trailing" id="ECC-UV-gDo"/>
                             <constraint firstItem="U68-bb-22G" firstAttribute="top" secondItem="GBE-wp-eqb" secondAttribute="bottom" constant="8" symbolic="YES" id="GJq-lz-yik"/>
                             <constraint firstItem="ghp-3P-wp6" firstAttribute="top" secondItem="GBE-wp-eqb" secondAttribute="bottom" constant="170" id="HY9-q0-X5U"/>
-                            <constraint firstAttribute="bottom" secondItem="Ih2-q9-cbj" secondAttribute="bottom" constant="20" symbolic="YES" id="IPY-2V-TBr"/>
+                            <constraint firstAttribute="bottom" secondItem="Ih2-q9-cbj" secondAttribute="bottom" constant="10" id="IPY-2V-TBr"/>
                             <constraint firstAttribute="centerX" secondItem="GBE-wp-eqb" secondAttribute="centerX" id="LVV-kU-IZW"/>
                             <constraint firstAttribute="width" secondItem="CG9-zF-MWr" secondAttribute="width" id="MD4-3q-Sl3"/>
                             <constraint firstItem="GBE-wp-eqb" firstAttribute="top" secondItem="CG9-zF-MWr" secondAttribute="bottom" constant="1" id="Mmu-FP-IR4"/>
                             <constraint firstItem="CoU-RX-DRh" firstAttribute="leading" secondItem="DCq-qf-ML4" secondAttribute="leading" id="NeN-o5-JHs"/>
                             <constraint firstItem="CoU-RX-DRh" firstAttribute="top" secondItem="CG9-zF-MWr" secondAttribute="bottom" constant="20" id="O6u-zF-QXZ"/>
                             <constraint firstItem="U68-bb-22G" firstAttribute="top" secondItem="GBE-wp-eqb" secondAttribute="bottom" id="OlK-ql-658"/>
+                            <constraint firstItem="Ih2-q9-cbj" firstAttribute="leading" secondItem="4pA-WR-2xM" secondAttribute="leading" id="QtU-eE-37D"/>
                             <constraint firstItem="Ih2-q9-cbj" firstAttribute="leading" secondItem="gn1-mm-x26" secondAttribute="leading" constant="238" id="U0G-IX-ZIq"/>
                             <constraint firstItem="3MI-8d-hkd" firstAttribute="leading" secondItem="4pA-WR-2xM" secondAttribute="leading" constant="-5" id="WtG-nq-GK3"/>
                             <constraint firstItem="AFi-dS-uCf" firstAttribute="baseline" secondItem="4pA-WR-2xM" secondAttribute="baseline" id="Wvp-VP-icP"/>
-                            <constraint firstItem="Ih2-q9-cbj" firstAttribute="top" secondItem="3MI-8d-hkd" secondAttribute="bottom" id="Z9s-4X-Ga9"/>
+                            <constraint firstItem="Ih2-q9-cbj" firstAttribute="top" secondItem="3MI-8d-hkd" secondAttribute="bottom" constant="10" id="Z9s-4X-Ga9"/>
                             <constraint firstItem="GBE-wp-eqb" firstAttribute="top" secondItem="CG9-zF-MWr" secondAttribute="top" id="bo4-t9-KPk"/>
                             <constraint firstAttribute="centerX" secondItem="CG9-zF-MWr" secondAttribute="centerX" id="d7U-BR-6i3"/>
                             <constraint firstAttribute="centerX" secondItem="Ih2-q9-cbj" secondAttribute="centerX" id="gVA-UX-Av3"/>
@@ -215,6 +222,7 @@ in stock</string>
                                 <exclude reference="HY9-q0-X5U"/>
                                 <exclude reference="5np-iV-uJ0"/>
                                 <exclude reference="U0G-IX-ZIq"/>
+                                <exclude reference="gVA-UX-Av3"/>
                                 <exclude reference="khg-uX-6Xq"/>
                             </mask>
                         </variation>

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <ApplePayStubs/STPTestPaymentAuthorizationViewController.h>
+#import <ContentfulStyle/UIColor+Contentful.h>
 #import <ContentfulStyle/UIFont+Contentful.h>
 #import <TSMiniWebBrowser@dblock/TSMiniWebBrowser.h>
 
@@ -50,11 +51,15 @@
     [super viewDidLoad];
 
     self.availabilityLabel.font = [UIFont bodyTextFont];
+    self.availabilityLabel.textColor = [UIColor contentfulDeactivatedColor];
     self.brandButton.titleLabel.font = [UIFont buttonTitleFont];
     self.buyButton.titleLabel.font = [UIFont buttonTitleFont];
     self.pricingLabel.font = [UIFont bodyTextFont];
     self.productDescription.font = [UIFont bodyTextFont];
     self.productNameLabel.font = [UIFont bodyTextFont];
+
+    self.buyButton.backgroundColor = [UIColor contentfulPrimaryColor];
+    self.buyButton.tintColor = [UIColor whiteColor];
 
     [self.brandButton addTarget:self
                          action:@selector(brandButtonTapped)
