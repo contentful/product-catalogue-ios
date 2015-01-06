@@ -36,7 +36,7 @@
 
     self.dataManager = [ContentfulDataManager new];
 
-    NSFetchedResultsController* controller = [self.dataManager fetchedResultsControllerForContentTypeWithIdentifier:CategoryContentTypeId sortDescriptors:@[ [[NSSortDescriptor alloc] initWithKey:@"title" ascending:YES] ]];
+    NSFetchedResultsController* controller = [self.dataManager fetchedResultsControllerForContentTypeWithIdentifier:CategoryContentTypeId predicate:nil sortDescriptors:@[ [[NSSortDescriptor alloc] initWithKey:@"title" ascending:YES] ]];
     _dataSource = [[CoreDataFetchDataSource alloc] initWithFetchedResultsController:controller tableView:self.tableView cellIdentifier:NSStringFromClass([self class])];
 
     __weak typeof(self) welf = self;

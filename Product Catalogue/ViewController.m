@@ -39,7 +39,7 @@
 
     self.dataManager = [ContentfulDataManager new];
 
-    NSFetchedResultsController* controller = [self.dataManager fetchedResultsControllerForContentTypeWithIdentifier:ProductContentTypeId sortDescriptors:@[ [[NSSortDescriptor alloc] initWithKey:@"productName" ascending:YES] ]];
+    NSFetchedResultsController* controller = [self.dataManager fetchedResultsControllerForContentTypeWithIdentifier:ProductContentTypeId predicate:self.predicate sortDescriptors:@[ [[NSSortDescriptor alloc] initWithKey:@"productName" ascending:YES] ]];
     _dataSource = [[CoreDataFetchDataSource alloc] initWithFetchedResultsController:controller collectionView:self.collectionView cellIdentifier:NSStringFromClass([self class])];
 
     __weak typeof(self) welf = self;

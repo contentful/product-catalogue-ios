@@ -10,4 +10,6 @@
 
 @interface ViewController : UICollectionViewController
 
+@property (nonatomic) NSString* predicate;
+
 @end

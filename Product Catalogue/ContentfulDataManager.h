@@ -17,7 +17,7 @@ extern NSString* const ProductContentTypeId;
 
 @property (nonatomic, readonly) CDAClient* client;
 
--(NSFetchedResultsController*)fetchedResultsControllerForContentTypeWithIdentifier:(NSString*)contentTypeIdentifier sortDescriptors:(NSArray*)sortDescriptors;
+-(NSFetchedResultsController*)fetchedResultsControllerForContentTypeWithIdentifier:(NSString*)contentTypeIdentifier predicate:(NSString*)predicate sortDescriptors:(NSArray*)sortDescriptors;
 -(void)performSynchronizationWithSuccess:(void (^)())success
                                  failure:(CDARequestFailureBlock)failure;
 

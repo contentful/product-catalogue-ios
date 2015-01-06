@@ -36,8 +36,8 @@ NSString* const ProductContentTypeId = @"2PqfXUJwE8qSYKuM0U6w8M";
     return self.manager.client;
 }
 
--(NSFetchedResultsController*)fetchedResultsControllerForContentTypeWithIdentifier:(NSString*)contentTypeIdentifier sortDescriptors:(NSArray*)sortDescriptors {
-    NSFetchRequest* fetchRequest = [self.manager fetchRequestForEntriesOfContentTypeWithIdentifier:contentTypeIdentifier matchingPredicate:nil];
+-(NSFetchedResultsController*)fetchedResultsControllerForContentTypeWithIdentifier:(NSString*)contentTypeIdentifier predicate:(NSString*)predicate sortDescriptors:(NSArray*)sortDescriptors {
+    NSFetchRequest* fetchRequest = [self.manager fetchRequestForEntriesOfContentTypeWithIdentifier:contentTypeIdentifier matchingPredicate:predicate];
     [fetchRequest setSortDescriptors:sortDescriptors];
 
     return [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.manager.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
