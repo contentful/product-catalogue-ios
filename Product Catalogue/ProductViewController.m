@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *brandButton;
 @property (weak, nonatomic) IBOutlet UIButton *buyButton;
 @property (weak, nonatomic) IBOutlet UILabel *pricingLabel;
+@property (weak, nonatomic) IBOutlet UITextView *productDescription;
 @property (weak, nonatomic) IBOutlet UILabel *productNameLabel;
 
 @end
@@ -39,6 +40,12 @@
     }
 }
 
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+
+    self.productDescription.contentOffset = CGPointZero;
+}
+
 -(void)viewDidLoad {
     [super viewDidLoad];
 
@@ -46,6 +53,7 @@
     self.brandButton.titleLabel.font = [UIFont buttonTitleFont];
     self.buyButton.titleLabel.font = [UIFont buttonTitleFont];
     self.pricingLabel.font = [UIFont bodyTextFont];
+    self.productDescription.font = [UIFont bodyTextFont];
     self.productNameLabel.font = [UIFont bodyTextFont];
 
     [self.brandButton addTarget:self
@@ -67,6 +75,7 @@
 
     [self.brandButton setTitle:[NSString stringWithFormat:NSLocalizedString(@"by %@", @"Brand button"), self.product.brand.companyName] forState:UIControlStateNormal];
     self.pricingLabel.text = [NSString stringWithFormat:NSLocalizedString(@"%@\nEUR", @"Pricing label"), self.product.price];
+    self.productDescription.text = self.product.productDescription;
     self.productNameLabel.text = self.product.productName;
 }
 
