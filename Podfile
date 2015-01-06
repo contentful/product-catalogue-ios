@@ -12,5 +12,6 @@ pod 'ContentfulStyle', :path => '../contentful-ios-style'
 
 pod 'ApplePayStubs', :head
 pod 'Masonry'
+pod 'TSMiniWebBrowser@dblock'
 
 end

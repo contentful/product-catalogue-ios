@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <ApplePayStubs/STPTestPaymentAuthorizationViewController.h>
 #import <ContentfulStyle/UIFont+Contentful.h>
+#import <TSMiniWebBrowser@dblock/TSMiniWebBrowser.h>
 
 #import "Brand.h"
 #import "GalleryViewController.h"
@@ -47,6 +48,10 @@
     self.pricingLabel.font = [UIFont bodyTextFont];
     self.productNameLabel.font = [UIFont bodyTextFont];
 
+    [self.brandButton addTarget:self
+                         action:@selector(brandButtonTapped)
+               forControlEvents:UIControlEventTouchUpInside];
+
     [self.buyButton addTarget:self action:@selector(buyButtonTapped) forControlEvents:UIControlEventTouchUpInside];
 
     self.title = self.product.productName;
@@ -66,6 +71,12 @@
 }
 
 #pragma mark - Actions
+
+-(void)brandButtonTapped {
+    NSURL* URL = [NSURL URLWithString:self.product.brand.website];
+    TSMiniWebBrowser* browser = [[TSMiniWebBrowser alloc] initWithURL:URL];
+    [self.navigationController pushViewController:browser animated:YES];
+}
 
 -(void)buyButtonTapped {
     NSDecimalNumber* price = [NSDecimalNumber decimalNumberWithDecimal:self.product.price.decimalValue];
