@@ -10,7 +10,7 @@
 		3FCD479E243FDCD8F72983FF /* libPods-Product Catalogue.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E32DFC738149AFD80A23AEC5 /* libPods-Product Catalogue.a */; };
 		A1083ADF1A388281007EF3C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1083ADE1A388281007EF3C9 /* main.m */; };
 		A1083AE21A388281007EF3C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1083AE11A388281007EF3C9 /* AppDelegate.m */; };
-		A1083AE51A388281007EF3C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1083AE41A388281007EF3C9 /* ViewController.m */; };
+		A1083AE51A388281007EF3C9 /* ProductList.m in Sources */ = {isa = PBXBuildFile; fileRef = A1083AE41A388281007EF3C9 /* ProductList.m */; };
 		A1083AEA1A388281007EF3C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1083AE91A388281007EF3C9 /* Images.xcassets */; };
 		A1083AF91A388281007EF3C9 /* Product_CatalogueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1083AF81A388281007EF3C9 /* Product_CatalogueTests.m */; };
 		A1B3A0D01A39DF31004DF1A2 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0CF1A39DF31004DF1A2 /* Product.m */; };
@@ -51,8 +51,8 @@
 		A1083ADE1A388281007EF3C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A1083AE01A388281007EF3C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A1083AE11A388281007EF3C9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A1083AE31A388281007EF3C9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A1083AE41A388281007EF3C9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A1083AE31A388281007EF3C9 /* ProductList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductList.h; sourceTree = "<group>"; };
+		A1083AE41A388281007EF3C9 /* ProductList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductList.m; sourceTree = "<group>"; };
 		A1083AE91A388281007EF3C9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A1083AF21A388281007EF3C9 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1083AF71A388281007EF3C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -236,8 +236,8 @@
 			children = (
 				A1B3A0DF1A39FB09004DF1A2 /* ProductCell.h */,
 				A1B3A0E01A39FB09004DF1A2 /* ProductCell.m */,
-				A1083AE31A388281007EF3C9 /* ViewController.h */,
-				A1083AE41A388281007EF3C9 /* ViewController.m */,
+				A1083AE31A388281007EF3C9 /* ProductList.h */,
+				A1083AE41A388281007EF3C9 /* ProductList.m */,
 			);
 			name = "Product List";
 			sourceTree = "<group>";
@@ -433,7 +433,7 @@
 				A1D289E31A5C137C00EE485C /* ProductCategoryCell.m in Sources */,
 				A1CB14471A48825A003D2813 /* HorizontalImageStripController.m in Sources */,
 				A1B3A0DC1A39DF32004DF1A2 /* ProductCategory.m in Sources */,
-				A1083AE51A388281007EF3C9 /* ViewController.m in Sources */,
+				A1083AE51A388281007EF3C9 /* ProductList.m in Sources */,
 				A1B3A0D01A39DF31004DF1A2 /* Product.m in Sources */,
 				A1083AE21A388281007EF3C9 /* AppDelegate.m in Sources */,
 				A1B3A0E11A39FB09004DF1A2 /* ProductCell.m in Sources */,

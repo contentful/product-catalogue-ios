@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ProductList.h
 //  Product Catalogue
 //
 //  Created by Boris Bügling on 10/12/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UICollectionViewController
+@interface ProductList : UICollectionViewController
 
 @property (nonatomic) NSString* predicate;
 

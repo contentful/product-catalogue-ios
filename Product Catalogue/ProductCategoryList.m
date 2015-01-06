@@ -14,7 +14,7 @@
 #import "ProductCategoryCell.h"
 #import "ProductCategoryList.h"
 #import "StoryboardIdentifiers.h"
-#import "ViewController.h"
+#import "ProductList.h"
 
 @interface ProductCategoryList ()
 
@@ -75,7 +75,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     ProductCategory* category = [self.dataSource objectAtIndexPath:indexPath];
 
-    ViewController* filteredProductList = [self.storyboard instantiateViewControllerWithIdentifier:FilteredProductsViewControllerSegue];
+    ProductList* filteredProductList = [self.storyboard instantiateViewControllerWithIdentifier:FilteredProductsViewControllerSegue];
     filteredProductList.predicate = [NSString stringWithFormat:@"ANY categories.identifier == '%@'", category.identifier];
     filteredProductList.title = category.title;
     [self.navigationController pushViewController:filteredProductList animated:YES];

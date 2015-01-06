@@ -1,5 +1,5 @@
 //
-//  ViewController.m
+//  ProductList.m
 //  Product Catalogue
 //
 //  Created by Boris Bügling on 10/12/14.
@@ -15,9 +15,9 @@
 #import "ProductCell.h"
 #import "ProductViewController.h"
 #import "StoryboardIdentifiers.h"
-#import "ViewController.h"
+#import "ProductList.h"
 
-@interface ViewController () <UICollectionViewDelegate>
+@interface ProductList () <UICollectionViewDelegate>
 
 @property (nonatomic, strong) ContentfulDataManager* dataManager;
 @property (nonatomic, readonly) CoreDataFetchDataSource* dataSource;
@@ -26,7 +26,7 @@
 
 #pragma mark -
 
-@implementation ViewController
+@implementation ProductList
 
 @synthesize dataSource = _dataSource;
 

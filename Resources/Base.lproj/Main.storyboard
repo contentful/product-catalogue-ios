@@ -8,7 +8,7 @@
         <!--All products-->
         <scene sceneID="uyG-6Y-sej">
             <objects>
-                <collectionViewController id="ewE-O1-wOe" customClass="ViewController" sceneMemberID="viewController">
+                <collectionViewController id="ewE-O1-wOe" customClass="ProductList" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="2Wc-4I-VlX">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -212,7 +212,7 @@ in stock</string>
         <!--Filtered Products View Controller-->
         <scene sceneID="76M-CC-8lQ">
             <objects>
-                <collectionViewController storyboardIdentifier="FilteredProductsViewControllerSegue" id="I5m-kb-m3h" userLabel="Filtered Products View Controller" customClass="ViewController" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="FilteredProductsViewControllerSegue" id="I5m-kb-m3h" userLabel="Filtered Products View Controller" customClass="ProductList" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="wp1-FZ-nEX">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
