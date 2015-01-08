@@ -13,13 +13,13 @@
 		A1083AE51A388281007EF3C9 /* ProductList.m in Sources */ = {isa = PBXBuildFile; fileRef = A1083AE41A388281007EF3C9 /* ProductList.m */; };
 		A1083AEA1A388281007EF3C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1083AE91A388281007EF3C9 /* Images.xcassets */; };
 		A1083AF91A388281007EF3C9 /* Product_CatalogueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1083AF81A388281007EF3C9 /* Product_CatalogueTests.m */; };
+		A1A03F1E1A5ECB88003621F5 /* Pods-Product Catalogue-acknowledgements.markdown in Resources */ = {isa = PBXBuildFile; fileRef = A1A03F1D1A5ECB88003621F5 /* Pods-Product Catalogue-acknowledgements.markdown */; };
 		A1B3A0D01A39DF31004DF1A2 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0CF1A39DF31004DF1A2 /* Product.m */; };
 		A1B3A0D31A39DF32004DF1A2 /* Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0D21A39DF32004DF1A2 /* Asset.m */; };
 		A1B3A0D61A39DF32004DF1A2 /* Brand.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0D51A39DF32004DF1A2 /* Brand.m */; };
 		A1B3A0D91A39DF32004DF1A2 /* SyncInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0D81A39DF32004DF1A2 /* SyncInfo.m */; };
 		A1B3A0DC1A39DF32004DF1A2 /* ProductCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0DB1A39DF32004DF1A2 /* ProductCategory.m */; };
 		A1B3A0E11A39FB09004DF1A2 /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0E01A39FB09004DF1A2 /* ProductCell.m */; };
-		A1B3A0E71A39FD26004DF1A2 /* UIView+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0E61A39FD26004DF1A2 /* UIView+Geometry.m */; };
 		A1CB14471A48825A003D2813 /* HorizontalImageStripController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB14461A48825A003D2813 /* HorizontalImageStripController.m */; };
 		A1CB144A1A488416003D2813 /* SingleImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB14491A488416003D2813 /* SingleImageCell.m */; };
 		A1D289E31A5C137C00EE485C /* ProductCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D289E21A5C137C00EE485C /* ProductCategoryCell.m */; };
@@ -57,6 +57,7 @@
 		A1083AF21A388281007EF3C9 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1083AF71A388281007EF3C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1083AF81A388281007EF3C9 /* Product_CatalogueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product_CatalogueTests.m; sourceTree = "<group>"; };
+		A1A03F1D1A5ECB88003621F5 /* Pods-Product Catalogue-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = "Pods-Product Catalogue-acknowledgements.markdown"; path = "../Pods/Target Support Files/Pods-Product Catalogue/Pods-Product Catalogue-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A1B3A0CE1A39DF31004DF1A2 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Product.h; path = "Product Catalogue/Product.h"; sourceTree = SOURCE_ROOT; };
 		A1B3A0CF1A39DF31004DF1A2 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Product.m; path = "Product Catalogue/Product.m"; sourceTree = SOURCE_ROOT; };
 		A1B3A0D11A39DF32004DF1A2 /* Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Asset.h; path = "Product Catalogue/Asset.h"; sourceTree = SOURCE_ROOT; };
@@ -70,8 +71,6 @@
 		A1B3A0DE1A39E4E9004DF1A2 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		A1B3A0DF1A39FB09004DF1A2 /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCell.h; sourceTree = "<group>"; };
 		A1B3A0E01A39FB09004DF1A2 /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCell.m; sourceTree = "<group>"; };
-		A1B3A0E51A39FD26004DF1A2 /* UIView+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Geometry.h"; sourceTree = "<group>"; };
-		A1B3A0E61A39FD26004DF1A2 /* UIView+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Geometry.m"; sourceTree = "<group>"; };
 		A1CB14451A48825A003D2813 /* HorizontalImageStripController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalImageStripController.h; sourceTree = "<group>"; };
 		A1CB14461A48825A003D2813 /* HorizontalImageStripController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalImageStripController.m; sourceTree = "<group>"; };
 		A1CB14481A488416003D2813 /* SingleImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleImageCell.h; sourceTree = "<group>"; };
@@ -168,8 +167,6 @@
 				A1B3A0DE1A39E4E9004DF1A2 /* Constants.h */,
 				A1D792A91A43340400325B32 /* ContentfulDataManager.h */,
 				A1D792AA1A43340400325B32 /* ContentfulDataManager.m */,
-				A1B3A0E51A39FD26004DF1A2 /* UIView+Geometry.h */,
-				A1B3A0E61A39FD26004DF1A2 /* UIView+Geometry.m */,
 			);
 			name = Code;
 			path = "Product Catalogue";
@@ -199,6 +196,7 @@
 				A1083AE91A388281007EF3C9 /* Images.xcassets */,
 				A1D3A4731A38845B001DF93D /* LaunchScreen.xib */,
 				A1D3A4751A38845B001DF93D /* Main.storyboard */,
+				A1A03F1D1A5ECB88003621F5 /* Pods-Product Catalogue-acknowledgements.markdown */,
 				A1D3A4791A389D89001DF93D /* ProductCatalog.xcdatamodeld */,
 			);
 			path = Resources;
@@ -352,6 +350,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1A03F1E1A5ECB88003621F5 /* Pods-Product Catalogue-acknowledgements.markdown in Resources */,
 				A1D3A4781A38845B001DF93D /* Main.storyboard in Resources */,
 				A1D3A4771A38845B001DF93D /* LaunchScreen.xib in Resources */,
 				A1083AEA1A388281007EF3C9 /* Images.xcassets in Resources */,
@@ -433,7 +432,6 @@
 				A1D792A11A4309B600325B32 /* GalleryViewController.m in Sources */,
 				A1D7929B1A42D6B300325B32 /* ProductViewController.m in Sources */,
 				A1D792AB1A43340400325B32 /* ContentfulDataManager.m in Sources */,
-				A1B3A0E71A39FD26004DF1A2 /* UIView+Geometry.m in Sources */,
 				A1B3A0D61A39DF32004DF1A2 /* Brand.m in Sources */,
 				A1083ADF1A388281007EF3C9 /* main.m in Sources */,
 				A1B3A0D91A39DF32004DF1A2 /* SyncInfo.m in Sources */,

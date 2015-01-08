@@ -17,6 +17,7 @@ target 'Product Catalogue' do
 pod 'ContentfulPersistence', :path => '../contentful-persistence.objc'
 
 pod 'ApplePayStubs', :head
+pod 'ContentfulDialogs', :git => 'git@github.com:contentful/contentful-ios-dialogs.git'
 pod 'ContentfulStyle', :git => 'git@github.com:contentful/contentful-ios-style.git'
 pod 'Masonry'
 pod 'TSMiniWebBrowser@dblock'
