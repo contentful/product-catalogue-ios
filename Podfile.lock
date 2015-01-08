@@ -40,7 +40,7 @@ PODS:
 DEPENDENCIES:
   - ApplePayStubs (HEAD)
   - ContentfulPersistence (from `../contentful-persistence.objc`)
-  - ContentfulStyle (from `../contentful-ios-style`)
+  - ContentfulStyle (from `git@github.com:contentful/contentful-ios-style.git`)
   - Masonry
   - TSMiniWebBrowser@dblock
 
@@ -48,7 +48,12 @@ EXTERNAL SOURCES:
   ContentfulPersistence:
     :path: ../contentful-persistence.objc
   ContentfulStyle:
-    :path: ../contentful-ios-style
+    :git: git@github.com:contentful/contentful-ios-style.git
+
+CHECKOUT OPTIONS:
+  ContentfulStyle:
+    :commit: e88d07fad7499062c9fe05d01f11a2ab42574b5e
+    :git: git@github.com:contentful/contentful-ios-style.git
 
 SPEC CHECKSUMS:
   AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
@@ -63,4 +68,4 @@ SPEC CHECKSUMS:
   Masonry: 35368c2ca9577ca87722c12fc52c4bad9b1c1516
   TSMiniWebBrowser@dblock: 4e73ee955fcf2e9f5d98f7a17460454ac059bc37
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.36.0.beta.1
