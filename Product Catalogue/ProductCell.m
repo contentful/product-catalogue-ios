@@ -9,7 +9,6 @@
 #import <ContentfulStyle/UIFont+Contentful.h>
 
 #import "ProductCell.h"
-#import "UIView+Geometry.h"
 
 @implementation ProductCell
 
@@ -23,8 +22,12 @@
 
     _coverImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10.0, 10.0, 0.0, 0.0)];
     _coverImageView.contentMode = UIViewContentModeScaleAspectFit;
-    _coverImageView.width = self.width - 2 * _coverImageView.x;
-    _coverImageView.height = self.height - 2 * _coverImageView.y;
+
+    CGRect frame = _coverImageView.frame;
+    frame.size.width = self.frame.size.width - 2 * frame.origin.x;
+    frame.size.height = self.frame.size.height - 2 * frame.origin.y;
+    _coverImageView.frame = frame;
+
     [self addSubview:_coverImageView];
 
     return _coverImageView;
@@ -49,8 +52,12 @@
     _pricingLabel.font = [UIFont bodyTextFont];
     _pricingLabel.textAlignment = NSTextAlignmentCenter;
     _pricingLabel.textColor = [UIColor whiteColor];
-    _pricingLabel.x = self.width - _pricingLabel.width;
-    _pricingLabel.y = self.height - _pricingLabel.height;
+
+    CGRect frame = _pricingLabel.frame;
+    frame.origin.x = self.frame.size.width - frame.size.width;
+    frame.origin.y = self.frame.size.height - frame.size.height;
+    _pricingLabel.frame = frame;
+
     [self addSubview:_pricingLabel];
 
     return _pricingLabel;

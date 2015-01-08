@@ -10,7 +10,6 @@
 #import <ContentfulStyle/UIFont+Contentful.h>
 
 #import "ProductCategoryCell.h"
-#import "UIView+Geometry.h"
 
 static const CGFloat TextLabelHeight = 30.0;
 
@@ -32,8 +31,10 @@ static const CGFloat TextLabelHeight = 30.0;
 -(void)layoutSubviews {
     [super layoutSubviews];
 
-    self.textLabel.y += self.textLabel.height - TextLabelHeight;
-    self.textLabel.height = TextLabelHeight;
+    CGRect frame = self.textLabel.frame;
+    frame.origin.y += frame.size.height - TextLabelHeight;
+    frame.size.height = TextLabelHeight;
+    self.textLabel.frame = frame;
 }
 
 @end
