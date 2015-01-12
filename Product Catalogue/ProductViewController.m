@@ -10,6 +10,7 @@
 #import <ApplePayStubs/STPTestPaymentAuthorizationViewController.h>
 #import <ContentfulStyle/UIColor+Contentful.h>
 #import <ContentfulStyle/UIFont+Contentful.h>
+#import <QuartzCore/QuartzCore.h>
 #import <TSMiniWebBrowser@dblock/TSMiniWebBrowser.h>
 
 #import "Brand.h"
@@ -59,6 +60,7 @@
     self.productNameLabel.font = [UIFont bodyTextFont];
 
     self.buyButton.backgroundColor = [UIColor contentfulPrimaryColor];
+    self.buyButton.layer.cornerRadius = 4.0;
     self.buyButton.tintColor = [UIColor whiteColor];
 
     [self.brandButton addTarget:self
