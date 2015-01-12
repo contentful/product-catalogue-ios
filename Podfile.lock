@@ -44,6 +44,7 @@ PODS:
   - ISO8601DateFormatter (0.7)
   - LatoFont (1.0.0)
   - Masonry (0.5.3)
+  - TPKeyboardAvoiding (1.2.4)
   - TSMiniWebBrowser@dblock (1.1)
 
 DEPENDENCIES:
@@ -52,6 +53,7 @@ DEPENDENCIES:
   - ContentfulPersistence (from `../contentful-persistence.objc`)
   - ContentfulStyle (from `git@github.com:contentful/contentful-ios-style.git`)
   - Masonry
+  - TPKeyboardAvoiding
   - TSMiniWebBrowser@dblock
 
 EXTERNAL SOURCES:
@@ -85,6 +87,7 @@ SPEC CHECKSUMS:
   ISO8601DateFormatter: 59731cd880cf87e71b4fa95f0d6b713dcbc4cbce
   LatoFont: 325a86578945d04cce8039deaf163229c63e2258
   Masonry: 35368c2ca9577ca87722c12fc52c4bad9b1c1516
+  TPKeyboardAvoiding: 925e1e1912597d1a4956697eec3bd9656552153c
   TSMiniWebBrowser@dblock: 4e73ee955fcf2e9f5d98f7a17460454ac059bc37
 
 COCOAPODS: 0.36.0.beta.1
