@@ -330,7 +330,7 @@ Contentful</string>
                                 <rect key="frame" x="175" y="361" width="250" height="60"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Space Key" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oLm-DT-Us3">
-                                        <rect key="frame" x="0.0" y="0.0" width="250" height="30"/>
+                                        <rect key="frame" x="10" y="0.0" width="240" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Thb-YM-WNL"/>
                                         </constraints>
@@ -338,7 +338,7 @@ Contentful</string>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Access Token" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1R4-y5-SGT">
-                                        <rect key="frame" x="0.0" y="30" width="250" height="30"/>
+                                        <rect key="frame" x="10" y="30" width="240" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="eH6-zM-PZ3"/>
                                         </constraints>
@@ -349,7 +349,7 @@ Contentful</string>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="1R4-y5-SGT" firstAttribute="top" secondItem="oLm-DT-Us3" secondAttribute="bottom" id="4Na-oO-5fH"/>
-                                    <constraint firstItem="oLm-DT-Us3" firstAttribute="leading" secondItem="XPW-JQ-POb" secondAttribute="leading" id="CCz-tR-eT5"/>
+                                    <constraint firstItem="oLm-DT-Us3" firstAttribute="leading" secondItem="XPW-JQ-POb" secondAttribute="leading" constant="10" id="CCz-tR-eT5"/>
                                     <constraint firstAttribute="height" constant="60" id="G5e-0h-Bt9"/>
                                     <constraint firstItem="1R4-y5-SGT" firstAttribute="width" secondItem="XPW-JQ-POb" secondAttribute="width" id="Lj7-G8-27u"/>
                                     <constraint firstAttribute="width" constant="250" id="Ukk-mq-r9f"/>
@@ -357,16 +357,20 @@ Contentful</string>
                                     <constraint firstItem="1R4-y5-SGT" firstAttribute="height" secondItem="XPW-JQ-POb" secondAttribute="height" id="aue-FS-R9e"/>
                                     <constraint firstItem="1R4-y5-SGT" firstAttribute="width" secondItem="XPW-JQ-POb" secondAttribute="width" id="bfH-n2-RUB"/>
                                     <constraint firstItem="oLm-DT-Us3" firstAttribute="top" secondItem="XPW-JQ-POb" secondAttribute="top" id="dhp-us-CE6"/>
-                                    <constraint firstItem="1R4-y5-SGT" firstAttribute="leading" secondItem="XPW-JQ-POb" secondAttribute="leading" id="o1w-xT-QHT"/>
+                                    <constraint firstItem="1R4-y5-SGT" firstAttribute="leading" secondItem="XPW-JQ-POb" secondAttribute="leading" constant="10" id="o1w-xT-QHT"/>
                                     <constraint firstAttribute="width" secondItem="oLm-DT-Us3" secondAttribute="width" id="pfb-R7-Wiy"/>
+                                    <constraint firstAttribute="trailing" secondItem="oLm-DT-Us3" secondAttribute="trailing" id="rqU-4f-Nra"/>
+                                    <constraint firstAttribute="trailing" secondItem="1R4-y5-SGT" secondAttribute="trailing" id="y8I-4B-XKC"/>
                                     <constraint firstAttribute="width" secondItem="oLm-DT-Us3" secondAttribute="width" id="yiu-7h-78y"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="pfb-R7-Wiy"/>
+                                        <exclude reference="yiu-7h-78y"/>
                                         <exclude reference="Lj7-G8-27u"/>
                                         <exclude reference="X1n-Ou-PO5"/>
                                         <exclude reference="aue-FS-R9e"/>
+                                        <exclude reference="bfH-n2-RUB"/>
                                     </mask>
                                 </variation>
                             </view>
