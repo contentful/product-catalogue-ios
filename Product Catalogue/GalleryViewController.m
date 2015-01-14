@@ -26,6 +26,7 @@
 
 -(UIButton*)buildButtonUsingAdditionalConstraints:(void(^)(MASConstraintMaker* make))block {
     UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.enabled = NO;
     [button setImage:[UIImage imageNamed:@"right-arrow"] forState:UIControlStateNormal];
     [button setImageEdgeInsets:UIEdgeInsetsMake(13.0, 10.0, 14.0, 10.0)];
     [self.view addSubview:button];
