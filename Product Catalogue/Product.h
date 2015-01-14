@@ -24,6 +24,7 @@
 @property (nonatomic, retain) Brand *brand;
 @property (nonatomic, retain) NSOrderedSet *categories;
 @property (nonatomic, retain) NSOrderedSet *image;
+@property (nonatomic, retain) NSString * website;
 @end
 
 @interface Product (CoreDataGeneratedAccessors)

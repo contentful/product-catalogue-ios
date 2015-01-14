@@ -16,11 +16,10 @@ target 'Product Catalogue' do
 # work with a local copy for simplicity's sake
 pod 'ContentfulPersistence', :path => '../contentful-persistence.objc'
 
-pod 'ApplePayStubs', :head
 pod 'ContentfulDialogs', :git => 'git@github.com:contentful/contentful-ios-dialogs.git'
 pod 'ContentfulStyle', :git => 'git@github.com:contentful/contentful-ios-style.git'
+pod 'DZNWebViewController'
 pod 'Masonry'
 pod 'TPKeyboardAvoiding'
-pod 'TSMiniWebBrowser@dblock'
 
 end

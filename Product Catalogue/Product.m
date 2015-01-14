@@ -24,5 +24,6 @@
 @dynamic brand;
 @dynamic categories;
 @dynamic image;
+@dynamic website;
 
 @end

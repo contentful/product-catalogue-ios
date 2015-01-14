@@ -28,6 +28,7 @@
         <attribute name="quantity" optional="YES" attributeType="Integer 64" syncable="YES"/>
         <attribute name="sizetypecolor" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sku" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="brand" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Brand" inverseName="brandInverse" inverseEntity="Brand" syncable="YES"/>
         <relationship name="categories" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="ProductCategory" inverseName="categoriesInverse" inverseEntity="ProductCategory" syncable="YES"/>
         <relationship name="image" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Asset" inverseName="ProductInverse" inverseEntity="Asset" syncable="YES"/>
@@ -46,8 +47,8 @@
     <elements>
         <element name="Asset" positionX="0" positionY="0" width="128" height="165"/>
         <element name="Brand" positionX="0" positionY="0" width="128" height="165"/>
+        <element name="Product" positionX="0" positionY="0" width="128" height="208"/>
         <element name="ProductCategory" positionX="0" positionY="0" width="128" height="118"/>
-        <element name="Product" positionX="0" positionY="0" width="128" height="193"/>
         <element name="SyncInfo" positionX="0" positionY="0" width="128" height="75"/>
     </elements>
 </model>

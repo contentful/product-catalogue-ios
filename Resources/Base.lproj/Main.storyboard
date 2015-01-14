@@ -122,7 +122,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="arJ-Ob-utS"/>
                                 </constraints>
-                                <state key="normal" title="BUY THIS ITEM">
+                                <state key="normal" title="VIEW ON THE WEB">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="default">

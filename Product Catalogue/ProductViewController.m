@@ -6,8 +6,6 @@
 //  Copyright (c) 2014 Boris Bügling. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <ApplePayStubs/STPTestPaymentAuthorizationViewController.h>
 #import <ContentfulStyle/UIColor+Contentful.h>
 #import <ContentfulStyle/UIFont+Contentful.h>
 #import <DZNWebViewController/DZNWebViewController.h>
@@ -18,7 +16,7 @@
 #import "ProductViewController.h"
 #import "StoryboardIdentifiers.h"
 
-@interface ProductViewController () <PKPaymentAuthorizationViewControllerDelegate>
+@interface ProductViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *availabilityLabel;
 @property (weak, nonatomic) IBOutlet UIButton *brandButton;
@@ -40,6 +38,13 @@
         galleryVC.client = self.client;
         
     }
+}
+
+-(void)showURL:(NSURL*)URL {
+    DZNWebViewController* browser = [[DZNWebViewController alloc] initWithURL:URL];
+    browser.supportedWebActions = DZNWebActionNone;
+    browser.supportedWebNavigationTools = DZNWebNavigationToolNone;
+    [self.navigationController pushViewController:browser animated:YES];
 }
 
 -(void)viewDidAppear:(BOOL)animated {
@@ -92,33 +97,12 @@
 
 -(void)brandButtonTapped {
     NSURL* URL = [NSURL URLWithString:self.product.brand.website];
-    DZNWebViewController* browser = [[DZNWebViewController alloc] initWithURL:URL];
-    browser.supportedWebActions = DZNWebActionNone;
-    browser.supportedWebNavigationTools = DZNWebNavigationToolNone;
-    [self.navigationController pushViewController:browser animated:YES];
+    [self showURL:URL];
 }
 
 -(void)buyButtonTapped {
-    NSDecimalNumber* price = [NSDecimalNumber decimalNumberWithDecimal:self.product.price.decimalValue];
-
-    PKPaymentRequest* request = [PKPaymentRequest new];
-    request.currencyCode = @"EUR";
-    request.paymentSummaryItems = @[ [PKPaymentSummaryItem summaryItemWithLabel:self.product.productName
-                                                                         amount:price] ];
-
-    STPTestPaymentAuthorizationViewController* viewController = [[STPTestPaymentAuthorizationViewController alloc] initWithPaymentRequest:request];
-    viewController.delegate = self;
-    [self presentViewController:viewController animated:YES completion:nil];
-}
-
-#pragma mark - PKPaymentAuthorizationViewControllerDelegate
-
--(void)paymentAuthorizationViewControllerDidFinish:(PKPaymentAuthorizationViewController *)controller {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
--(void)paymentAuthorizationViewController:(PKPaymentAuthorizationViewController *)controller didAuthorizePayment:(PKPayment *)payment completion:(void (^)(PKPaymentAuthorizationStatus))completion {
-    completion(PKPaymentAuthorizationStatusSuccess);
+    NSURL* URL = [NSURL URLWithString:self.product.website];
+    [self showURL:URL];
 }
 
 @end
