@@ -296,7 +296,7 @@
         <!--Change Space-->
         <scene sceneID="YD1-tF-hNE">
             <objects>
-                <viewController id="u7H-YU-Pxz" userLabel="Change Space" customClass="SpaceSelectionViewController" sceneMemberID="viewController">
+                <viewController id="u7H-YU-Pxz" userLabel="Change Space" customClass="CDASpaceSelectionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1f8-r4-33d"/>
                         <viewControllerLayoutGuide type="bottom" id="72U-PK-Tme"/>

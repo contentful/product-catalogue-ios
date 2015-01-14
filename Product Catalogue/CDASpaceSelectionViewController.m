@@ -1,6 +1,5 @@
 //
-//  SpaceSelectionViewController.m
-//  Product Catalogue
+//  CDASpaceSelectionViewController.m
 //
 //  Created by Boris Bügling on 09/01/15.
 //  Copyright (c) 2015 Boris Bügling. All rights reserved.
@@ -8,12 +7,17 @@
 
 #import <QuartzCore/QuartzCore.h>
 
+#import <ContentfulDeliveryAPI/ContentfulDeliveryAPI.h>
 #import <ContentfulStyle/UIColor+Contentful.h>
 #import <ContentfulStyle/UIFont+Contentful.h>
 
-#import "SpaceSelectionViewController.h"
+#import "CDASpaceSelectionViewController.h"
 
-@interface SpaceSelectionViewController () <UITextFieldDelegate>
+NSString* const CDAAccessTokenKey           = @"CDAAccessTokenKey";
+NSString* const CDASpaceIdentifierKey       = @"CDASpaceIdentifierKey";
+NSString* const CDASpaceChangedNotification = @"CDASpaceChangedNotification";
+
+@interface CDASpaceSelectionViewController () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *accessTokenTextField;
 @property (weak, nonatomic) IBOutlet UILabel *infoLabel;
@@ -27,7 +31,7 @@
 
 #pragma mark -
 
-@implementation SpaceSelectionViewController
+@implementation CDASpaceSelectionViewController
 
 -(BOOL)hasValidContent {
     return self.accessTokenTextField.text.length > 0 && self.spaceKeyTextField.text.length > 0;
@@ -35,6 +39,13 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
+
+    self.accessTokenTextField.delegate = self;
+    self.spaceKeyTextField.delegate = self;
+
+    [self.loadSpaceButton addTarget:self
+                             action:@selector(loadSpaceTapped)
+                   forControlEvents:UIControlEventTouchUpInside];
 
     self.accessTokenTextField.font = [UIFont bodyTextFont];
     self.infoLabel.font = [UIFont bodyTextFont];
@@ -56,6 +67,30 @@
     layer.startPoint = CGPointMake(0.0, 0.0);
 
     [self.view.layer insertSublayer:layer atIndex:0];
+}
+
+#pragma mark - Actions
+
+-(void)loadSpaceTapped {
+    [self.view endEditing:YES];
+
+    NSString* accessToken = self.accessTokenTextField.text;
+    NSString* spaceKey = self.spaceKeyTextField.text;
+    CDAClient* client = [[CDAClient alloc] initWithSpaceKey:spaceKey accessToken:accessToken];
+
+    [client fetchSpaceWithSuccess:^(CDAResponse *response, CDASpace *space) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:CDASpaceChangedNotification
+                                                            object:self
+                                                          userInfo:@{ CDAAccessTokenKey: accessToken,
+                                                                      CDASpaceIdentifierKey: spaceKey }];
+    } failure:^(CDAResponse *response, NSError *error) {
+        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil)
+                                                        message:error.localizedDescription
+                                                       delegate:nil
+                                              cancelButtonTitle:NSLocalizedString(@"OK", nil)
+                                              otherButtonTitles:nil];
+        [alert show];
+    }];
 }
 
 #pragma mark - UITextFieldDelegate

@@ -11,6 +11,7 @@
 
 #import "Asset.h"
 #import "Brand.h"
+#import "CDASpaceSelectionViewController.h"
 #import "Constants.h"
 #import "ContentfulDataManager.h"
 #import "Product.h"
@@ -36,11 +37,28 @@ NSString* const ProductContentTypeId = @"2PqfXUJwE8qSYKuM0U6w8M";
     return self.manager.client;
 }
 
+-(void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:CDASpaceChangedNotification
+                                                  object:nil];
+}
+
 -(NSFetchedResultsController*)fetchedResultsControllerForContentTypeWithIdentifier:(NSString*)contentTypeIdentifier predicate:(NSString*)predicate sortDescriptors:(NSArray*)sortDescriptors {
     NSFetchRequest* fetchRequest = [self.manager fetchRequestForEntriesOfContentTypeWithIdentifier:contentTypeIdentifier matchingPredicate:predicate];
     [fetchRequest setSortDescriptors:sortDescriptors];
 
     return [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.manager.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+}
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(spaceChanged:)
+                                                     name:CDASpaceChangedNotification
+                                                   object:nil];
+    }
+    return self;
 }
 
 - (CoreDataManager *)manager {
@@ -62,6 +80,18 @@ NSString* const ProductContentTypeId = @"2PqfXUJwE8qSYKuM0U6w8M";
 
 - (void)performSynchronizationWithSuccess:(void (^)())success failure:(CDARequestFailureBlock)failure {
     [self.manager performSynchronizationWithSuccess:success failure:failure];
+}
+
+- (void)spaceChanged:(NSNotification*)note {
+    [self.manager deleteAll];
+
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setValue:note.userInfo[CDAAccessTokenKey] forKey:ACCESS_TOKEN];
+    [defaults setValue:note.userInfo[CDASpaceIdentifierKey] forKey:SPACE_KEY];
+
+    UIWindow* keyWindow = [UIApplication sharedApplication].keyWindow;
+    keyWindow.rootViewController = [keyWindow.rootViewController.storyboard
+                                    instantiateInitialViewController];
 }
 
 @end
