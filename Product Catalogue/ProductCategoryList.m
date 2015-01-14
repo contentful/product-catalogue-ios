@@ -52,8 +52,42 @@
     return _dataSource;
 }
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:UIApplicationDidBecomeActiveNotification
+                                                  object:nil];
+}
+
+- (void)refresh {
+    self.tabBarController.view.userInteractionEnabled = NO;
+
+    [self.dataManager performSynchronizationWithSuccess:^{
+        [self.dataSource performFetch];
+
+        self.tabBarController.view.userInteractionEnabled = YES;
+    } failure:^(CDAResponse *response, NSError *error) {
+        if (error.code != NSURLErrorNotConnectedToInternet) {
+            UIAlertView* alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil)
+                                                            message:error.localizedDescription
+                                                           delegate:nil
+                                                  cancelButtonTitle:NSLocalizedString(@"OK", nil)
+                                                  otherButtonTitles:nil];
+            [alert show];
+        }
+
+        [self.dataSource performFetch];
+
+        self.tabBarController.view.userInteractionEnabled = YES;
+    }];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(refresh)
+                                                 name:UIApplicationDidBecomeActiveNotification
+                                               object:nil];
 
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
 
@@ -61,13 +95,12 @@
     self.tableView.rowHeight = 70.0;
 
     [self.tableView registerClass:ProductCategoryCell.class forCellReuseIdentifier:NSStringFromClass([self class])];
+}
 
-    [self.dataManager performSynchronizationWithSuccess:^{
-        [self.dataSource performFetch];
-    } failure:^(CDAResponse *response, NSError *error) {
-        // FIXME: For brevity's sake, we do not check the cause of the error, but a real app should.
-        [self.dataSource performFetch];
-    }];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    [self refresh];
 }
 
 #pragma mark - UITableViewDelegate
