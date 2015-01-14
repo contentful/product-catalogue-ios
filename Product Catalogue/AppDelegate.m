@@ -12,12 +12,6 @@
 #import "AppDelegate.h"
 #import "Constants.h"
 
-@interface AppDelegate ()
-
-@end
-
-#pragma mark -
-
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)app didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
