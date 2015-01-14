@@ -22,6 +22,7 @@
 		A1B3A0E11A39FB09004DF1A2 /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0E01A39FB09004DF1A2 /* ProductCell.m */; };
 		A1CB14471A48825A003D2813 /* HorizontalImageStripController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB14461A48825A003D2813 /* HorizontalImageStripController.m */; };
 		A1CB144A1A488416003D2813 /* SingleImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB14491A488416003D2813 /* SingleImageCell.m */; };
+		A1D1135E1A66CBE900FB9828 /* launch-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D1135D1A66CBE900FB9828 /* launch-bg.png */; };
 		A1D1E1CC1A6004BE00FD1E49 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D1E1CB1A6004BE00FD1E49 /* logo.png */; };
 		A1D1E1CF1A600DAD00FD1E49 /* CDASpaceSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D1E1CE1A600DAD00FD1E49 /* CDASpaceSelectionViewController.m */; };
 		A1D289E31A5C137C00EE485C /* ProductCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D289E21A5C137C00EE485C /* ProductCategoryCell.m */; };
@@ -77,6 +78,7 @@
 		A1CB14461A48825A003D2813 /* HorizontalImageStripController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalImageStripController.m; sourceTree = "<group>"; };
 		A1CB14481A488416003D2813 /* SingleImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleImageCell.h; sourceTree = "<group>"; };
 		A1CB14491A488416003D2813 /* SingleImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleImageCell.m; sourceTree = "<group>"; };
+		A1D1135D1A66CBE900FB9828 /* launch-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-bg.png"; sourceTree = "<group>"; };
 		A1D1E1CB1A6004BE00FD1E49 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		A1D1E1CD1A600DAD00FD1E49 /* CDASpaceSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDASpaceSelectionViewController.h; sourceTree = "<group>"; };
 		A1D1E1CE1A600DAD00FD1E49 /* CDASpaceSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDASpaceSelectionViewController.m; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 		A1083B021A388296007EF3C9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A1D1135D1A66CBE900FB9828 /* launch-bg.png */,
 				A1D1E1CB1A6004BE00FD1E49 /* logo.png */,
 				A1083AE91A388281007EF3C9 /* Images.xcassets */,
 				A1D3A4731A38845B001DF93D /* LaunchScreen.xib */,
@@ -368,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1A03F1E1A5ECB88003621F5 /* Pods-Product Catalogue-acknowledgements.markdown in Resources */,
+				A1D1135E1A66CBE900FB9828 /* launch-bg.png in Resources */,
 				A1D1E1CC1A6004BE00FD1E49 /* logo.png in Resources */,
 				A1D3A4781A38845B001DF93D /* Main.storyboard in Resources */,
 				A1D3A4771A38845B001DF93D /* LaunchScreen.xib in Resources */,
