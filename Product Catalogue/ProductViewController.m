@@ -10,8 +10,8 @@
 #import <ApplePayStubs/STPTestPaymentAuthorizationViewController.h>
 #import <ContentfulStyle/UIColor+Contentful.h>
 #import <ContentfulStyle/UIFont+Contentful.h>
+#import <DZNWebViewController/DZNWebViewController.h>
 #import <QuartzCore/QuartzCore.h>
-#import <TSMiniWebBrowser@dblock/TSMiniWebBrowser.h>
 
 #import "Brand.h"
 #import "GalleryViewController.h"
@@ -51,6 +51,8 @@
 -(void)viewDidLoad {
     [super viewDidLoad];
 
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+
     self.availabilityLabel.font = [UIFont bodyTextFont];
     self.availabilityLabel.textColor = [UIColor contentfulDeactivatedColor];
     self.brandButton.titleLabel.font = [UIFont buttonTitleFont];
@@ -77,11 +79,11 @@
     } else if (self.product.quantity.integerValue == 1) {
 
     } else {
-        self.availabilityLabel.text = [NSString stringWithFormat:NSLocalizedString(@"%@ items\nin stock", @"Product quantity label"), self.product.quantity];
+        self.availabilityLabel.text = [NSString stringWithFormat:NSLocalizedString(@"%@ items in stock", @"Product quantity label"), self.product.quantity];
     }
 
     [self.brandButton setTitle:[NSString stringWithFormat:NSLocalizedString(@"by %@", @"Brand button"), self.product.brand.companyName] forState:UIControlStateNormal];
-    self.pricingLabel.text = [NSString stringWithFormat:NSLocalizedString(@"%@\nEUR", @"Pricing label"), self.product.price];
+    self.pricingLabel.text = [NSString stringWithFormat:NSLocalizedString(@"%@ EUR", @"Pricing label"), self.product.price];
     self.productDescription.text = self.product.productDescription;
     self.productNameLabel.text = self.product.productName;
 }
@@ -90,7 +92,9 @@
 
 -(void)brandButtonTapped {
     NSURL* URL = [NSURL URLWithString:self.product.brand.website];
-    TSMiniWebBrowser* browser = [[TSMiniWebBrowser alloc] initWithURL:URL];
+    DZNWebViewController* browser = [[DZNWebViewController alloc] initWithURL:URL];
+    browser.supportedWebActions = DZNWebActionNone;
+    browser.supportedWebNavigationTools = DZNWebNavigationToolNone;
     [self.navigationController pushViewController:browser animated:YES];
 }
 

@@ -91,7 +91,7 @@
         make.width.equalTo(@140);
         make.height.equalTo(@40);
         make.centerX.equalTo(self.view.mas_centerX);
-        make.bottom.equalTo(@10);
+        make.bottom.equalTo(@0);
     }];
 
     self.leftButton = [self buildButtonUsingAdditionalConstraints:^(MASConstraintMaker *make) {

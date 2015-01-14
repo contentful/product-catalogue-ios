@@ -63,7 +63,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GBE-wp-eqb">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="237"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="257"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="0ma-Lo-bqE"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="VEW-wL-r1L"/>
@@ -79,14 +79,14 @@
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CoU-RX-DRh">
-                                <rect key="frame" x="26" y="246" width="568" height="41"/>
+                                <rect key="frame" x="26" y="266" width="568" height="41"/>
                                 <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut e</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCq-qf-ML4">
-                                <rect key="frame" x="26" y="297" width="93" height="30"/>
+                                <rect key="frame" x="26" y="317" width="93" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="290" id="EwF-97-LPJ"/>
                                     <constraint firstAttribute="width" constant="113" id="SFb-dB-cKo"/>
@@ -111,10 +111,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pA-WR-2xM">
-                                <rect key="frame" x="26" y="336" width="43" height="41"/>
-                                <string key="text">36,50
-EUR</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="36,50 EUR" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pA-WR-2xM">
+                                <rect key="frame" x="26" y="356" width="83" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -133,13 +131,11 @@ EUR</string>
                                     </mask>
                                 </variation>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFi-dS-uCf">
-                                <rect key="frame" x="508" y="336" width="66" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 items in stock" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFi-dS-uCf">
+                                <rect key="frame" x="443" y="356" width="131" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="Xxc-5b-eQ4"/>
                                 </constraints>
-                                <string key="text">15 items
-in stock</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -150,7 +146,7 @@ in stock</string>
                                 </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CG9-zF-MWr" userLabel="Horizontal Line">
-                                <rect key="frame" x="0.0" y="225" width="600" height="1"/>
+                                <rect key="frame" x="0.0" y="245" width="600" height="1"/>
                                 <color key="backgroundColor" red="0.89064472849999998" green="0.89064472849999998" blue="0.89064472849999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="MVC-Oa-V6B"/>
@@ -169,7 +165,7 @@ in stock</string>
                             <constraint firstItem="4pA-WR-2xM" firstAttribute="bottom" secondItem="Ih2-q9-cbj" secondAttribute="bottom" constant="20" id="7eI-nC-2Zw"/>
                             <constraint firstItem="4pA-WR-2xM" firstAttribute="bottom" secondItem="3MI-8d-hkd" secondAttribute="top" id="BeD-1W-mYX"/>
                             <constraint firstItem="CoU-RX-DRh" firstAttribute="trailing" secondItem="AFi-dS-uCf" secondAttribute="trailing" constant="20" id="CM0-OO-6Ui"/>
-                            <constraint firstItem="DCq-qf-ML4" firstAttribute="bottom" secondItem="4pA-WR-2xM" secondAttribute="bottom" constant="-50" id="Cgh-yu-cA1"/>
+                            <constraint firstItem="DCq-qf-ML4" firstAttribute="bottom" secondItem="4pA-WR-2xM" secondAttribute="bottom" constant="-30" id="Cgh-yu-cA1"/>
                             <constraint firstItem="U68-bb-22G" firstAttribute="top" secondItem="GBE-wp-eqb" secondAttribute="bottom" constant="-317" id="Cji-WH-Ibd"/>
                             <constraint firstItem="AFi-dS-uCf" firstAttribute="trailing" secondItem="Ih2-q9-cbj" secondAttribute="trailing" id="ECC-UV-gDo"/>
                             <constraint firstItem="U68-bb-22G" firstAttribute="top" secondItem="GBE-wp-eqb" secondAttribute="bottom" constant="8" symbolic="YES" id="GJq-lz-yik"/>

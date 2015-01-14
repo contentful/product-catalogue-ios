@@ -23,9 +23,10 @@
 - (BOOL)application:(UIApplication *)app didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self writeKeysToUserDefaults];
 
-    [[UINavigationBar appearance] setTitleTextAttributes:@{ NSFontAttributeName: UIFont.titleBarFont }];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{ NSFontAttributeName: UIFont.titleBarFont,NSForegroundColorAttributeName: UIColor.blackColor }];
     [[UITabBarItem appearance] setTitleTextAttributes:@{ NSFontAttributeName: UIFont.tabTitleFont } forState:UIControlStateNormal];
 
+    self.window.backgroundColor = UIColor.whiteColor;
     return YES;
 }
 
