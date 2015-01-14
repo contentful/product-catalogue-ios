@@ -73,8 +73,10 @@
     [self.brandButton addTarget:self
                          action:@selector(brandButtonTapped)
                forControlEvents:UIControlEventTouchUpInside];
+    self.brandButton.enabled = self.product.brand.website.length > 0;
 
     [self.buyButton addTarget:self action:@selector(buyButtonTapped) forControlEvents:UIControlEventTouchUpInside];
+    self.buyButton.enabled = self.product.website.length > 0;
 
     self.title = self.product.productName;
 
