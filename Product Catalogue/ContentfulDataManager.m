@@ -18,7 +18,6 @@
 #import "ProductCategory.h"
 #import "SyncInfo.h"
 
-// TODO: This won't work when we enable space selection
 NSString* const BrandContentTypeId = @"sFzTZbSuM8coEwygeUYes";
 NSString* const CategoryContentTypeId = @"6XwpTaSiiI2Ak2Ww0oi6qa";
 NSString* const ProductContentTypeId = @"2PqfXUJwE8qSYKuM0U6w8M";
