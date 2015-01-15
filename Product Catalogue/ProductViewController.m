@@ -31,12 +31,20 @@
 
 @implementation ProductViewController
 
+-(void)loadView {
+    [super loadView];
+
+    UIScrollView* scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
+    [scrollView addSubview:self.view];
+
+    self.view = scrollView;
+}
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:EmbedGalleryVCSegue]) {
         GalleryViewController* galleryVC = segue.destinationViewController;
         galleryVC.assets = self.product.image;
         galleryVC.client = self.client;
-        
     }
 }
 
@@ -47,10 +55,10 @@
     [self.navigationController pushViewController:browser animated:YES];
 }
 
--(void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-
-    self.productDescription.contentOffset = CGPointZero;
+-(void)updateContentSizeToHeight:(CGFloat)height {
+    UIView* contentView = self.view.subviews[0];
+    contentView.frame = CGRectMake(0.0, 0.0, self.view.frame.size.width, height);
+    ((UIScrollView*)self.view).contentSize = contentView.frame.size;
 }
 
 -(void)viewDidLoad {
@@ -93,6 +101,9 @@
     self.pricingLabel.text = [NSString stringWithFormat:NSLocalizedString(@"%@ EUR", @"Pricing label"), self.product.price];
     self.productDescription.text = self.product.productDescription;
     self.productNameLabel.text = self.product.productName;
+
+    CGFloat contentHeight = 550.0 + self.productNameLabel.intrinsicContentSize.height + self.productDescription.intrinsicContentSize.height;
+    [self updateContentSizeToHeight:contentHeight];
 }
 
 #pragma mark - Actions

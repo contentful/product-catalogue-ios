@@ -63,10 +63,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GBE-wp-eqb">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="257"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="0ma-Lo-bqE"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="VEW-wL-r1L"/>
+                                    <constraint firstAttribute="height" constant="250" id="c2K-QC-RXi"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -78,15 +79,22 @@
                                     <segue destination="dSx-eF-0gw" kind="embed" identifier="EmbedGalleryVCSegue" id="XG0-25-TF9"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CG9-zF-MWr" userLabel="Horizontal Line">
+                                <rect key="frame" x="0.0" y="252" width="600" height="1"/>
+                                <color key="backgroundColor" red="0.89064472849999998" green="0.89064472849999998" blue="0.89064472849999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="MVC-Oa-V6B"/>
+                                </constraints>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CoU-RX-DRh">
-                                <rect key="frame" x="26" y="266" width="568" height="41"/>
+                                <rect key="frame" x="26" y="260" width="568" height="41"/>
                                 <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut e</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCq-qf-ML4">
-                                <rect key="frame" x="26" y="317" width="93" height="30"/>
+                                <rect key="frame" x="26" y="311" width="93" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="290" id="EwF-97-LPJ"/>
                                     <constraint firstAttribute="width" constant="113" id="SFb-dB-cKo"/>
@@ -101,38 +109,14 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MI-8d-hkd" userLabel="Product Description">
-                                <rect key="frame" x="21" y="377" width="558" height="60"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="lJm-1G-bcf"/>
-                                </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="36,50 EUR" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pA-WR-2xM">
-                                <rect key="frame" x="26" y="356" width="83" height="21"/>
+                                <rect key="frame" x="26" y="351" width="83" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ih2-q9-cbj">
-                                <rect key="frame" x="26" y="447" width="548" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="arJ-Ob-utS"/>
-                                </constraints>
-                                <state key="normal" title="VIEW ON THE WEB">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="arJ-Ob-utS"/>
-                                    </mask>
-                                </variation>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 items in stock" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFi-dS-uCf">
-                                <rect key="frame" x="443" y="356" width="131" height="21"/>
+                                <rect key="frame" x="443" y="351" width="131" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="Xxc-5b-eQ4"/>
                                 </constraints>
@@ -145,13 +129,35 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CG9-zF-MWr" userLabel="Horizontal Line">
-                                <rect key="frame" x="0.0" y="245" width="600" height="1"/>
-                                <color key="backgroundColor" red="0.89064472849999998" green="0.89064472849999998" blue="0.89064472849999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MI-8d-hkd" userLabel="Product Description">
+                                <rect key="frame" x="21" y="374" width="558" height="67"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="MVC-Oa-V6B"/>
+                                    <constraint firstAttribute="height" constant="60" id="lJm-1G-bcf"/>
                                 </constraints>
-                            </view>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="lJm-1G-bcf"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ih2-q9-cbj">
+                                <rect key="frame" x="26" y="446" width="548" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="arJ-Ob-utS"/>
+                                </constraints>
+                                <state key="normal" title="VIEW ON THE WEB">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="arJ-Ob-utS"/>
+                                    </mask>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -163,7 +169,9 @@
                             <constraint firstItem="GBE-wp-eqb" firstAttribute="bottom" secondItem="CG9-zF-MWr" secondAttribute="bottom" constant="-222" id="5qX-36-a2r"/>
                             <constraint firstItem="GBE-wp-eqb" firstAttribute="top" secondItem="CG9-zF-MWr" secondAttribute="top" constant="-265" id="7LL-XV-Q49"/>
                             <constraint firstItem="4pA-WR-2xM" firstAttribute="bottom" secondItem="Ih2-q9-cbj" secondAttribute="bottom" constant="20" id="7eI-nC-2Zw"/>
+                            <constraint firstItem="4pA-WR-2xM" firstAttribute="top" secondItem="DCq-qf-ML4" secondAttribute="bottom" constant="10" id="9eJ-WM-EHi"/>
                             <constraint firstItem="4pA-WR-2xM" firstAttribute="bottom" secondItem="3MI-8d-hkd" secondAttribute="top" id="BeD-1W-mYX"/>
+                            <constraint firstItem="DCq-qf-ML4" firstAttribute="top" secondItem="CoU-RX-DRh" secondAttribute="bottom" constant="10" id="CFd-se-rFb"/>
                             <constraint firstItem="CoU-RX-DRh" firstAttribute="trailing" secondItem="AFi-dS-uCf" secondAttribute="trailing" constant="20" id="CM0-OO-6Ui"/>
                             <constraint firstItem="DCq-qf-ML4" firstAttribute="bottom" secondItem="4pA-WR-2xM" secondAttribute="bottom" constant="-30" id="Cgh-yu-cA1"/>
                             <constraint firstItem="U68-bb-22G" firstAttribute="top" secondItem="GBE-wp-eqb" secondAttribute="bottom" constant="-317" id="Cji-WH-Ibd"/>
@@ -179,6 +187,7 @@
                             <constraint firstItem="U68-bb-22G" firstAttribute="top" secondItem="GBE-wp-eqb" secondAttribute="bottom" id="OlK-ql-658"/>
                             <constraint firstItem="Ih2-q9-cbj" firstAttribute="leading" secondItem="4pA-WR-2xM" secondAttribute="leading" id="QtU-eE-37D"/>
                             <constraint firstItem="Ih2-q9-cbj" firstAttribute="leading" secondItem="gn1-mm-x26" secondAttribute="leading" constant="238" id="U0G-IX-ZIq"/>
+                            <constraint firstItem="CG9-zF-MWr" firstAttribute="top" secondItem="GBE-wp-eqb" secondAttribute="bottom" constant="2" id="VAv-aB-pZV"/>
                             <constraint firstItem="3MI-8d-hkd" firstAttribute="leading" secondItem="4pA-WR-2xM" secondAttribute="leading" constant="-5" id="WtG-nq-GK3"/>
                             <constraint firstItem="AFi-dS-uCf" firstAttribute="baseline" secondItem="4pA-WR-2xM" secondAttribute="baseline" id="Wvp-VP-icP"/>
                             <constraint firstItem="Ih2-q9-cbj" firstAttribute="top" secondItem="3MI-8d-hkd" secondAttribute="bottom" constant="10" id="Z9s-4X-Ga9"/>
@@ -188,7 +197,10 @@
                             <constraint firstItem="CoU-RX-DRh" firstAttribute="bottom" secondItem="DCq-qf-ML4" secondAttribute="bottom" constant="-40" id="gq0-u0-pFq"/>
                             <constraint firstItem="GBE-wp-eqb" firstAttribute="width" secondItem="gn1-mm-x26" secondAttribute="width" id="h5j-zj-jsO"/>
                             <constraint firstItem="DCq-qf-ML4" firstAttribute="leading" secondItem="4pA-WR-2xM" secondAttribute="leading" id="hIy-2F-3Nh"/>
+                            <constraint firstItem="3MI-8d-hkd" firstAttribute="top" secondItem="4pA-WR-2xM" secondAttribute="bottom" constant="2" id="hTF-Bz-BTp"/>
                             <constraint firstItem="CoU-RX-DRh" firstAttribute="bottom" secondItem="GBE-wp-eqb" secondAttribute="bottom" constant="50" id="i2I-z4-5tC"/>
+                            <constraint firstItem="CoU-RX-DRh" firstAttribute="top" secondItem="GBE-wp-eqb" secondAttribute="bottom" constant="10" id="i84-DF-2i1"/>
+                            <constraint firstItem="Ih2-q9-cbj" firstAttribute="top" secondItem="3MI-8d-hkd" secondAttribute="bottom" constant="5" id="icg-AM-5px"/>
                             <constraint firstItem="GBE-wp-eqb" firstAttribute="top" secondItem="U68-bb-22G" secondAttribute="bottom" id="jS4-DL-sf5"/>
                             <constraint firstItem="AFi-dS-uCf" firstAttribute="trailing" secondItem="3MI-8d-hkd" secondAttribute="trailing" constant="-5" id="kSF-aL-KXj"/>
                             <constraint firstItem="Ih2-q9-cbj" firstAttribute="top" secondItem="4pA-WR-2xM" secondAttribute="bottom" constant="10" id="khg-uX-6Xq"/>
@@ -209,14 +221,21 @@
                                 <exclude reference="Cji-WH-Ibd"/>
                                 <exclude reference="GJq-lz-yik"/>
                                 <exclude reference="OlK-ql-658"/>
+                                <exclude reference="O6u-zF-QXZ"/>
+                                <exclude reference="gq0-u0-pFq"/>
+                                <exclude reference="i2I-z4-5tC"/>
+                                <exclude reference="Cgh-yu-cA1"/>
                                 <exclude reference="7eI-nC-2Zw"/>
+                                <exclude reference="BeD-1W-mYX"/>
                                 <exclude reference="qQU-QP-q8g"/>
                                 <exclude reference="wAH-UJ-Dhn"/>
                                 <exclude reference="2L0-hr-ro4"/>
                                 <exclude reference="mcU-NX-zd1"/>
                                 <exclude reference="pGG-gN-Kl6"/>
                                 <exclude reference="5np-iV-uJ0"/>
+                                <exclude reference="IPY-2V-TBr"/>
                                 <exclude reference="U0G-IX-ZIq"/>
+                                <exclude reference="Z9s-4X-Ga9"/>
                                 <exclude reference="gVA-UX-Av3"/>
                                 <exclude reference="khg-uX-6Xq"/>
                                 <exclude reference="HY9-q0-X5U"/>
