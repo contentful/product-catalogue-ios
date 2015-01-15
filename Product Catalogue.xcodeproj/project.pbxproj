@@ -28,7 +28,7 @@
 		A1D289E31A5C137C00EE485C /* ProductCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D289E21A5C137C00EE485C /* ProductCategoryCell.m */; };
 		A1D3A4771A38845B001DF93D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1D3A4731A38845B001DF93D /* LaunchScreen.xib */; };
 		A1D3A4781A38845B001DF93D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D3A4751A38845B001DF93D /* Main.storyboard */; };
-		A1D3A47B1A389D89001DF93D /* ProductCatalog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1D3A4791A389D89001DF93D /* ProductCatalog.xcdatamodeld */; };
+		A1D3A47B1A389D89001DF93D /* Product Catalogue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1D3A4791A389D89001DF93D /* Product Catalogue.xcdatamodeld */; };
 		A1D7929B1A42D6B300325B32 /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D7929A1A42D6B300325B32 /* ProductViewController.m */; };
 		A1D792A11A4309B600325B32 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D792A01A4309B600325B32 /* GalleryViewController.m */; };
 		A1D792A41A430F1F00325B32 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D792A31A430F1F00325B32 /* ImageViewController.m */; };
@@ -86,7 +86,7 @@
 		A1D289E21A5C137C00EE485C /* ProductCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCategoryCell.m; sourceTree = "<group>"; };
 		A1D3A4741A38845B001DF93D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A1D3A4761A38845B001DF93D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A1D3A47A1A389D89001DF93D /* ProductCatalog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProductCatalog.xcdatamodel; sourceTree = "<group>"; };
+		A1D3A47A1A389D89001DF93D /* Product Catalogue.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Product Catalogue.xcdatamodel"; sourceTree = "<group>"; };
 		A1D792991A42D6B300325B32 /* ProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductViewController.h; sourceTree = "<group>"; };
 		A1D7929A1A42D6B300325B32 /* ProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductViewController.m; sourceTree = "<group>"; };
 		A1D7929F1A4309B600325B32 /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
@@ -207,7 +207,7 @@
 				A1D3A4731A38845B001DF93D /* LaunchScreen.xib */,
 				A1D3A4751A38845B001DF93D /* Main.storyboard */,
 				A1A03F1D1A5ECB88003621F5 /* Pods-Product Catalogue-acknowledgements.markdown */,
-				A1D3A4791A389D89001DF93D /* ProductCatalog.xcdatamodeld */,
+				A1D3A4791A389D89001DF93D /* Product Catalogue.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -459,7 +459,7 @@
 				A1083ADF1A388281007EF3C9 /* main.m in Sources */,
 				A1B3A0D91A39DF32004DF1A2 /* SyncInfo.m in Sources */,
 				A1D792A41A430F1F00325B32 /* ImageViewController.m in Sources */,
-				A1D3A47B1A389D89001DF93D /* ProductCatalog.xcdatamodeld in Sources */,
+				A1D3A47B1A389D89001DF93D /* Product Catalogue.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,14 +674,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A1D3A4791A389D89001DF93D /* ProductCatalog.xcdatamodeld */ = {
+		A1D3A4791A389D89001DF93D /* Product Catalogue.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A1D3A47A1A389D89001DF93D /* ProductCatalog.xcdatamodel */,
+				A1D3A47A1A389D89001DF93D /* Product Catalogue.xcdatamodel */,
 			);
-			currentVersion = A1D3A47A1A389D89001DF93D /* ProductCatalog.xcdatamodel */;
-			name = ProductCatalog.xcdatamodeld;
-			path = ../ProductCatalog.xcdatamodeld;
+			currentVersion = A1D3A47A1A389D89001DF93D /* Product Catalogue.xcdatamodel */;
+			name = "Product Catalogue.xcdatamodeld";
+			path = "../Product Catalogue.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
