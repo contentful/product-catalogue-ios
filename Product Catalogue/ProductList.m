@@ -66,10 +66,19 @@
 - (void)refresh {
     self.tabBarController.view.userInteractionEnabled = NO;
 
-    [self.dataManager performSynchronizationWithSuccess:^{
+    void(^refresh)() = ^() {
         [self.dataSource performFetch];
 
         self.tabBarController.view.userInteractionEnabled = YES;
+
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(refresh)
+                                                     name:UIApplicationDidBecomeActiveNotification
+                                                   object:nil];
+    };
+
+    [self.dataManager performSynchronizationWithSuccess:^{
+        refresh();
     } failure:^(CDAResponse *response, NSError *error) {
         if (error.code != NSURLErrorNotConnectedToInternet) {
             UIAlertView* alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil)
@@ -80,19 +89,12 @@
             [alert show];
         }
 
-        [self.dataSource performFetch];
-
-        self.tabBarController.view.userInteractionEnabled = YES;
+        refresh();
     }];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(refresh)
-                                                 name:UIApplicationDidBecomeActiveNotification
-                                               object:nil];
 
     self.collectionView.dataSource = self.dataSource;
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];

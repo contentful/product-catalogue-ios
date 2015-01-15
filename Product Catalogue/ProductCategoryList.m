@@ -52,12 +52,6 @@
     return _dataSource;
 }
 
-- (void)dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:UIApplicationDidBecomeActiveNotification
-                                                  object:nil];
-}
-
 - (void)refresh {
     self.tabBarController.view.userInteractionEnabled = NO;
 
@@ -83,11 +77,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(refresh)
-                                                 name:UIApplicationDidBecomeActiveNotification
-                                               object:nil];
 
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
 
