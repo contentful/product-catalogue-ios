@@ -34,7 +34,7 @@ PODS:
     - TSMiniWebBrowser@dblock
   - ContentfulPersistence (0.1.0):
     - ContentfulDeliveryAPI (~> 1.4.7)
-  - ContentfulStyle (0.1.0):
+  - ContentfulStyle (0.2.0):
     - EDColor
     - LatoFont
   - DDPageControl (0.1)
@@ -68,7 +68,7 @@ CHECKOUT OPTIONS:
     :commit: 5483d344b7c1757616f2442886a4030d72375bd9
     :git: git@github.com:contentful/contentful-ios-dialogs.git
   ContentfulStyle:
-    :commit: e88d07fad7499062c9fe05d01f11a2ab42574b5e
+    :commit: 9f0295a152acef324d0c688b20b481fcaf969938
     :git: git@github.com:contentful/contentful-ios-style.git
 
 SPEC CHECKSUMS:
@@ -78,7 +78,7 @@ SPEC CHECKSUMS:
   ContentfulDeliveryAPI: c3815bd863ddc5ae8a9039051bc7ab6962bfc031
   ContentfulDialogs: ce515410dba561c8d815a5ef0470ed930d48ee4b
   ContentfulPersistence: 9c7117962b4cf9a069756639d3275ecf7cee0364
-  ContentfulStyle: 51deb5e2f57f944b3c37f558187d09ac4aeb97c0
+  ContentfulStyle: af9eb49cfafa472641e2600d913c786d91dc1461
   DDPageControl: 86d07bda58e325a427fb0d7c8fb650add2ff35c2
   DZNWebViewController: 73361f52eafcc6fc46a868b8bb2ec3bae65dfe69
   EDColor: bcdb8600b7a456f4408ce1d7e7fc001588919254
