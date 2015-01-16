@@ -35,6 +35,7 @@
     [super loadView];
 
     UIScrollView* scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
+    scrollView.backgroundColor = [UIColor whiteColor];
     [scrollView addSubview:self.view];
 
     self.view = scrollView;
