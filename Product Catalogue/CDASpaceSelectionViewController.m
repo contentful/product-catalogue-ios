@@ -12,6 +12,7 @@
 #import <ContentfulStyle/UIFont+Contentful.h>
 
 #import "CDASpaceSelectionViewController.h"
+#import "Constants.h"
 
 NSString* const CDAAccessTokenKey           = @"CDAAccessTokenKey";
 NSString* const CDASpaceIdentifierKey       = @"CDASpaceIdentifierKey";
@@ -20,6 +21,7 @@ NSString* const CDASpaceChangedNotification = @"CDASpaceChangedNotification";
 @interface CDASpaceSelectionViewController () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *accessTokenTextField;
+@property (weak, nonatomic) IBOutlet UITextView *helpLabel;
 @property (weak, nonatomic) IBOutlet UILabel *infoLabel;
 @property (weak, nonatomic) IBOutlet UIButton *loadSpaceButton;
 @property (weak, nonatomic) IBOutlet UILabel *loginInfoLabel;
@@ -48,6 +50,8 @@ NSString* const CDASpaceChangedNotification = @"CDASpaceChangedNotification";
                    forControlEvents:UIControlEventTouchUpInside];
 
     self.accessTokenTextField.font = [UIFont bodyTextFont];
+    self.helpLabel.font = [UIFont bodyTextFont];
+    self.helpLabel.text = FIRST_LAUNCH_MESSAGE;
     self.infoLabel.font = [UIFont bodyTextFont];
     self.loadSpaceButton.backgroundColor = [UIColor contentfulPrimaryColor];
     self.loadSpaceButton.titleLabel.font = [UIFont buttonTitleFont];

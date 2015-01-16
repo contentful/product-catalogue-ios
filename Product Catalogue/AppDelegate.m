@@ -29,6 +29,9 @@
     ProductCatalogueKeys* keys = [ProductCatalogueKeys new];
 
     if (![defaults stringForKey:SPACE_KEY]) {
+        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Info", nil) message:FIRST_LAUNCH_MESSAGE delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", nil) otherButtonTitles:nil];
+        [alert show];
+
         [defaults setValue:keys.productCatalogueSpaceId forKey:SPACE_KEY];
     }
 

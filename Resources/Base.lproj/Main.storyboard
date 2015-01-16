@@ -346,7 +346,7 @@ Contentful</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XPW-JQ-POb" userLabel="Text Field Container">
-                                <rect key="frame" x="175" y="361" width="250" height="60"/>
+                                <rect key="frame" x="175" y="301" width="250" height="60"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Space Key" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oLm-DT-Us3">
                                         <rect key="frame" x="10" y="0.0" width="240" height="30"/>
@@ -394,44 +394,63 @@ Contentful</string>
                                 </variation>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login information" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lm3-28-Rud">
-                                <rect key="frame" x="175" y="330" width="134" height="21"/>
+                                <rect key="frame" x="175" y="270" width="134" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CU2-X0-ZGU">
-                                <rect key="frame" x="175" y="441" width="250" height="30"/>
+                                <rect key="frame" x="175" y="381" width="250" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Load Space">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xg9-pN-LYG">
+                                <rect key="frame" x="140" y="424" width="320" height="117"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="8Lv-bR-V1S"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137257" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yjp-jn-FOf" firstAttribute="top" secondItem="TkB-JR-S6r" secondAttribute="bottom" constant="10" id="3OF-YE-dZm"/>
                             <constraint firstItem="yjp-jn-FOf" firstAttribute="leading" secondItem="lm3-28-Rud" secondAttribute="trailing" constant="150" id="7Gn-h5-HE0"/>
                             <constraint firstItem="TkB-JR-S6r" firstAttribute="top" secondItem="yvk-gR-n3c" secondAttribute="top" constant="75" id="9Xp-Av-WPQ"/>
+                            <constraint firstAttribute="centerX" secondItem="xg9-pN-LYG" secondAttribute="centerX" id="Dur-p5-E6u"/>
                             <constraint firstAttribute="centerX" secondItem="TkB-JR-S6r" secondAttribute="centerX" id="Hu3-gP-Fji"/>
                             <constraint firstItem="lm3-28-Rud" firstAttribute="leading" secondItem="XPW-JQ-POb" secondAttribute="leading" id="IZV-22-xSt"/>
                             <constraint firstItem="CU2-X0-ZGU" firstAttribute="top" secondItem="XPW-JQ-POb" secondAttribute="bottom" constant="20" id="LYN-wJ-6gm"/>
                             <constraint firstAttribute="centerX" secondItem="CU2-X0-ZGU" secondAttribute="centerX" id="Ox2-jf-fu9"/>
+                            <constraint firstItem="xg9-pN-LYG" firstAttribute="width" secondItem="1d2-e9-WK9" secondAttribute="width" id="QaH-Ez-IaI"/>
                             <constraint firstAttribute="centerX" secondItem="yjp-jn-FOf" secondAttribute="centerX" id="Rks-8d-qiP"/>
                             <constraint firstAttribute="centerX" secondItem="XPW-JQ-POb" secondAttribute="centerX" id="SOy-lM-hT1"/>
                             <constraint firstItem="CU2-X0-ZGU" firstAttribute="width" secondItem="XPW-JQ-POb" secondAttribute="width" id="SqC-ra-uID"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xg9-pN-LYG" secondAttribute="trailing" constant="10" id="Xgp-EJ-cD2"/>
                             <constraint firstItem="TkB-JR-S6r" firstAttribute="leading" secondItem="yvk-gR-n3c" secondAttribute="trailing" constant="-121" id="fUy-t4-hf0"/>
+                            <constraint firstItem="72U-PK-Tme" firstAttribute="top" secondItem="xg9-pN-LYG" secondAttribute="bottom" constant="10" id="fVX-ui-0WY"/>
                             <constraint firstItem="XPW-JQ-POb" firstAttribute="top" secondItem="lm3-28-Rud" secondAttribute="bottom" constant="10" id="haS-eE-1IR"/>
                             <constraint firstItem="TkB-JR-S6r" firstAttribute="top" secondItem="yvk-gR-n3c" secondAttribute="bottom" constant="20" id="rrn-Bt-Ssn"/>
                             <constraint firstItem="yvk-gR-n3c" firstAttribute="top" secondItem="1f8-r4-33d" secondAttribute="bottom" constant="80" id="taG-Ep-4Y1"/>
-                            <constraint firstItem="72U-PK-Tme" firstAttribute="top" secondItem="CU2-X0-ZGU" secondAttribute="bottom" constant="80" id="tty-yP-yiR"/>
+                            <constraint firstItem="72U-PK-Tme" firstAttribute="top" secondItem="CU2-X0-ZGU" secondAttribute="bottom" constant="140" id="tty-yP-yiR"/>
                             <constraint firstAttribute="centerX" secondItem="yvk-gR-n3c" secondAttribute="centerX" id="xEv-PD-y7s"/>
+                            <constraint firstItem="xg9-pN-LYG" firstAttribute="leading" secondItem="1d2-e9-WK9" secondAttribute="leadingMargin" constant="10" id="yPZ-kY-nGG"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="9Xp-Av-WPQ"/>
                                 <exclude reference="fUy-t4-hf0"/>
                                 <exclude reference="7Gn-h5-HE0"/>
+                                <exclude reference="QaH-Ez-IaI"/>
+                                <exclude reference="Xgp-EJ-cD2"/>
+                                <exclude reference="yPZ-kY-nGG"/>
                             </mask>
                         </variation>
                     </view>
@@ -440,6 +459,7 @@ Contentful</string>
                     </tabBarItem>
                     <connections>
                         <outlet property="accessTokenTextField" destination="1R4-y5-SGT" id="4Oa-NH-1bi"/>
+                        <outlet property="helpLabel" destination="xg9-pN-LYG" id="FXB-df-Sjc"/>
                         <outlet property="infoLabel" destination="yjp-jn-FOf" id="2ap-IN-bD9"/>
                         <outlet property="loadSpaceButton" destination="CU2-X0-ZGU" id="AGR-0n-4RB"/>
                         <outlet property="loginInfoLabel" destination="lm3-28-Rud" id="gXO-Ot-e4O"/>
