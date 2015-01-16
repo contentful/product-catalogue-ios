@@ -61,6 +61,17 @@
     ((UIScrollView*)self.view).contentSize = contentView.frame.size;
 }
 
+-(void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+
+    CGFloat contentHeight = 400.0 + self.productNameLabel.intrinsicContentSize.height + self.productDescription.intrinsicContentSize.height;
+    [self updateContentSizeToHeight:contentHeight];
+
+    [self.view layoutIfNeeded];
+
+    self.productDescription.selectable = NO;
+}
+
 -(void)viewDidLoad {
     [super viewDidLoad];
 
@@ -101,9 +112,6 @@
     self.pricingLabel.text = [NSString stringWithFormat:NSLocalizedString(@"%@ EUR", @"Pricing label"), self.product.price];
     self.productDescription.text = self.product.productDescription;
     self.productNameLabel.text = self.product.productName;
-
-    CGFloat contentHeight = 550.0 + self.productNameLabel.intrinsicContentSize.height + self.productDescription.intrinsicContentSize.height;
-    [self updateContentSizeToHeight:contentHeight];
 }
 
 #pragma mark - Actions
