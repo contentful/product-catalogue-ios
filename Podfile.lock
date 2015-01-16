@@ -26,7 +26,7 @@ PODS:
     - AFNetworking
     - HRCoder
     - ISO8601DateFormatter
-  - ContentfulDialogs (0.1.0):
+  - ContentfulDialogs (0.2.0):
     - Bypass
     - CGLMail
     - ContentfulDeliveryAPI (~> 1.4.7)
@@ -51,7 +51,7 @@ DEPENDENCIES:
   - ContentfulDialogs (from `git@github.com:contentful/contentful-ios-dialogs.git`)
   - ContentfulPersistence (from `../contentful-persistence.objc`)
   - ContentfulStyle (from `git@github.com:contentful/contentful-ios-style.git`)
-  - DZNWebViewController
+  - DZNWebViewController (from `git@github.com:neonichu/DZNWebViewController.git`)
   - Masonry
   - TPKeyboardAvoiding
 
@@ -62,25 +62,30 @@ EXTERNAL SOURCES:
     :path: ../contentful-persistence.objc
   ContentfulStyle:
     :git: git@github.com:contentful/contentful-ios-style.git
+  DZNWebViewController:
+    :git: git@github.com:neonichu/DZNWebViewController.git
 
 CHECKOUT OPTIONS:
   ContentfulDialogs:
-    :commit: 5483d344b7c1757616f2442886a4030d72375bd9
+    :commit: c2248e9396b5fd6851238f44fba207e49317b2d2
     :git: git@github.com:contentful/contentful-ios-dialogs.git
   ContentfulStyle:
     :commit: 9f0295a152acef324d0c688b20b481fcaf969938
     :git: git@github.com:contentful/contentful-ios-style.git
+  DZNWebViewController:
+    :commit: 94e7db3d6feb9db76f1f334a461110d00249a66d
+    :git: git@github.com:neonichu/DZNWebViewController.git
 
 SPEC CHECKSUMS:
   AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
   Bypass: 225bc63ebb09e5674c1fc460b1708e775f68f52f
   CGLMail: ba03e1a69db3c27bad925fe1270cd99fada5ed69
   ContentfulDeliveryAPI: c3815bd863ddc5ae8a9039051bc7ab6962bfc031
-  ContentfulDialogs: ce515410dba561c8d815a5ef0470ed930d48ee4b
+  ContentfulDialogs: b6b11105aff841fff749f8f4547f2e26f5ec5db4
   ContentfulPersistence: 9c7117962b4cf9a069756639d3275ecf7cee0364
   ContentfulStyle: af9eb49cfafa472641e2600d913c786d91dc1461
   DDPageControl: 86d07bda58e325a427fb0d7c8fb650add2ff35c2
-  DZNWebViewController: 73361f52eafcc6fc46a868b8bb2ec3bae65dfe69
+  DZNWebViewController: 3c63bfa4f8f9ae4da03329d20f10b8b9900c14cc
   EDColor: bcdb8600b7a456f4408ce1d7e7fc001588919254
   HRCoder: 492f8e2e0b69b54842564d4bbeb1c0e151d4f95f
   ISO8601DateFormatter: 59731cd880cf87e71b4fa95f0d6b713dcbc4cbce

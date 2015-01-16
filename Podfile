@@ -18,7 +18,7 @@ pod 'ContentfulPersistence', :path => '../contentful-persistence.objc'
 
 pod 'ContentfulDialogs', :git => 'git@github.com:contentful/contentful-ios-dialogs.git'
 pod 'ContentfulStyle', :git => 'git@github.com:contentful/contentful-ios-style.git'
-pod 'DZNWebViewController'
+pod 'DZNWebViewController', :git => 'git@github.com:neonichu/DZNWebViewController.git'
 pod 'Masonry'
 pod 'TPKeyboardAvoiding'
 
