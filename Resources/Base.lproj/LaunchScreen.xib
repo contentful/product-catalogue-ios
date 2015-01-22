@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C99d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -44,14 +44,23 @@ Contentful</string>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="package" translatesAutoresizingMaskIntoConstraints="NO" id="0nE-Nq-3HG">
+                    <rect key="frame" x="190" y="36" width="100" height="107"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="107" id="fI3-kv-Wy7"/>
+                        <constraint firstAttribute="width" constant="100" id="re7-RI-eZg"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstAttribute="centerX" secondItem="0nE-Nq-3HG" secondAttribute="centerX" id="33P-rr-1Ei"/>
                 <constraint firstItem="klq-SA-TXF" firstAttribute="top" secondItem="UdF-9Q-KVG" secondAttribute="bottom" constant="20" id="3af-2f-PrT"/>
                 <constraint firstAttribute="centerX" secondItem="S8W-nn-d8B" secondAttribute="centerX" id="3gk-GH-WZf"/>
                 <constraint firstAttribute="bottom" secondItem="fUA-gu-uZn" secondAttribute="bottom" id="7Ly-G3-Dz2"/>
                 <constraint firstItem="fUA-gu-uZn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7m5-gm-1kH"/>
                 <constraint firstAttribute="trailing" secondItem="fUA-gu-uZn" secondAttribute="trailing" id="Jb3-Ds-h67"/>
+                <constraint firstItem="UdF-9Q-KVG" firstAttribute="top" secondItem="0nE-Nq-3HG" secondAttribute="bottom" constant="20" id="Qre-x9-K5e"/>
                 <constraint firstAttribute="centerX" secondItem="klq-SA-TXF" secondAttribute="centerX" id="Uaf-ve-bSM"/>
                 <constraint firstAttribute="centerX" secondItem="fUA-gu-uZn" secondAttribute="centerX" id="dOx-ds-y3R"/>
                 <constraint firstItem="S8W-nn-d8B" firstAttribute="top" secondItem="klq-SA-TXF" secondAttribute="bottom" constant="10" id="gZa-6R-oRU"/>
@@ -68,5 +77,6 @@ Contentful</string>
     <resources>
         <image name="launch-bg.png" width="1242" height="2208"/>
         <image name="logo.png" width="256" height="256"/>
+        <image name="package" width="208" height="221"/>
     </resources>
 </document>
