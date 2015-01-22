@@ -7,6 +7,7 @@
 //
 
 #import <ContentfulDeliveryAPI/ContentfulDeliveryAPI.h>
+#import <CoreData/CoreData.h>
 #import <Foundation/Foundation.h>
 
 extern NSString* const BrandContentTypeId;
