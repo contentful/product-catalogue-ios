@@ -11,7 +11,7 @@
 
 #import "Asset.h"
 #import "Brand.h"
-#import "CDASpaceSelectionViewController.h"
+#import "CMALoginViewController.h"
 #import "Constants.h"
 #import "ContentfulDataManager.h"
 #import "Product.h"

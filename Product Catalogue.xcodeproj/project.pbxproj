@@ -24,7 +24,6 @@
 		A1CB144A1A488416003D2813 /* SingleImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB14491A488416003D2813 /* SingleImageCell.m */; };
 		A1D1135E1A66CBE900FB9828 /* launch-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D1135D1A66CBE900FB9828 /* launch-bg.png */; };
 		A1D1E1CC1A6004BE00FD1E49 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D1E1CB1A6004BE00FD1E49 /* logo.png */; };
-		A1D1E1CF1A600DAD00FD1E49 /* CDASpaceSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D1E1CE1A600DAD00FD1E49 /* CDASpaceSelectionViewController.m */; };
 		A1D289E31A5C137C00EE485C /* ProductCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D289E21A5C137C00EE485C /* ProductCategoryCell.m */; };
 		A1D3A4771A38845B001DF93D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1D3A4731A38845B001DF93D /* LaunchScreen.xib */; };
 		A1D3A4781A38845B001DF93D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D3A4751A38845B001DF93D /* Main.storyboard */; };
@@ -80,8 +79,6 @@
 		A1CB14491A488416003D2813 /* SingleImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleImageCell.m; sourceTree = "<group>"; };
 		A1D1135D1A66CBE900FB9828 /* launch-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-bg.png"; sourceTree = "<group>"; };
 		A1D1E1CB1A6004BE00FD1E49 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		A1D1E1CD1A600DAD00FD1E49 /* CDASpaceSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDASpaceSelectionViewController.h; sourceTree = "<group>"; };
-		A1D1E1CE1A600DAD00FD1E49 /* CDASpaceSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDASpaceSelectionViewController.m; sourceTree = "<group>"; };
 		A1D289E11A5C137C00EE485C /* ProductCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCategoryCell.h; sourceTree = "<group>"; };
 		A1D289E21A5C137C00EE485C /* ProductCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCategoryCell.m; sourceTree = "<group>"; };
 		A1D3A4741A38845B001DF93D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -169,7 +166,6 @@
 				A1E4937D1A5AF4C500EB1065 /* Product Categories */,
 				A1D792AD1A433BD300325B32 /* Product Details */,
 				A1D792AC1A433BC900325B32 /* Product List */,
-				A1D1E1CA1A6003AC00FD1E49 /* Space Selection */,
 				A1083AE01A388281007EF3C9 /* AppDelegate.h */,
 				A1083AE11A388281007EF3C9 /* AppDelegate.m */,
 				A1B3A0DE1A39E4E9004DF1A2 /* Constants.h */,
@@ -227,15 +223,6 @@
 				A1B3A0D81A39DF32004DF1A2 /* SyncInfo.m */,
 			);
 			name = Model;
-			sourceTree = "<group>";
-		};
-		A1D1E1CA1A6003AC00FD1E49 /* Space Selection */ = {
-			isa = PBXGroup;
-			children = (
-				A1D1E1CD1A600DAD00FD1E49 /* CDASpaceSelectionViewController.h */,
-				A1D1E1CE1A600DAD00FD1E49 /* CDASpaceSelectionViewController.m */,
-			);
-			name = "Space Selection";
 			sourceTree = "<group>";
 		};
 		A1D792A81A431DF700325B32 /* Generated */ = {
@@ -446,7 +433,6 @@
 				A1D289E31A5C137C00EE485C /* ProductCategoryCell.m in Sources */,
 				A1CB14471A48825A003D2813 /* HorizontalImageStripController.m in Sources */,
 				A1B3A0DC1A39DF32004DF1A2 /* ProductCategory.m in Sources */,
-				A1D1E1CF1A600DAD00FD1E49 /* CDASpaceSelectionViewController.m in Sources */,
 				A1083AE51A388281007EF3C9 /* ProductList.m in Sources */,
 				A1B3A0D01A39DF31004DF1A2 /* Product.m in Sources */,
 				A1083AE21A388281007EF3C9 /* AppDelegate.m in Sources */,

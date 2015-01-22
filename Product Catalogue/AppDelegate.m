@@ -10,7 +10,7 @@
 #import <ContentfulStyle/UIFont+Contentful.h>
 
 #import "AppDelegate.h"
-#import "CDASpaceSelectionViewController.h"
+#import "CMALoginViewController.h"
 #import "Constants.h"
 
 @implementation AppDelegate

@@ -5,6 +5,9 @@ plugin 'cocoapods-keys', {
     'ProductCatalogueAccesToken'
   ]}
 
+source 'https://github.com/CocoaPods/Specs'
+source 'https://github.com/contentful/CocoaPodsSpecs'
+
 platform :ios, '8.0'
 
 inhibit_all_warnings!
@@ -14,12 +17,13 @@ target 'Product Catalogue' do
 #use_frameworks!
 
 # work with a local copy for simplicity's sake
+pod 'ContentfulLogin', :path => '../contentful-ios-login'
 pod 'ContentfulPersistence', :path => '../contentful-persistence.objc'
 
-pod 'ContentfulDialogs', :git => 'git@github.com:contentful/contentful-ios-dialogs.git'
-pod 'ContentfulStyle', :git => 'git@github.com:contentful/contentful-ios-style.git'
+pod 'ContentfulDialogs'
+pod 'ContentfulManagementAPI', '~> 0.5.0'
+pod 'ContentfulStyle'
 pod 'DZNWebViewController', :git => 'git@github.com:neonichu/DZNWebViewController.git'
 pod 'Masonry'
-pod 'TPKeyboardAvoiding'
 
 end
