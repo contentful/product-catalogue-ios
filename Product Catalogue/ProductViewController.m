@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *availabilityLabel;
 @property (weak, nonatomic) IBOutlet UIButton *brandButton;
 @property (weak, nonatomic) IBOutlet UIButton *buyButton;
+@property (weak, nonatomic) IBOutlet UILabel *byLabel;
 @property (weak, nonatomic) IBOutlet UILabel *pricingLabel;
 @property (weak, nonatomic) IBOutlet UITextView *productDescription;
 @property (weak, nonatomic) IBOutlet UILabel *productNameLabel;
@@ -82,6 +83,7 @@
     self.availabilityLabel.textColor = [UIColor contentfulDeactivatedColor];
     self.brandButton.titleLabel.font = [UIFont buttonTitleFont];
     self.buyButton.titleLabel.font = [UIFont buttonTitleFont];
+    self.byLabel.font = [UIFont buttonTitleFont];
     self.pricingLabel.font = [UIFont bodyTextFont];
     self.productDescription.font = [UIFont bodyTextFont];
     self.productNameLabel.font = [UIFont bodyTextFont];
