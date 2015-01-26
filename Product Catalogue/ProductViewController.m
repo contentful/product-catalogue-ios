@@ -45,7 +45,8 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:EmbedGalleryVCSegue]) {
         GalleryViewController* galleryVC = segue.destinationViewController;
-        galleryVC.assets = self.product.image;
+        galleryVC.assets = [self.product.image.array
+                            subarrayWithRange:NSMakeRange(0, MIN(self.product.image.count, 5))];
         galleryVC.client = self.client;
     }
 }

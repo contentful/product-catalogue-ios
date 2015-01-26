@@ -12,7 +12,7 @@
 
 @interface GalleryViewController : UIPageViewController
 
-@property (nonatomic, weak) NSOrderedSet* assets;
+@property (nonatomic, strong) NSArray* assets;
 @property (nonatomic, weak) CDAClient* client;
 
 @end
