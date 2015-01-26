@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProductList : UICollectionViewController
+@interface ProductList : UITableViewController
 
 @property (nonatomic) NSString* predicate;
 

@@ -21,7 +21,6 @@ pod 'ContentfulLogin', :path => '../contentful-ios-login'
 pod 'ContentfulPersistence', :path => '../contentful-persistence.objc'
 
 pod 'ContentfulDialogs'
-pod 'ContentfulManagementAPI', '~> 0.5.0'
 pod 'ContentfulStyle'
 pod 'DZNWebViewController', :git => 'git@github.com:neonichu/DZNWebViewController.git'
 pod 'Masonry'

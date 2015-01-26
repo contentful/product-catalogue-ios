@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProductCell : UICollectionViewCell
+@interface ProductCell : UITableViewCell
 
-@property (nonatomic, readonly) UIImageView* coverImageView;
 @property (nonatomic, readonly) UILabel* pricingLabel;
 
 @end

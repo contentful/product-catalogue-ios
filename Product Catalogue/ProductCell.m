@@ -12,30 +12,17 @@
 
 @implementation ProductCell
 
-@synthesize coverImageView = _coverImageView;
 @synthesize pricingLabel = _pricingLabel;
 
--(UIImageView *)coverImageView {
-    if (_coverImageView) {
-        return _coverImageView;
+-(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        self.backgroundColor = [UIColor whiteColor];
+        self.imageView.contentMode = UIViewContentModeScaleAspectFit;
+        self.separatorInset = UIEdgeInsetsZero;
+        self.textLabel.font = [UIFont bodyTextFont];
+        self.textLabel.numberOfLines = 2;
     }
-
-    _coverImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10.0, 10.0, 0.0, 0.0)];
-    _coverImageView.contentMode = UIViewContentModeScaleAspectFit;
-
-    CGRect frame = _coverImageView.frame;
-    frame.size.width = self.frame.size.width - 2 * frame.origin.x;
-    frame.size.height = self.frame.size.height - 2 * frame.origin.y;
-    _coverImageView.frame = frame;
-
-    [self addSubview:_coverImageView];
-
-    return _coverImageView;
-}
-
--(instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    self.backgroundColor = [UIColor whiteColor];
     return self;
 }
 
@@ -53,14 +40,30 @@
     _pricingLabel.textAlignment = NSTextAlignmentCenter;
     _pricingLabel.textColor = [UIColor whiteColor];
 
-    CGRect frame = _pricingLabel.frame;
-    frame.origin.x = self.frame.size.width - frame.size.width;
-    frame.origin.y = self.frame.size.height - frame.size.height;
-    _pricingLabel.frame = frame;
-
-    [self addSubview:_pricingLabel];
+    [self.contentView addSubview:_pricingLabel];
 
     return _pricingLabel;
+}
+
+-(void)layoutSubviews {
+    [super layoutSubviews];
+
+    self.imageView.frame = CGRectMake(10.0, 10.0,
+                                      self.frame.size.height - 20.0, self.frame.size.height - 20.0);
+
+    CGRect frame = self.pricingLabel.frame;
+    frame.origin.x = CGRectGetMaxX(self.imageView.frame) + 10.0;
+    frame.origin.y = CGRectGetMaxY(self.imageView.frame) - frame.size.height;
+    self.pricingLabel.frame = frame;
+
+    frame = self.textLabel.frame;
+    frame.origin.x = self.pricingLabel.frame.origin.x;
+    frame.origin.y = self.imageView.frame.origin.y + 20.0;
+    frame.size.width = self.frame.size.width - frame.origin.x - 20.0;
+    frame.size.height = self.pricingLabel.frame.origin.y - frame.origin.y - 10.0;
+    self.textLabel.frame = frame;
+
+    [self.textLabel sizeToFit];
 }
 
 @end

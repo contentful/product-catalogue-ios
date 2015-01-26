@@ -40,18 +40,19 @@
     self.dataManager = [ContentfulDataManager new];
 
     NSFetchedResultsController* controller = [self.dataManager fetchedResultsControllerForContentTypeWithIdentifier:ProductContentTypeId predicate:self.predicate sortDescriptors:@[ [[NSSortDescriptor alloc] initWithKey:@"productName" ascending:YES] ]];
-    _dataSource = [[CoreDataFetchDataSource alloc] initWithFetchedResultsController:controller collectionView:self.collectionView cellIdentifier:NSStringFromClass([self class])];
+    _dataSource = [[CoreDataFetchDataSource alloc] initWithFetchedResultsController:controller tableView:self.tableView cellIdentifier:NSStringFromClass([self class])];
 
     __weak typeof(self) welf = self;
     _dataSource.cellConfigurator = ^(ProductCell* cell, NSIndexPath* indexPath) {
         Product* product = [welf.dataSource objectAtIndexPath:indexPath];
-        cell.coverImageView.offlineCaching_cda = YES;
-        [cell.coverImageView cda_setImageWithPersistedAsset:[product.image firstObject]
-                                                     client:welf.dataManager.client
-                                                       size:CGSizeZero
-                                           placeholderImage:[UIImage imageNamed:@"placeholder"]];
+        cell.imageView.offlineCaching_cda = YES;
+        [cell.imageView cda_setImageWithPersistedAsset:[product.image firstObject]
+                                                client:welf.dataManager.client
+                                                  size:CGSizeZero
+                                      placeholderImage:[UIImage imageNamed:@"placeholder"]];
 
         cell.pricingLabel.text = [NSString stringWithFormat:@"%@ €", product.price];
+        cell.textLabel.text = product.productName;
     };
 
     return _dataSource;
@@ -96,18 +97,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.collectionView.dataSource = self.dataSource;
+    self.tableView.dataSource = self.dataSource;
+    self.tableView.rowHeight = 130.0;
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
 
-    [self.collectionView registerClass:ProductCell.class
-            forCellWithReuseIdentifier:NSStringFromClass(self.class)];
-
-    UICollectionViewFlowLayout* layout = [UICollectionViewFlowLayout new];
-    layout.itemSize = CGSizeMake((int)self.view.frame.size.width / 2,
-                                 (int)(self.view.frame.size.height / 3));
-    layout.minimumInteritemSpacing = 0.0;
-    layout.minimumLineSpacing = 0.0;
-    [self.collectionView setCollectionViewLayout:layout];
+    [self.tableView registerClass:ProductCell.class
+           forCellReuseIdentifier:NSStringFromClass(self.class)];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -116,9 +111,9 @@
     [self refresh];
 }
 
-#pragma mark - UICollectionViewDelegate
+#pragma mark - UITableViewDelegate
 
--(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     ProductViewController* detail = [self.storyboard instantiateViewControllerWithIdentifier:ProductViewControllerSegue];
     detail.client = self.dataManager.client;
     detail.product = [self.dataSource objectAtIndexPath:indexPath];

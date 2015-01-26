@@ -1,33 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C99d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EHx-G9-azh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C106a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EHx-G9-azh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--All products-->
-        <scene sceneID="uyG-6Y-sej">
+        <scene sceneID="W8A-7x-dB0">
             <objects>
-                <collectionViewController id="ewE-O1-wOe" customClass="ProductList" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="2Wc-4I-VlX">
+                <tableViewController id="w4v-oZ-vpV" customClass="ProductList" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="f5S-KE-bpQ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="g7Z-IK-idw">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
-                            <outlet property="dataSource" destination="ewE-O1-wOe" id="buv-JZ-sjO"/>
-                            <outlet property="delegate" destination="ewE-O1-wOe" id="B85-6X-ICc"/>
+                            <outlet property="dataSource" destination="w4v-oZ-vpV" id="nyb-Bp-81k"/>
+                            <outlet property="delegate" destination="w4v-oZ-vpV" id="Sn5-rF-X4f"/>
                         </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" title="All products" id="i4Q-Ij-zzu"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wpN-2L-xGK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="All products" id="9IT-MB-lV8"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qOd-Hq-6T3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2329" y="-392"/>
         </scene>
@@ -258,30 +251,23 @@
             </objects>
             <point key="canvasLocation" x="3057" y="-392"/>
         </scene>
-        <!--Filtered Products View Controller-->
-        <scene sceneID="76M-CC-8lQ">
+        <!--Filtered Product List-->
+        <scene sceneID="ocj-vE-9zu">
             <objects>
-                <collectionViewController storyboardIdentifier="FilteredProductsViewControllerSegue" id="I5m-kb-m3h" userLabel="Filtered Products View Controller" customClass="ProductList" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="wp1-FZ-nEX">
+                <tableViewController storyboardIdentifier="FilteredProductsViewControllerSegue" id="35P-jT-EBy" userLabel="Filtered Product List" customClass="ProductList" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="wy3-kA-fP6">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Dyh-3U-5AO">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
-                            <outlet property="dataSource" destination="I5m-kb-m3h" id="GKB-oG-lbz"/>
-                            <outlet property="delegate" destination="I5m-kb-m3h" id="d0M-b1-aNF"/>
+                            <outlet property="dataSource" destination="35P-jT-EBy" id="bW6-QS-ILZ"/>
+                            <outlet property="delegate" destination="35P-jT-EBy" id="K4H-0H-73p"/>
                         </connections>
-                    </collectionView>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pLD-C8-Tei" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uKS-tz-VrO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3058" y="313"/>
+            <point key="canvasLocation" x="3057" y="311"/>
         </scene>
         <!--Gallery View Controller-->
         <scene sceneID="f3l-EW-rcs">
@@ -305,7 +291,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ewE-O1-wOe" kind="relationship" relationship="rootViewController" id="B5u-oM-zv2"/>
+                        <segue destination="w4v-oZ-vpV" kind="relationship" relationship="rootViewController" id="oVL-YN-d5N"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QFJ-jS-eOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -315,7 +301,6 @@
         <!--Change Space-->
         <scene sceneID="YD1-tF-hNE">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eVU-dc-09a" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="u7H-YU-Pxz" userLabel="Change Space" customClass="CMALoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1f8-r4-33d"/>
@@ -331,6 +316,7 @@
                         <userDefinedRuntimeAttribute type="string" keyPath="oauthRedirectURI" value="contentful-catalogue://token"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVU-dc-09a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="949" y="1000"/>
         </scene>
