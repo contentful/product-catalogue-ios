@@ -22,8 +22,6 @@
 		A1B3A0DC1A39DF32004DF1A2 /* ProductCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0DB1A39DF32004DF1A2 /* ProductCategory.m */; };
 		A1B3A0E11A39FB09004DF1A2 /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0E01A39FB09004DF1A2 /* ProductCell.m */; };
 		A1B954D91A715CE800B4F200 /* CMAProductCatalogueVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B954D81A715CE800B4F200 /* CMAProductCatalogueVerifier.m */; };
-		A1CB14471A48825A003D2813 /* HorizontalImageStripController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB14461A48825A003D2813 /* HorizontalImageStripController.m */; };
-		A1CB144A1A488416003D2813 /* SingleImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CB14491A488416003D2813 /* SingleImageCell.m */; };
 		A1D1135E1A66CBE900FB9828 /* launch-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D1135D1A66CBE900FB9828 /* launch-bg.png */; };
 		A1D1E1CC1A6004BE00FD1E49 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D1E1CB1A6004BE00FD1E49 /* logo.png */; };
 		A1D289E31A5C137C00EE485C /* ProductCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D289E21A5C137C00EE485C /* ProductCategoryCell.m */; };
@@ -79,10 +77,6 @@
 		A1B3A0E01A39FB09004DF1A2 /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCell.m; sourceTree = "<group>"; };
 		A1B954D71A715CE800B4F200 /* CMAProductCatalogueVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMAProductCatalogueVerifier.h; sourceTree = "<group>"; };
 		A1B954D81A715CE800B4F200 /* CMAProductCatalogueVerifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMAProductCatalogueVerifier.m; sourceTree = "<group>"; };
-		A1CB14451A48825A003D2813 /* HorizontalImageStripController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalImageStripController.h; sourceTree = "<group>"; };
-		A1CB14461A48825A003D2813 /* HorizontalImageStripController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalImageStripController.m; sourceTree = "<group>"; };
-		A1CB14481A488416003D2813 /* SingleImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleImageCell.h; sourceTree = "<group>"; };
-		A1CB14491A488416003D2813 /* SingleImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleImageCell.m; sourceTree = "<group>"; };
 		A1D1135D1A66CBE900FB9828 /* launch-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-bg.png"; sourceTree = "<group>"; };
 		A1D1E1CB1A6004BE00FD1E49 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		A1D289E11A5C137C00EE485C /* ProductCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCategoryCell.h; sourceTree = "<group>"; };
@@ -272,10 +266,6 @@
 				A1D792A31A430F1F00325B32 /* ImageViewController.m */,
 				A1D792991A42D6B300325B32 /* ProductViewController.h */,
 				A1D7929A1A42D6B300325B32 /* ProductViewController.m */,
-				A1CB14481A488416003D2813 /* SingleImageCell.h */,
-				A1CB14491A488416003D2813 /* SingleImageCell.m */,
-				A1CB14451A48825A003D2813 /* HorizontalImageStripController.h */,
-				A1CB14461A48825A003D2813 /* HorizontalImageStripController.m */,
 			);
 			name = "Product Details";
 			sourceTree = "<group>";
@@ -446,10 +436,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1B3A0D31A39DF32004DF1A2 /* Asset.m in Sources */,
-				A1CB144A1A488416003D2813 /* SingleImageCell.m in Sources */,
 				A1E493801A5AF50400EB1065 /* ProductCategoryList.m in Sources */,
 				A1D289E31A5C137C00EE485C /* ProductCategoryCell.m in Sources */,
-				A1CB14471A48825A003D2813 /* HorizontalImageStripController.m in Sources */,
 				A1B3A0DC1A39DF32004DF1A2 /* ProductCategory.m in Sources */,
 				A1083AE51A388281007EF3C9 /* ProductList.m in Sources */,
 				A1B3A0D01A39DF31004DF1A2 /* Product.m in Sources */,

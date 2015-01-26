@@ -10,12 +10,11 @@
 
 #import "GalleryViewController.h"
 #import "ImageViewController.h"
-#import "HorizontalImageStripController.h"
 
 @interface GalleryViewController () <UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 
 @property (nonatomic) UIButton* leftButton;
-@property (nonatomic) HorizontalImageStripController* imageStripController;
+@property (nonatomic) UIPageControl* pageControl;
 @property (nonatomic) UIButton* rightButton;
 
 @end
@@ -73,7 +72,7 @@
 }
 
 -(void)updateCurrentIndex:(NSInteger)currentIndex {
-    [self.imageStripController scrollToItemAtIndex:currentIndex];
+    self.pageControl.currentPage = currentIndex;
 
     self.leftButton.enabled = currentIndex > 0;
     self.leftButton.alpha = self.leftButton.enabled ? 1.0 : 0.5;
@@ -85,14 +84,17 @@
 -(void)viewDidLoad{
     [super viewDidLoad];
 
-    self.imageStripController = [HorizontalImageStripController new];
-    [self.view addSubview:self.imageStripController.view];
+    self.pageControl = [UIPageControl new];
+    self.pageControl.currentPageIndicatorTintColor = self.pageControl.tintColor;
+    self.pageControl.numberOfPages = self.assets.count;
+    self.pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+    [self.view addSubview:self.pageControl];
 
-    [self.imageStripController.view mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.pageControl mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view.mas_centerX);
+        make.bottom.equalTo(@5);
         make.width.equalTo(@140);
         make.height.equalTo(@40);
-        make.centerX.equalTo(self.view.mas_centerX);
-        make.bottom.equalTo(@0);
     }];
 
     self.leftButton = [self buildButtonUsingAdditionalConstraints:^(MASConstraintMaker *make) {
@@ -109,10 +111,6 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-
-    self.imageStripController.assets = self.assets;
-    self.imageStripController.client = self.client;
-    [self.imageStripController refresh];
 
     ImageViewController* imageVC = [self imageViewControllerWithIndex:0];
 
