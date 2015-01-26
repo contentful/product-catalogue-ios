@@ -13,6 +13,7 @@
 		A1083AE51A388281007EF3C9 /* ProductList.m in Sources */ = {isa = PBXBuildFile; fileRef = A1083AE41A388281007EF3C9 /* ProductList.m */; };
 		A1083AEA1A388281007EF3C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1083AE91A388281007EF3C9 /* Images.xcassets */; };
 		A1083AF91A388281007EF3C9 /* Product_CatalogueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1083AF81A388281007EF3C9 /* Product_CatalogueTests.m */; };
+		A11DA1EC1A766CCA00EAFE84 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11DA1EB1A766CCA00EAFE84 /* LoginViewController.m */; };
 		A1A03F1E1A5ECB88003621F5 /* Pods-Product Catalogue-acknowledgements.markdown in Resources */ = {isa = PBXBuildFile; fileRef = A1A03F1D1A5ECB88003621F5 /* Pods-Product Catalogue-acknowledgements.markdown */; };
 		A1B3A0D01A39DF31004DF1A2 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0CF1A39DF31004DF1A2 /* Product.m */; };
 		A1B3A0D31A39DF32004DF1A2 /* Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0D21A39DF32004DF1A2 /* Asset.m */; };
@@ -60,6 +61,8 @@
 		A1083AF21A388281007EF3C9 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1083AF71A388281007EF3C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1083AF81A388281007EF3C9 /* Product_CatalogueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product_CatalogueTests.m; sourceTree = "<group>"; };
+		A11DA1EA1A766CCA00EAFE84 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A11DA1EB1A766CCA00EAFE84 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		A1A03F1D1A5ECB88003621F5 /* Pods-Product Catalogue-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = "Pods-Product Catalogue-acknowledgements.markdown"; path = "../Pods/Target Support Files/Pods-Product Catalogue/Pods-Product Catalogue-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A1B3A0CE1A39DF31004DF1A2 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Product.h; path = "Product Catalogue/Product.h"; sourceTree = SOURCE_ROOT; };
 		A1B3A0CF1A39DF31004DF1A2 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Product.m; path = "Product Catalogue/Product.m"; sourceTree = SOURCE_ROOT; };
@@ -234,6 +237,8 @@
 			children = (
 				A1B954D71A715CE800B4F200 /* CMAProductCatalogueVerifier.h */,
 				A1B954D81A715CE800B4F200 /* CMAProductCatalogueVerifier.m */,
+				A11DA1EA1A766CCA00EAFE84 /* LoginViewController.h */,
+				A11DA1EB1A766CCA00EAFE84 /* LoginViewController.m */,
 			);
 			name = "Space Selection";
 			sourceTree = "<group>";
@@ -451,6 +456,7 @@
 				A1083AE21A388281007EF3C9 /* AppDelegate.m in Sources */,
 				A1B3A0E11A39FB09004DF1A2 /* ProductCell.m in Sources */,
 				A1D792A71A431DF000325B32 /* StoryboardIdentifiers.m in Sources */,
+				A11DA1EC1A766CCA00EAFE84 /* LoginViewController.m in Sources */,
 				A1D792A11A4309B600325B32 /* GalleryViewController.m in Sources */,
 				A1D7929B1A42D6B300325B32 /* ProductViewController.m in Sources */,
 				A1D792AB1A43340400325B32 /* ContentfulDataManager.m in Sources */,
