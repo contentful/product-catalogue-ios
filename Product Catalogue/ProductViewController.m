@@ -12,6 +12,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 #import "Brand.h"
+#import "BrandDetailsViewController.h"
 #import "GalleryViewController.h"
 #import "ProductViewController.h"
 #import "StoryboardIdentifiers.h"
@@ -46,6 +47,12 @@
         galleryVC.assets = [self.product.image.array
                             subarrayWithRange:NSMakeRange(0, MIN(self.product.image.count, 5))];
         galleryVC.client = self.client;
+    }
+
+    if ([segue.identifier isEqualToString:ShowBrandDetailsSegue]) {
+        BrandDetailsViewController* brandVC = segue.destinationViewController;
+        brandVC.brand = self.product.brand;
+        brandVC.client = self.client;
     }
 }
 
@@ -84,10 +91,7 @@
     self.buyButton.layer.cornerRadius = 4.0;
     self.buyButton.tintColor = [UIColor whiteColor];
 
-    [self.brandButton addTarget:self
-                         action:@selector(brandButtonTapped)
-               forControlEvents:UIControlEventTouchUpInside];
-    self.brandButton.enabled = self.product.brand.website.length > 0;
+    self.brandButton.enabled = self.product.brand != nil;
 
     [self.buyButton addTarget:self action:@selector(buyButtonTapped) forControlEvents:UIControlEventTouchUpInside];
     self.buyButton.enabled = self.product.website.length > 0;
@@ -114,11 +118,6 @@
 }
 
 #pragma mark - Actions
-
--(void)brandButtonTapped {
-    NSURL* URL = [NSURL URLWithString:self.product.brand.website];
-    [self showURL:URL];
-}
 
 -(void)buyButtonTapped {
     NSURL* URL = [NSURL URLWithString:self.product.website];

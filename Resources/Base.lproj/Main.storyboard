@@ -100,6 +100,9 @@
                                         <exclude reference="SFb-dB-cKo"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="020-h9-2YD" kind="show" identifier="ShowBrandDetailsSegue" id="xWE-d7-5n9"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwr-nP-PAG">
                                 <rect key="frame" x="26" y="296" width="17" height="18"/>
@@ -328,6 +331,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wmE-zU-eRe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3786" y="-569"/>
+        </scene>
+        <!--Brand Details View Controller-->
+        <scene sceneID="WsO-WT-yTR">
+            <objects>
+                <viewController id="020-h9-2YD" customClass="BrandDetailsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G4x-60-WUB"/>
+                        <viewControllerLayoutGuide type="bottom" id="7tS-lH-lVn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ws7-cC-laz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lyy-wP-QEv">
+                                <rect key="frame" x="250" y="74" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Unl-Iz-a7v"/>
+                                    <constraint firstAttribute="width" constant="100" id="pyt-ok-S6Z"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3R-RJ-4Gv">
+                                <rect key="frame" x="26" y="224" width="548" height="133"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="A3R-RJ-4Gv" secondAttribute="trailing" constant="10" id="SOQ-h1-d57"/>
+                            <constraint firstItem="A3R-RJ-4Gv" firstAttribute="top" secondItem="Lyy-wP-QEv" secondAttribute="bottom" constant="50" id="U9a-hu-ADd"/>
+                            <constraint firstItem="G4x-60-WUB" firstAttribute="top" secondItem="Lyy-wP-QEv" secondAttribute="top" constant="-10" id="lUu-92-jiW"/>
+                            <constraint firstAttribute="centerX" secondItem="Lyy-wP-QEv" secondAttribute="centerX" id="twl-vU-ELc"/>
+                            <constraint firstItem="A3R-RJ-4Gv" firstAttribute="leading" secondItem="Ws7-cC-laz" secondAttribute="leadingMargin" constant="10" id="ugL-cb-5W4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="brandDescription" destination="A3R-RJ-4Gv" id="Iqi-5f-0z2"/>
+                        <outlet property="brandLogoView" destination="Lyy-wP-QEv" id="3Cl-rV-IdX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LLt-8b-EEA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3777" y="-45"/>
         </scene>
         <!--All products-->
         <scene sceneID="e5c-4S-KnY">

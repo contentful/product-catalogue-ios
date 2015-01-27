@@ -14,6 +14,7 @@
 		A1083AEA1A388281007EF3C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1083AE91A388281007EF3C9 /* Images.xcassets */; };
 		A1083AF91A388281007EF3C9 /* Product_CatalogueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1083AF81A388281007EF3C9 /* Product_CatalogueTests.m */; };
 		A11DA1EC1A766CCA00EAFE84 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11DA1EB1A766CCA00EAFE84 /* LoginViewController.m */; };
+		A127D6891A77D7600053777C /* BrandDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A127D6881A77D7600053777C /* BrandDetailsViewController.m */; };
 		A127D68C1A77D97F0053777C /* UIScrollingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A127D68B1A77D97F0053777C /* UIScrollingViewController.m */; };
 		A1A03F1E1A5ECB88003621F5 /* Pods-Product Catalogue-acknowledgements.markdown in Resources */ = {isa = PBXBuildFile; fileRef = A1A03F1D1A5ECB88003621F5 /* Pods-Product Catalogue-acknowledgements.markdown */; };
 		A1B3A0D01A39DF31004DF1A2 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0CF1A39DF31004DF1A2 /* Product.m */; };
@@ -62,6 +63,8 @@
 		A1083AF81A388281007EF3C9 /* Product_CatalogueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product_CatalogueTests.m; sourceTree = "<group>"; };
 		A11DA1EA1A766CCA00EAFE84 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		A11DA1EB1A766CCA00EAFE84 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		A127D6871A77D7600053777C /* BrandDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrandDetailsViewController.h; sourceTree = "<group>"; };
+		A127D6881A77D7600053777C /* BrandDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrandDetailsViewController.m; sourceTree = "<group>"; };
 		A127D68A1A77D97F0053777C /* UIScrollingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIScrollingViewController.h; sourceTree = "<group>"; };
 		A127D68B1A77D97F0053777C /* UIScrollingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIScrollingViewController.m; sourceTree = "<group>"; };
 		A1A03F1D1A5ECB88003621F5 /* Pods-Product Catalogue-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = "Pods-Product Catalogue-acknowledgements.markdown"; path = "../Pods/Target Support Files/Pods-Product Catalogue/Pods-Product Catalogue-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -164,6 +167,7 @@
 		A1083ADB1A388280007EF3C9 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				A127D6861A77D74B0053777C /* Brand Details */,
 				A1D792A81A431DF700325B32 /* Generated */,
 				A1B3A0AF1A39DDF7004DF1A2 /* Model */,
 				A1E4937D1A5AF4C500EB1065 /* Product Categories */,
@@ -212,6 +216,15 @@
 				A1D3A4791A389D89001DF93D /* Product Catalogue.xcdatamodeld */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A127D6861A77D74B0053777C /* Brand Details */ = {
+			isa = PBXGroup;
+			children = (
+				A127D6871A77D7600053777C /* BrandDetailsViewController.h */,
+				A127D6881A77D7600053777C /* BrandDetailsViewController.m */,
+			);
+			name = "Brand Details";
 			sourceTree = "<group>";
 		};
 		A1B3A0AF1A39DDF7004DF1A2 /* Model */ = {
@@ -443,6 +456,7 @@
 				A1B3A0D31A39DF32004DF1A2 /* Asset.m in Sources */,
 				A1E493801A5AF50400EB1065 /* ProductCategoryList.m in Sources */,
 				A1D289E31A5C137C00EE485C /* ProductCategoryCell.m in Sources */,
+				A127D6891A77D7600053777C /* BrandDetailsViewController.m in Sources */,
 				A1B3A0DC1A39DF32004DF1A2 /* ProductCategory.m in Sources */,
 				A1083AE51A388281007EF3C9 /* ProductList.m in Sources */,
 				A1B3A0D01A39DF31004DF1A2 /* Product.m in Sources */,
