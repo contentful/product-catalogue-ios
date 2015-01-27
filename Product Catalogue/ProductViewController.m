@@ -36,14 +36,8 @@
 
 @implementation ProductViewController
 
--(void)loadView {
-    [super loadView];
-
-    UIScrollView* scrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
-    scrollView.backgroundColor = [UIColor whiteColor];
-    [scrollView addSubview:self.view];
-
-    self.view = scrollView;
+-(CGFloat)contentHeight {
+    return 450.0 + self.productNameLabel.intrinsicContentSize.height + self.productDescription.intrinsicContentSize.height;
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -62,19 +56,8 @@
     [self.navigationController pushViewController:browser animated:YES];
 }
 
--(void)updateContentSizeToHeight:(CGFloat)height {
-    UIView* contentView = self.view.subviews[0];
-    contentView.frame = CGRectMake(0.0, 0.0, self.view.frame.size.width, height);
-    ((UIScrollView*)self.view).contentSize = contentView.frame.size;
-}
-
 -(void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
-
-    CGFloat contentHeight = 450.0 + self.productNameLabel.intrinsicContentSize.height + self.productDescription.intrinsicContentSize.height;
-    [self updateContentSizeToHeight:contentHeight];
-
-    [self.view layoutIfNeeded];
 
     self.productDescription.selectable = NO;
 }

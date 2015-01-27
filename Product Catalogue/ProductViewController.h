@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 #import "Product.h"
+#import "UIScrollingViewController.h"
 
-@interface ProductViewController : UIViewController
+@interface ProductViewController : UIScrollingViewController
 
 @property (nonatomic, weak) CDAClient* client;
 @property (nonatomic, weak) Product* product;
