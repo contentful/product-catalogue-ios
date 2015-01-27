@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14A388a" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14C106a" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Asset" representedClassName="Asset" syncable="YES">
         <attribute name="height" optional="YES" attributeType="Float" syncable="YES"/>
         <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
@@ -28,6 +28,7 @@
         <attribute name="quantity" optional="YES" attributeType="Integer 64" syncable="YES"/>
         <attribute name="sizetypecolor" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sku" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tags" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="brand" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Brand" inverseName="brandInverse" inverseEntity="Brand" syncable="YES"/>
         <relationship name="categories" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="ProductCategory" inverseName="categoriesInverse" inverseEntity="ProductCategory" syncable="YES"/>
@@ -47,7 +48,7 @@
     <elements>
         <element name="Asset" positionX="0" positionY="0" width="128" height="165"/>
         <element name="Brand" positionX="0" positionY="0" width="128" height="165"/>
-        <element name="Product" positionX="0" positionY="0" width="128" height="208"/>
+        <element name="Product" positionX="0" positionY="0" width="128" height="225"/>
         <element name="ProductCategory" positionX="0" positionY="0" width="128" height="118"/>
         <element name="SyncInfo" positionX="0" positionY="0" width="128" height="75"/>
     </elements>

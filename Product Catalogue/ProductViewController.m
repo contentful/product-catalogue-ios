@@ -25,6 +25,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *pricingLabel;
 @property (weak, nonatomic) IBOutlet UITextView *productDescription;
 @property (weak, nonatomic) IBOutlet UILabel *productNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *sizeTypeColorTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *sizeTypeColorLabel;
+@property (weak, nonatomic) IBOutlet UILabel *tagsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *tagsTitleLabel;
 
 @end
 
@@ -67,7 +71,7 @@
 -(void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
 
-    CGFloat contentHeight = 400.0 + self.productNameLabel.intrinsicContentSize.height + self.productDescription.intrinsicContentSize.height;
+    CGFloat contentHeight = 450.0 + self.productNameLabel.intrinsicContentSize.height + self.productDescription.intrinsicContentSize.height;
     [self updateContentSizeToHeight:contentHeight];
 
     [self.view layoutIfNeeded];
@@ -88,6 +92,10 @@
     self.pricingLabel.font = [UIFont bodyTextFont];
     self.productDescription.font = [UIFont bodyTextFont];
     self.productNameLabel.font = [UIFont bodyTextFont];
+    self.sizeTypeColorLabel.font = [UIFont bodyTextFont];
+    self.sizeTypeColorTitleLabel.font = [UIFont bodyTextFont];
+    self.tagsLabel.font = [UIFont bodyTextFont];
+    self.tagsTitleLabel.font = [UIFont bodyTextFont];
 
     self.buyButton.backgroundColor = [UIColor contentfulPrimaryColor];
     self.buyButton.layer.cornerRadius = 4.0;
@@ -116,6 +124,10 @@
     self.pricingLabel.text = [NSString stringWithFormat:NSLocalizedString(@"%@ EUR", @"Pricing label"), self.product.price];
     self.productDescription.text = self.product.productDescription;
     self.productNameLabel.text = self.product.productName;
+    self.sizeTypeColorLabel.text = self.product.sizetypecolor;
+
+    NSArray* tagsArray = [NSKeyedUnarchiver unarchiveObjectWithData:self.product.tags];
+    self.tagsLabel.text = [tagsArray componentsJoinedByString:@", "];
 }
 
 #pragma mark - Actions

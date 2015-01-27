@@ -25,5 +25,6 @@
 @dynamic categories;
 @dynamic image;
 @dynamic website;
+@dynamic tags;
 
 @end

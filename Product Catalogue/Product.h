@@ -25,6 +25,7 @@
 @property (nonatomic, retain) NSOrderedSet *categories;
 @property (nonatomic, retain) NSOrderedSet *image;
 @property (nonatomic, retain) NSString * website;
+@property (nonatomic, retain) NSData * tags;
 @end
 
 @interface Product (CoreDataGeneratedAccessors)
