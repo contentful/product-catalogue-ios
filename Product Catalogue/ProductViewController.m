@@ -38,7 +38,7 @@
 @implementation ProductViewController
 
 -(CGFloat)contentHeight {
-    return 450.0 + self.productNameLabel.intrinsicContentSize.height + self.productDescription.intrinsicContentSize.height;
+    return 410.0 + self.productNameLabel.intrinsicContentSize.height + self.productDescription.intrinsicContentSize.height + self.sizeTypeColorLabel.intrinsicContentSize.height +  self.tagsLabel.intrinsicContentSize.height;
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
