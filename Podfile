@@ -16,10 +16,8 @@ target 'Product Catalogue' do
 
 #use_frameworks!
 
-# work with a local copy for simplicity's sake
-pod 'ContentfulPersistence', :path => '../contentful-persistence.objc'
-
 pod 'ContentfulDialogs'
+pod 'ContentfulPersistence'
 pod 'ContentfulStyle'
 pod 'DZNWebViewController', :git => 'git@github.com:neonichu/DZNWebViewController.git'
 pod 'Masonry'

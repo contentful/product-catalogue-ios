@@ -46,14 +46,12 @@ PODS:
 
 DEPENDENCIES:
   - ContentfulDialogs
-  - ContentfulPersistence (from `../contentful-persistence.objc`)
+  - ContentfulPersistence
   - ContentfulStyle
   - DZNWebViewController (from `git@github.com:neonichu/DZNWebViewController.git`)
   - Masonry
 
 EXTERNAL SOURCES:
-  ContentfulPersistence:
-    :path: ../contentful-persistence.objc
   DZNWebViewController:
     :git: git@github.com:neonichu/DZNWebViewController.git
 
