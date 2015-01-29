@@ -398,28 +398,6 @@
             </objects>
             <point key="canvasLocation" x="1566" y="-392"/>
         </scene>
-        <!--Change Space-->
-        <scene sceneID="YD1-tF-hNE">
-            <objects>
-                <viewController id="u7H-YU-Pxz" userLabel="Change Space" customClass="LoginViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1f8-r4-33d"/>
-                        <viewControllerLayoutGuide type="bottom" id="72U-PK-Tme"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1d2-e9-WK9">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Eoi-PR-SDN"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="oauthRedirectURI" value="contentful-catalogue://token"/>
-                    </userDefinedRuntimeAttributes>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eVU-dc-09a" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="949" y="1000"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="qae-Vu-Dkz">
             <objects>
@@ -434,7 +412,6 @@
                     <connections>
                         <segue destination="zdu-8k-8t3" kind="relationship" relationship="viewControllers" id="4Ew-HA-Ep4"/>
                         <segue destination="JvE-MI-m3o" kind="relationship" relationship="viewControllers" id="N4A-eN-FMh"/>
-                        <segue destination="P8q-5j-Zvh" kind="relationship" relationship="viewControllers" id="Ygp-pJ-7UK"/>
                         <segue destination="U6A-NP-WpA" kind="relationship" relationship="viewControllers" id="sn2-az-iNC"/>
                     </connections>
                 </tabBarController>
@@ -501,32 +478,10 @@
             </objects>
             <point key="canvasLocation" x="1606" y="1000"/>
         </scene>
-        <!--Settings-->
-        <scene sceneID="nLE-hN-NTM">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P8q-5j-Zvh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" image="settings_tab" id="Llw-bC-Efg">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Glf-dN-ivR">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="u7H-YU-Pxz" kind="relationship" relationship="rootViewController" id="Gvn-3R-Oby"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4YV-9v-ou6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="137" y="1000"/>
-        </scene>
     </scenes>
     <resources>
         <image name="about.png" width="20" height="20"/>
         <image name="all_products_tab" width="22" height="18"/>
         <image name="categories_tab" width="21" height="17"/>
-        <image name="settings_tab" width="21" height="21"/>
     </resources>
 </document>

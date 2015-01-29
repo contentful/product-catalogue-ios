@@ -31,14 +31,6 @@ PODS:
     - ContentfulDeliveryAPI (~> 1.4.7)
     - DDPageControl
     - TSMiniWebBrowser@dblock
-  - ContentfulLogin (0.1.0):
-    - ContentfulDeliveryAPI
-    - ContentfulManagementAPI (~> 0.5.0)
-    - ContentfulStyle
-    - MMProgressHUD
-    - SSKeychain
-  - ContentfulManagementAPI (0.5.0):
-    - ContentfulDeliveryAPI (~> 1.4.7)
   - ContentfulPersistence (0.1.0):
     - ContentfulDeliveryAPI (~> 1.4.7)
   - ContentfulStyle (0.2.0):
@@ -50,22 +42,16 @@ PODS:
   - ISO8601DateFormatter (0.7)
   - LatoFont (1.0.0)
   - Masonry (0.5.3)
-  - MMProgressHUD (0.3.0)
-  - SSKeychain (1.2.2)
   - TSMiniWebBrowser@dblock (1.1)
 
 DEPENDENCIES:
   - ContentfulDialogs
-  - ContentfulLogin (from `../contentful-ios-login`)
-  - ContentfulManagementAPI (~> 0.5.0)
   - ContentfulPersistence (from `../contentful-persistence.objc`)
   - ContentfulStyle
   - DZNWebViewController (from `git@github.com:neonichu/DZNWebViewController.git`)
   - Masonry
 
 EXTERNAL SOURCES:
-  ContentfulLogin:
-    :path: ../contentful-ios-login
   ContentfulPersistence:
     :path: ../contentful-persistence.objc
   DZNWebViewController:
@@ -82,8 +68,6 @@ SPEC CHECKSUMS:
   CGLMail: ba03e1a69db3c27bad925fe1270cd99fada5ed69
   ContentfulDeliveryAPI: 4652d1fb65a08fdfbf01d5e3c399da01409bda00
   ContentfulDialogs: e4a668f43ee864be7275033f8f27e92eeac25261
-  ContentfulLogin: 12633710008d382a194e012f8e83b427f8c8087e
-  ContentfulManagementAPI: d21051009aa6aaf087076c16dd1f8c5017dfeaa1
   ContentfulPersistence: 9c7117962b4cf9a069756639d3275ecf7cee0364
   ContentfulStyle: 0f41944b1efd8bba2a8f0c1ac0cf3910b1105949
   DDPageControl: 86d07bda58e325a427fb0d7c8fb650add2ff35c2
@@ -92,8 +76,6 @@ SPEC CHECKSUMS:
   ISO8601DateFormatter: 59731cd880cf87e71b4fa95f0d6b713dcbc4cbce
   LatoFont: 325a86578945d04cce8039deaf163229c63e2258
   Masonry: 35368c2ca9577ca87722c12fc52c4bad9b1c1516
-  MMProgressHUD: a524179e2ece5ba76f5228f9368a6918f617510e
-  SSKeychain: cc48bd3ad24fcd9125adb9e0d23dd50b8bbd08b9
   TSMiniWebBrowser@dblock: 4e73ee955fcf2e9f5d98f7a17460454ac059bc37
 
 COCOAPODS: 0.36.0.beta.1

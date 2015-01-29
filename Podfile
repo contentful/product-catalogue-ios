@@ -17,7 +17,6 @@ target 'Product Catalogue' do
 #use_frameworks!
 
 # work with a local copy for simplicity's sake
-pod 'ContentfulLogin', :path => '../contentful-ios-login'
 pod 'ContentfulPersistence', :path => '../contentful-persistence.objc'
 
 pod 'ContentfulDialogs'

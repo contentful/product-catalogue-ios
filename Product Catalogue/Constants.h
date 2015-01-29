@@ -10,3 +10,7 @@
 
 #define SPACE_KEY       @"ContentfulSpaceKey"
 #define ACCESS_TOKEN    @"ContentfulAccessToken"
+
+#define CDAAccessTokenKey           @"CDAAccessTokenKey"
+#define CDASpaceIdentifierKey       @"CDASpaceIdentifierKey"
+#define CDASpaceChangedNotification @"CDASpaceChangedNotification"
