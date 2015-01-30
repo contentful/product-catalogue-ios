@@ -17,8 +17,8 @@ $ make setup
 - Use cocoapods-keys to setup your space credentials for it:
 
 ```
-$ pod keys set ProductCatalogueSpaceId $YOUR_SPACE_ID
-$ pod keys set ProductCatalogueAccesToken $YOUR_ACCESS_TOKEN
+$ bundle exec pod keys set ProductCatalogueSpaceId $YOUR_SPACE_ID
+$ bundle exec pod keys set ProductCatalogueAccesToken $YOUR_ACCESS_TOKEN
 ```
 
 - Now you're ready to use it!
