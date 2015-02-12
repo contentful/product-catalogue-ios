@@ -64,7 +64,10 @@ NSString* const ProductContentTypeId = @"2PqfXUJwE8qSYKuM0U6w8M";
         return _manager;
     }
 
-    _manager = [[CoreDataManager alloc] initWithClient:[[CDAClient alloc] initWithSpaceKey:[[NSUserDefaults standardUserDefaults] stringForKey:SPACE_KEY] accessToken:[[NSUserDefaults standardUserDefaults] stringForKey:ACCESS_TOKEN]] dataModelName:@"Product Catalogue"];
+    CDAConfiguration* configuration = [CDAConfiguration defaultConfiguration];
+    configuration.userAgent = @"Contentful Product Catalogue/1.0";
+
+    _manager = [[CoreDataManager alloc] initWithClient:[[CDAClient alloc] initWithSpaceKey:[[NSUserDefaults standardUserDefaults] stringForKey:SPACE_KEY] accessToken:[[NSUserDefaults standardUserDefaults] stringForKey:ACCESS_TOKEN] configuration:configuration] dataModelName:@"Product Catalogue"];
 
     _manager.classForAssets = [Asset class];
     _manager.classForSpaces = [SyncInfo class];
