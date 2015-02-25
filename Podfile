@@ -16,10 +16,17 @@ target 'Product Catalogue' do
 
 #use_frameworks!
 
+pod 'ContentfulDeliveryAPI', '~> 1.4.9'
 pod 'ContentfulDialogs'
 pod 'ContentfulPersistence'
 pod 'ContentfulStyle'
 pod 'DZNWebViewController', :git => 'git@github.com:neonichu/DZNWebViewController.git'
 pod 'Masonry'
+
+end
+
+target 'Tests' do
+
+pod 'FBSnapshotTestcase'
 
 end
