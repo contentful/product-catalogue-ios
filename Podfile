@@ -4,6 +4,7 @@ plugin 'cocoapods-keys', {
     'ProductCatalogueSpaceId',
     'ProductCatalogueAccesToken'
   ]}
+plugin 'cocoapods-stats'
 
 source 'https://github.com/CocoaPods/Specs'
 source 'https://github.com/contentful/CocoaPodsSpecs'

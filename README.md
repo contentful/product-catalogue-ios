@@ -1,5 +1,7 @@
 # Product Catalogue
 
+[![](download-store.svg)](https://itunes.apple.com/app/id963680410)
+
 This is an iOS application example for the [Contentful][1] product
 catalogue space template.
 
