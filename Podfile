@@ -28,6 +28,6 @@ end
 
 target 'Tests' do
 
-pod 'FBSnapshotTestcase'
+pod 'FBSnapshotTestcase', '~> 1.8.1'
 
 end
