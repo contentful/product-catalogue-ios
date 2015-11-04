@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.contentful.$(PRODUCT_NAME:rfc1034identifier)</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -20,6 +20,21 @@
 	<string>1.1</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>CFBundleURLIconFile</key>
+			<string>512_black.png</string>
+			<key>CFBundleURLName</key>
+			<string>com.contentful.catalogue</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>contentful-catalogue</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -35,21 +50,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-	</array>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Viewer</string>
-			<key>CFBundleURLIconFile</key>
-			<string>512_black.png</string>
-			<key>CFBundleURLName</key>
-			<string>com.contentful.catalogue</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>contentful-catalogue</string>
-			</array>
-		</dict>
 	</array>
 </dict>
 </plist>
