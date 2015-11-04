@@ -9,6 +9,8 @@ catalogue space template.
 
 ## Usage
 
+- Simply run
+
 ```
 $ make setup
 ```
