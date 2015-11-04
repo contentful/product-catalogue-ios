@@ -41,6 +41,7 @@ PODS:
   - EDColor (0.4.0)
   - FBSnapshotTestCase (1.8.1)
   - ISO8601DateFormatter (0.7)
+  - Keys (1.0.0)
   - LatoFont (1.0.0)
   - Masonry (0.5.3)
   - TSMiniWebBrowser@dblock (1.1)
@@ -51,12 +52,15 @@ DEPENDENCIES:
   - ContentfulPersistence
   - ContentfulStyle
   - DZNWebViewController (from `git@github.com:neonichu/DZNWebViewController.git`)
-  - FBSnapshotTestcase (~> 1.8.1)
+  - FBSnapshotTestCase (~> 1.8.1)
+  - Keys (from `Pods/CocoaPodsKeys`)
   - Masonry
 
 EXTERNAL SOURCES:
   DZNWebViewController:
     :git: git@github.com:neonichu/DZNWebViewController.git
+  Keys:
+    :path: Pods/CocoaPodsKeys
 
 CHECKOUT OPTIONS:
   DZNWebViewController:
@@ -76,8 +80,9 @@ SPEC CHECKSUMS:
   EDColor: 89d19a013279a5604d61650721c15f20fefaaf00
   FBSnapshotTestCase: 3dc3899168747a0319c5278f5b3445c13a6532dd
   ISO8601DateFormatter: ab926648eebe497f4d167c0fd083992f959f1274
+  Keys: 7d2ff6ff42f6903358267ce56e9392f83c31acfe
   LatoFont: bcfb0239c339af9aacf4b3061d5268e53e080732
   Masonry: 9f515466afe48632562342a40a1c224071a1a022
   TSMiniWebBrowser@dblock: 6eb565b44cc2e5cd5eee7660ee5c21f8afae415c
 
-COCOAPODS: 0.36.0.beta.1
+COCOAPODS: 0.39.0
