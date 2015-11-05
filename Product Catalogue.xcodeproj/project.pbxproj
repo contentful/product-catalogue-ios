@@ -16,7 +16,7 @@
 		A1083AF91A388281007EF3C9 /* Product_CatalogueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1083AF81A388281007EF3C9 /* Product_CatalogueTests.m */; };
 		A127D6891A77D7600053777C /* BrandDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A127D6881A77D7600053777C /* BrandDetailsViewController.m */; };
 		A127D68C1A77D97F0053777C /* UIScrollingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A127D68B1A77D97F0053777C /* UIScrollingViewController.m */; };
-		A1A03F1E1A5ECB88003621F5 /* Pods-Product Catalogue-acknowledgements.markdown in Resources */ = {isa = PBXBuildFile; fileRef = A1A03F1D1A5ECB88003621F5 /* Pods-Product Catalogue-acknowledgements.markdown */; };
+		A16B5B8E1BEA644000DE6A96 /* Pods-acknowledgements.markdown in Resources */ = {isa = PBXBuildFile; fileRef = A16B5B8D1BEA644000DE6A96 /* Pods-acknowledgements.markdown */; };
 		A1B3A0D01A39DF31004DF1A2 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0CF1A39DF31004DF1A2 /* Product.m */; };
 		A1B3A0D31A39DF32004DF1A2 /* Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0D21A39DF32004DF1A2 /* Asset.m */; };
 		A1B3A0D61A39DF32004DF1A2 /* Brand.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B3A0D51A39DF32004DF1A2 /* Brand.m */; };
@@ -66,7 +66,7 @@
 		A127D6881A77D7600053777C /* BrandDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrandDetailsViewController.m; sourceTree = "<group>"; };
 		A127D68A1A77D97F0053777C /* UIScrollingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIScrollingViewController.h; sourceTree = "<group>"; };
 		A127D68B1A77D97F0053777C /* UIScrollingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIScrollingViewController.m; sourceTree = "<group>"; };
-		A1A03F1D1A5ECB88003621F5 /* Pods-Product Catalogue-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = "Pods-Product Catalogue-acknowledgements.markdown"; path = "../Pods/Target Support Files/Pods-Product Catalogue/Pods-Product Catalogue-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A16B5B8D1BEA644000DE6A96 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = "Pods-acknowledgements.markdown"; path = "../Pods/Target Support Files/Pods/Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A1B3A0CE1A39DF31004DF1A2 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Product.h; path = "Product Catalogue/Product.h"; sourceTree = SOURCE_ROOT; };
 		A1B3A0CF1A39DF31004DF1A2 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Product.m; path = "Product Catalogue/Product.m"; sourceTree = SOURCE_ROOT; };
 		A1B3A0D11A39DF32004DF1A2 /* Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Asset.h; path = "Product Catalogue/Asset.h"; sourceTree = SOURCE_ROOT; };
@@ -213,7 +213,7 @@
 				A1083AE91A388281007EF3C9 /* Images.xcassets */,
 				A1D3A4731A38845B001DF93D /* LaunchScreen.xib */,
 				A1D3A4751A38845B001DF93D /* Main.storyboard */,
-				A1A03F1D1A5ECB88003621F5 /* Pods-Product Catalogue-acknowledgements.markdown */,
+				A16B5B8D1BEA644000DE6A96 /* Pods-acknowledgements.markdown */,
 				A1D3A4791A389D89001DF93D /* Product Catalogue.xcdatamodeld */,
 			);
 			path = Resources;
@@ -377,7 +377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1A03F1E1A5ECB88003621F5 /* Pods-Product Catalogue-acknowledgements.markdown in Resources */,
+				A16B5B8E1BEA644000DE6A96 /* Pods-acknowledgements.markdown in Resources */,
 				A1D1135E1A66CBE900FB9828 /* launch-bg.png in Resources */,
 				A1D1E1CC1A6004BE00FD1E49 /* logo.png in Resources */,
 				A1D3A4781A38845B001DF93D /* Main.storyboard in Resources */,
@@ -681,10 +681,6 @@
 			baseConfigurationReference = F14D929693FD138C62728A6A /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -702,10 +698,6 @@
 			baseConfigurationReference = 67F2274851082CEF36EDD50D /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.contentful.$(PRODUCT_NAME:rfc1034identifier)";

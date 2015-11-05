@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Boris Bügling. All rights reserved.
 //
 
-#import <CocoaPods-Keys/ProductCatalogueKeys.h>
+#import <Keys/ProductCatalogueKeys.h>
 #import <ContentfulStyle/UIFont+Contentful.h>
 
 #import "AppDelegate.h"
@@ -74,7 +74,7 @@
 
 -(void)writeKeysToUserDefaults {
     NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
-    ProductCatalogueKeys* keys = [ProductCatalogueKeys new];
+    ProductcatalogueKeys* keys = [ProductcatalogueKeys new];
 
     if (![defaults stringForKey:SPACE_KEY]) {
         UIAlertView* alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Info", nil) message:FIRST_LAUNCH_MESSAGE delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", nil) otherButtonTitles:nil];
