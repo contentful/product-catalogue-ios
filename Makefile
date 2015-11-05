@@ -3,7 +3,7 @@ get_config = $(shell grep -A 2 $1 ~/.contentfulrc|grep $2|cut -d' ' -f3)
 
 .PHONY: all bootstrap setup storyboard_ids
 
-SPACE_NAME=ProductCatalogueDemo
+SPACE_NAME=my_catalogue
 
 all:
 	xcodebuild -workspace 'Product Catalogue.xcworkspace' \
