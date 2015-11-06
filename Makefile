@@ -11,12 +11,11 @@ all:
 
 bootstrap:
 	bundle install
-	bundle exec contentful_bootstrap create_space $(SPACE_NAME) -j templates/product-catalogue.json
 
 setup: bootstrap
 	@pod keys set ProductCatalogueSpaceId $(call get_config,$(SPACE_NAME),SPACE_ID)
 	@pod keys set ProductCatalogueAccesToken $(call get_config,$(SPACE_NAME),CONTENTFUL_DELIVERY_ACCESS_TOKEN)
-	bundle exec pod install #--no-repo-update
+	bundle exec pod install --no-repo-update
 
 storyboard_ids:
 	bundle exec sbconstants Product\ Catalogue/StoryboardIdentifiers.h
