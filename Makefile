@@ -9,10 +9,7 @@ all:
 	xcodebuild -workspace 'Product Catalogue.xcworkspace' \
 		-scheme 'Product Catalogue'|xcpretty
 
-bootstrap:
-	bundle install
-
-setup: bootstrap
+setup:
 	@pod keys set ProductCatalogueSpaceId $(call get_config,$(SPACE_NAME),SPACE_ID)
 	@pod keys set ProductCatalogueAccesToken $(call get_config,$(SPACE_NAME),CONTENTFUL_DELIVERY_ACCESS_TOKEN)
 	bundle exec pod install --no-repo-update
