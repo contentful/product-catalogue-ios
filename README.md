@@ -18,6 +18,8 @@ $ make setup
 This will install all necessary RubyGems, create a new space on [Contentful][1] using 
 [Contentful Bootstrap][3], install all necessary [CocoaPods][2] and setup API keys automatically.
 
+Note: this requires `bundler`, which you most likely already have. In case you are running this on a freshly installed OS X, please run `sudo gem install bundler` first.
+
 - Now you're ready to use it!
 
 ## Customizing
